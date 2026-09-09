@@ -1,4 +1,4 @@
-﻿-- CICDE Enfermeria 2026
+-- CICDE Enfermeria 2026
 -- Initial PostgreSQL enum types
 
 create type public.app_role as enum (

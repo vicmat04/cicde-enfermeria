@@ -1,4 +1,4 @@
-﻿-- CICDE Enfermeria 2026
+-- CICDE Enfermeria 2026
 -- Core tables: profiles, areas and topics
 
 create table public.profiles (
