@@ -117,7 +117,9 @@ Solo puede utilizarse en entorno seguro de servidor cuando sea necesario.
 # Variables de entorno previstas
 
 NEXT_PUBLIC_SUPABASE_URL
-NEXT_PUBLIC_SUPABASE_ANON_KEY
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+
+*Nota: `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` reemplaza a la llave `NEXT_PUBLIC_SUPABASE_ANON_KEY` (legacy anon key) como convención moderna en este proyecto.*
 
 Variables secretas adicionales se agregaran solamente cuando una funcionalidad del servidor las necesite.
 
