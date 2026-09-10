@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f7f5;
+  --foreground: #1b2a2b;
+  --ink-muted: #617170;
+  --teal: #0d706d;
+  --teal-dark: #075957;
+  --line: #d9e4e1;
+  --paper: #fffefd;
 }
 
 @theme inline {
@@ -12,15 +17,150 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: #bfe4df;
+  color: #123330;
+}
+
+:focus-visible {
+  outline: 3px solid #0d706d;
+  outline-offset: 3px;
+}
+
+.page-wash {
+  background:
+    radial-gradient(circle at 7% -10%, rgba(159, 211, 199, 0.32), transparent 31rem),
+    radial-gradient(circle at 98% 9%, rgba(224, 202, 165, 0.25), transparent 28rem),
+    var(--background);
+}
+
+.paper-shadow {
+  box-shadow: 0 12px 34px rgba(17, 52, 49, 0.08);
+}
+
+.reading-copy {
+  color: #314442;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.reading-copy p + p {
+  margin-top: 1rem;
+}
+
+.reading-copy ul,
+.reading-copy ol {
+  margin: 1rem 0;
+  padding-left: 1.45rem;
+}
+
+.reading-copy ul {
+  list-style: disc;
+}
+
+.reading-copy ol {
+  list-style: decimal;
+}
+
+.reading-copy li + li {
+  margin-top: 0.45rem;
+}
+
+.reading-copy strong {
+  color: #173a37;
+  font-weight: 700;
+}
+
+.reading-copy code {
+  border-radius: 0.3rem;
+  background: #e7f1ee;
+  padding: 0.12rem 0.32rem;
+  color: #075957;
+  font-size: 0.9em;
+}
+
+.reading-copy a {
+  color: #075957;
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-color: #8fc9bf;
+  text-underline-offset: 0.18em;
+}
+
+.reading-copy blockquote {
+  margin: 1.5rem 0;
+  border-left: 4px solid #75aaa0;
+  background: #f0f8f5;
+  padding: 1rem 1.25rem;
+  color: #254845;
+  font-style: italic;
+}
+
+.reading-copy hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid #c9d9d5;
+}
+
+.reading-copy table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.reading-copy th {
+  background: #eaf3f0;
+  color: #174642;
+  font-weight: 700;
+}
+
+.reading-copy th,
+.reading-copy td {
+  border: 1px solid #cddbd7;
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.lesson-anchor {
+  scroll-margin-top: 6.5rem;
+}
+
+.lesson-focus-shell.is-focused .lesson-toc {
+  display: none;
+}
+
+.lesson-focus-shell.is-focused .lesson-content-grid {
+  display: block;
+}
+
+.lesson-focus-shell.is-focused .lesson-article {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
 }
