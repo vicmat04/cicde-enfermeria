@@ -1,0 +1,107 @@
+{
+  "topic_code": "ADULT-11",
+  "area_code": "ADULT",
+  "title": "Cuidados paliativos",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Cuidados paliativos integrales: calidad de vida, alivio del sufrimiento, dolor, disnea, síntomas, comunicación, objetivos de cuidado, apoyo psicosocial/espiritual, final de vida, familia, duelo y marco oficial de Panamá.",
+  "coverage": {
+    "cicde_topic_exact": "Paliativos",
+    "includes": [
+      "definición OMS",
+      "paliativos tempranos y concomitantes",
+      "enfermedades elegibles",
+      "sufrimiento multidimensional",
+      "valoración integral",
+      "objetivos de cuidado",
+      "comunicación",
+      "esperanza realista",
+      "dolor",
+      "opioides",
+      "disnea",
+      "náuseas/vómitos",
+      "estreñimiento",
+      "delirium",
+      "fatiga",
+      "secreciones terminales",
+      "nutrición",
+      "hidratación",
+      "cuidado de boca y piel",
+      "ansiedad",
+      "espiritualidad",
+      "familia/cuidador",
+      "duelo",
+      "últimos días",
+      "decisiones al final de vida",
+      "Programa Nacional de Panamá",
+      "domicilio",
+      "urgencias paliativas",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_palliative_care_checked": true,
+    "paho_palliative_care_checked": true,
+    "nci_palliative_end_of_life_checked": true,
+    "minsa_panama_program_checked": true,
+    "minsa_resolution_866_2021_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Palliative care",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Palliative Care in the Americas",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Palliative Care in Cancer / Last Days of Life / Communication in Cancer Care",
+      "organization": "National Cancer Institute"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Programa de Cuidados Paliativos",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 866 de 12 de noviembre de 2021 — Norma del Programa Nacional de Cuidados Paliativos",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Guía Operativa N.º 3 — Rol y Funciones del Equipo de Salud en el Programa de Cuidados Paliativos",
+      "organization": "Ministerio de Salud de Panamá"
+    }
+  ]
+}

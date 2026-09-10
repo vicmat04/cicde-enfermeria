@@ -1,0 +1,110 @@
+{
+  "topic_code": "ADULT-17",
+  "area_code": "ADULT",
+  "title": "Función cardiovascular/circulatoria",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Valoración cardiovascular, síndrome coronario, arritmias, edema pulmonar, paro cardiorrespiratorio, TVP/EP, aneurisma e hipertensión/crisis con actualización AHA/ACC 2025.",
+  "coverage": {
+    "cicde_topic_exact": "Función cardiovascular/circulatoria",
+    "includes": [
+      "valoración cardiovascular",
+      "angina/SCA",
+      "ECG y troponina",
+      "oxígeno/nitroglicerina",
+      "antiagregación/anticoagulación",
+      "bradicardia",
+      "taquicardia",
+      "fibrilación auricular",
+      "TV/FV",
+      "asistolia/AESP",
+      "RCP AHA 2025",
+      "desfibrilación",
+      "epinefrina",
+      "antiarrítmicos",
+      "Hs y Ts",
+      "ROSC",
+      "edema pulmonar",
+      "TVP",
+      "embolia pulmonar",
+      "anticoagulación",
+      "aneurisma abdominal/torácico",
+      "disección",
+      "hipertensión",
+      "técnica de PA",
+      "hipertensión severa",
+      "emergencia hipertensiva",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "acc_aha_acs_2025_checked": true,
+    "aha_bls_als_2025_checked": true,
+    "aha_post_arrest_2025_checked": true,
+    "acc_aha_af_2023_checked": true,
+    "aha_acc_hypertension_2025_checked": true,
+    "merck_pulmonary_edema_2025_checked": true,
+    "merck_pe_2026_checked": true,
+    "merck_aortic_aneurysm_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "2025 Guideline for the Management of Patients With Acute Coronary Syndromes",
+      "organization": "ACC/AHA/ACEP/NAEMSP/SCAI",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "2025 Guidelines for CPR and ECC — Adult BLS/ALS/Post-Cardiac Arrest",
+      "organization": "American Heart Association",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guideline for Diagnosis and Management of Atrial Fibrillation",
+      "organization": "ACC/AHA/ACCP/HRS",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "High Blood Pressure Guideline",
+      "organization": "AHA/ACC",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Pulmonary Edema",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Pulmonary Embolism",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Thoracic Aortic Aneurysms",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2024
+    }
+  ]
+}

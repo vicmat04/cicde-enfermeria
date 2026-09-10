@@ -1,0 +1,88 @@
+{
+  "topic_code": "ADULT-09",
+  "area_code": "ADULT",
+  "title": "Líquidos y electrolitos",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Balance hídrico y electrolítico del adulto: compartimentos, valoración, déficit/exceso de volumen, terapia IV, sodio, potasio, calcio, magnesio, seguridad con KCl, PAE y cálculos básicos.",
+  "coverage": {
+    "cicde_topic_exact": "Líquidos y electrolitos",
+    "includes": [
+      "LIC y LEC",
+      "difusión osmosis filtración transporte activo",
+      "tonicidad",
+      "valoración de volumen",
+      "peso diario",
+      "ingresos y egresos",
+      "déficit y exceso de volumen",
+      "terapia IV",
+      "5R de NICE",
+      "hiponatremia",
+      "hipernatremia",
+      "hipopotasemia",
+      "hiperpotasemia",
+      "seudohiperpotasemia",
+      "KCl IV seguridad",
+      "hipocalcemia",
+      "hipercalcemia",
+      "hipomagnesemia",
+      "hipermagnesemia",
+      "interrelación electrolitos",
+      "función renal",
+      "PAE",
+      "balance y mL/h",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "nice_iv_fluids_checked": true,
+    "merck_sodium_2025_checked": true,
+    "merck_potassium_2025_checked": true,
+    "merck_calcium_2025_checked": true,
+    "merck_magnesium_2025_checked": true,
+    "fda_dailymed_potassium_safety_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Intravenous fluid therapy in adults in hospital (CG174)",
+      "organization": "NICE"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Electrolyte disorders — sodium, potassium, calcium and magnesium",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Potassium Chloride for Injection Concentrate",
+      "organization": "FDA / DailyMed",
+      "publication_year": 2026
+    }
+  ]
+}

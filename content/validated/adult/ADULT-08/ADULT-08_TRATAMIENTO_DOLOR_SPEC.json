@@ -1,0 +1,78 @@
+{
+  "topic_code": "ADULT-08",
+  "area_code": "ADULT",
+  "title": "Tratamiento del dolor",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Valoración y manejo integral del dolor: definición IASP, clasificación, escalas, impacto funcional, señales de alarma, estrategias multimodales, analgésicos, seguridad de opioides, reevaluación, educación y PAE.",
+  "coverage": {
+    "cicde_topic_exact": "Tratamiento del dolor",
+    "includes": [
+      "definición IASP",
+      "dolor vs nocicepción",
+      "dolor agudo subagudo crónico",
+      "nociceptivo neuropático mixto",
+      "valoración integral",
+      "escalas",
+      "paciente no verbal",
+      "impacto funcional",
+      "signos de alarma",
+      "manejo multimodal",
+      "intervenciones no farmacológicas",
+      "no opioides",
+      "opioides",
+      "seguridad respiratoria",
+      "naloxona concepto general",
+      "CDC 2022 y límites",
+      "dolor crónico",
+      "oncología/paliativos",
+      "postoperatorio",
+      "reevaluación",
+      "educación",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "iasp_definition_checked": true,
+    "cdc_opioid_2022_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "IASP Terminology — Pain",
+      "organization": "International Association for the Study of Pain",
+      "publication_year": 2020
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "CDC Clinical Practice Guideline for Prescribing Opioids for Pain — United States, 2022",
+      "organization": "Centers for Disease Control and Prevention",
+      "publication_year": 2022
+    }
+  ]
+}

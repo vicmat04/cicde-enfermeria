@@ -1,0 +1,92 @@
+{
+  "topic_code": "ADULT-14",
+  "area_code": "ADULT",
+  "title": "Tratamiento respiratorio sin invasión corporal",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Soporte respiratorio no invasivo: oxigenoterapia, dispositivos, HFNC, CPAP/BPAP, ventilación no invasiva, indicaciones y contraindicaciones, aerosolterapia, expansión pulmonar, secreciones y criterios de fracaso.",
+  "coverage": {
+    "cicde_topic_exact": "Tratamiento respiratorio sin invasión corporal",
+    "includes": [
+      "oxigenoterapia",
+      "objetivos SpO2",
+      "cánula nasal",
+      "mascarilla simple",
+      "Venturi",
+      "reservorio",
+      "HFNC",
+      "NIV/NIPPV",
+      "CPAP",
+      "BPAP",
+      "EPOC con acidosis",
+      "edema pulmonar cardiogénico",
+      "contraindicaciones",
+      "aspiración",
+      "interfaz",
+      "lesiones por presión",
+      "fugas",
+      "reevaluación",
+      "fracaso NIV",
+      "aerosolterapia",
+      "inhaladores",
+      "nebulización",
+      "posicionamiento",
+      "expansión pulmonar",
+      "secreciones",
+      "humidificación",
+      "seguridad de oxígeno",
+      "transporte",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "merck_nippv_2026_checked": true,
+    "ers_ats_niv_checked": true,
+    "aarc_oxygen_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Noninvasive Positive Pressure Ventilation",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Official ERS/ATS Clinical Practice Guidelines: Noninvasive Ventilation for Acute Respiratory Failure",
+      "organization": "ERS/ATS",
+      "publication_year": 2017
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Management of Adult Patients With Oxygen in the Acute Care Setting",
+      "organization": "AARC",
+      "publication_year": 2022
+    }
+  ]
+}

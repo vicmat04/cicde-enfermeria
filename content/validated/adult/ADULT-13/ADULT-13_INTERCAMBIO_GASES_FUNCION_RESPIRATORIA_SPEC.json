@@ -1,0 +1,94 @@
+{
+  "topic_code": "ADULT-13",
+  "area_code": "ADULT",
+  "title": "Intercambio de gases y función respiratoria",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Fundamentos de función respiratoria: ventilación, perfusión, difusión, V/Q, oxigenación, ventilación, oximetría, gasometría, hipoxemia/hipercapnia, insuficiencia respiratoria, oxigenoterapia y PAE.",
+  "coverage": {
+    "cicde_topic_exact": "Intercambio de gases y función respiratoria",
+    "includes": [
+      "ventilación",
+      "perfusión",
+      "difusión",
+      "V/Q",
+      "shunt",
+      "espacio muerto",
+      "oxigenación vs ventilación",
+      "hipoxemia",
+      "hipoxia",
+      "hipercapnia",
+      "insuficiencia respiratoria",
+      "valoración respiratoria",
+      "frecuencia y trabajo respiratorio",
+      "auscultación",
+      "oximetría y limitaciones",
+      "monóxido de carbono",
+      "gasometría básica",
+      "oxigenoterapia",
+      "dispositivos de oxígeno introductorios",
+      "seguridad",
+      "posicionamiento",
+      "tos y secreciones",
+      "signos de alarma",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "aarc_oxygen_2022_checked": true,
+    "merck_respiratory_failure_2026_checked": true,
+    "merck_hypoxemic_failure_2026_checked": true,
+    "ncbi_vq_physiology_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "AARC Clinical Practice Guideline: Management of Adult Patients With Oxygen in the Acute Care Setting",
+      "organization": "American Association for Respiratory Care",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Overview of Respiratory Failure",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Acute Hypoxemic Respiratory Failure",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Physiology, Pulmonary Ventilation and Perfusion",
+      "organization": "NCBI Bookshelf / StatPearls",
+      "publication_year": 2023
+    }
+  ]
+}

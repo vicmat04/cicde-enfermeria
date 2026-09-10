@@ -1,0 +1,89 @@
+{
+  "topic_code": "ADULT-16",
+  "area_code": "ADULT",
+  "title": "Asma, Neumonía, Broncoaspiración, Tuberculosis",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Atención respiratoria del adulto con asma, neumonía, broncoaspiración y tuberculosis: valoración, gravedad, tratamiento, prevención, aislamiento y educación.",
+  "coverage": {
+    "cicde_topic_exact": "Asma, Neumonía, Broncoaspiración, Tuberculosis",
+    "includes": [
+      "asma y exacerbación",
+      "GINA 2026 e ICS",
+      "neumonía CAP",
+      "sepsis y complicaciones",
+      "neumonitis aspirativa",
+      "neumonía aspirativa",
+      "disfagia y prevención",
+      "tuberculosis",
+      "transmisión aérea",
+      "N95 y AIIR",
+      "diagnóstico TB",
+      "tratamiento combinado",
+      "vigilancia de fármacos",
+      "TAES Panamá",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "gina_2026_checked": true,
+    "ats_idsa_cap_current_checked": true,
+    "merck_aspiration_checked": true,
+    "who_tb_2026_checked": true,
+    "cdc_tb_airborne_checked": true,
+    "minsa_tb_program_checked": true,
+    "panama_tb_2017_norm_requires_supersession_check_before_verified": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Global Strategy for Asthma Management and Prevention",
+      "organization": "GINA",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Diagnosis and Treatment of Adults with Community-Acquired Pneumonia",
+      "organization": "ATS/IDSA",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Aspiration Pneumonitis and Pneumonia",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Tuberculosis",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Tuberculosis Infection Control",
+      "organization": "CDC"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Programa de Control de la Tuberculosis",
+      "organization": "Ministerio de Salud de Panamá"
+    }
+  ]
+}

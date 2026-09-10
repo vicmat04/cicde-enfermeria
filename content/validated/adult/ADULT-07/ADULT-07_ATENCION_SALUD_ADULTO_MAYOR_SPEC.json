@@ -1,0 +1,98 @@
+{
+  "topic_code": "ADULT-07",
+  "area_code": "ADULT",
+  "title": "Atención de la salud del adulto mayor",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Atención integral de la persona adulta mayor: envejecimiento saludable, capacidad intrínseca y funcional, valoración multidimensional, caídas, delirium, polifarmacia, nutrición, continencia, piel, derechos, cuidador y transiciones, con actualización MINSA Panamá 2026.",
+  "coverage": {
+    "cicde_topic_exact": "Atención de la salud del adulto mayor",
+    "includes": [
+      "envejecimiento saludable",
+      "capacidad intrínseca",
+      "capacidad funcional",
+      "valoración geriátrica integral",
+      "deterioro funcional",
+      "movilidad y caídas",
+      "inmovilidad",
+      "delirium vs deterioro crónico",
+      "salud mental",
+      "polifarmacia",
+      "nutrición e hidratación",
+      "disfagia",
+      "visión y audición",
+      "continencia",
+      "estreñimiento",
+      "piel y lesiones por presión",
+      "dolor",
+      "sueño",
+      "maltrato/negligencia",
+      "autonomía",
+      "cuidador",
+      "alta/transiciones",
+      "Panamá 2026",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_icope_2025_checked": true,
+    "paho_healthy_ageing_checked": true,
+    "minsa_panama_program_checked": true,
+    "minsa_panama_2026_norms_checked": true,
+    "minsa_panama_healthy_ageing_strategy_2024_2029_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Programa Salud Adulto Mayor / Programa de Salud de Personas Mayores",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Normas Técnicas para la Atención Integral de la Persona Adulta Mayor",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Estrategia Nacional para la Promoción del Envejecimiento Saludable con Enfoque de Curso de Vida 2024–2029",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Integrated care for older people (ICOPE): guidance for person-centred assessment and pathways in primary care, 2nd ed",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Healthy Aging / Decade of Healthy Aging in the Americas 2021–2030",
+      "organization": "Pan American Health Organization"
+    }
+  ]
+}

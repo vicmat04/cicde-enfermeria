@@ -1,0 +1,74 @@
+{
+  "topic_code": "ADULT-04",
+  "area_code": "ADULT",
+  "title": "Valoración nutricional del adulto",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Valoración nutricional integral del adulto: tamizaje, historia, peso, IMC y sus limitaciones, ingesta, examen físico, función, disfagia, factores clínicos/sociales, laboratorios y PAE.",
+  "coverage": {
+    "cicde_topic_exact": "Valoración nutricional del adulto",
+    "includes": [
+      "tamizaje vs valoración nutricional",
+      "historia nutricional",
+      "cambio involuntario de peso",
+      "IMC y clasificación general OMS",
+      "limitaciones del IMC",
+      "circunferencia de cintura",
+      "examen físico nutricional",
+      "masa muscular y funcionalidad",
+      "ingesta",
+      "hidratación",
+      "disfagia y aspiración",
+      "factores clínicos",
+      "adulto mayor",
+      "factores sociales",
+      "medicamentos",
+      "laboratorios",
+      "desnutrición",
+      "obesidad",
+      "nutrición oral enteral parenteral",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_bmi_checked": true,
+    "clinical_nutrition_assessment_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Adult BMI classification / Obesity and overweight",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Nutrition in Clinical Medicine / Overview of Undernutrition",
+      "organization": "Merck Manual Professional Edition"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "topic_code": "ADULT-05",
+  "area_code": "ADULT",
+  "title": "Homeostasis, estrés y adaptación individual y familiar",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Homeostasis y regulación, respuesta fisiológica al estrés, allostasis, estrés agudo/crónico, afrontamiento, adaptación individual/familiar, sobrecarga del cuidador, comunicación y PAE.",
+  "coverage": {
+    "cicde_topic_exact": "Homeostasis, estrés y adaptación individual y familiar",
+    "includes": [
+      "homeostasis",
+      "retroalimentación negativa y positiva",
+      "allostasis",
+      "estresor y estrés",
+      "sistema simpático-adreno-medular",
+      "eje HPA",
+      "estrés agudo y crónico",
+      "manifestaciones del estrés",
+      "factores individuales",
+      "afrontamiento",
+      "adaptación a enfermedad",
+      "familia como sistema",
+      "sobrecarga del cuidador",
+      "hospitalización",
+      "crisis y seguridad",
+      "técnicas de reducción del estrés",
+      "comunicación terapéutica",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "homeostasis_source_checked": true,
+    "stress_physiology_source_checked": true,
+    "apa_stress_sources_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Physiology, Homeostasis / Physiology, Stress Reaction",
+      "organization": "NCBI Bookshelf / StatPearls"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Stress resources",
+      "organization": "American Psychological Association"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Stress, adaptation, and disease: allostasis and allostatic load",
+      "authors": "Bruce S. McEwen",
+      "publication_year": 1998
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "topic_code": "ADULT-06",
+  "area_code": "ADULT",
+  "title": "Enfermedad crónica y discapacidad",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Atención integral de la enfermedad crónica y discapacidad: función, autocuidado, accesibilidad, rehabilitación, multimorbilidad, polifarmacia, salud mental, cuidador y continuidad del cuidado.",
+  "coverage": {
+    "cicde_topic_exact": "Enfermedad crónica y discapacidad",
+    "includes": [
+      "enfermedad crónica",
+      "ENT",
+      "discapacidad como interacción",
+      "funcionamiento",
+      "actividades básicas e instrumentales",
+      "autogestión y autocuidado",
+      "barreras",
+      "multimorbilidad",
+      "exacerbaciones",
+      "polifarmacia",
+      "rehabilitación",
+      "productos de apoyo",
+      "comunicación accesible",
+      "prevención de complicaciones",
+      "salud mental",
+      "cuidador",
+      "transiciones de cuidado",
+      "derechos y no discriminación",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_disability_checked": true,
+    "who_rehabilitation_checked": true,
+    "who_ncd_checked": true,
+    "paho_integrated_ncd_care_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Disability and health",
+      "organization": "World Health Organization",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Rehabilitation",
+      "organization": "World Health Organization",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Noncommunicable diseases",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Strengthening care for noncommunicable diseases in the Americas",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Plan of action on noncommunicable disease prevention and control 2025–2030",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2026
+    }
+  ]
+}

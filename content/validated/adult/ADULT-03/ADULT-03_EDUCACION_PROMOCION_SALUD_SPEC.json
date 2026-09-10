@@ -1,0 +1,238 @@
+{
+  "topic_code": "ADULT-03",
+  "area_code": "ADULT",
+  "title": "Educación para la salud y promoción de la salud",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Promoción de la salud, educación sanitaria y aprendizaje para el autocuidado: valoración de necesidades, objetivos, alfabetización en salud, estrategias educativas, teach-back, retorno-demostración, alta segura y evaluación del aprendizaje.",
+  "coverage": {
+    "cicde_topic_exact": "Educación para la salud y promoción de la salud",
+    "includes": [
+      "promoción de la salud",
+      "educación para la salud",
+      "prevención de enfermedad",
+      "autocuidado",
+      "Carta de Ottawa",
+      "rol de enfermería",
+      "valoración educativa",
+      "disposición para aprender",
+      "objetivos educativos",
+      "dominios cognitivo psicomotor y afectivo",
+      "estrategias educativas",
+      "teach-back",
+      "retorno-demostración",
+      "alfabetización en salud",
+      "cultura y comunicación",
+      "educación del adulto",
+      "enfermedad crónica",
+      "medicamentos",
+      "alta",
+      "familia y cuidadores",
+      "evaluación",
+      "documentación",
+      "12 casos pedagógicos originales"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "cicde_education_competencies_checked": true,
+    "minsa_panama_promotion_plan_checked": true,
+    "who_ottawa_checked": true,
+    "who_health_promotion_glossary_checked": true,
+    "paho_nursing_role_checked": true,
+    "requires_current_panama_check_for_changeable_programs": true
+  },
+  "sections": [
+    {
+      "section_key": "scope",
+      "title": "Alcance oficial CICDE",
+      "sort_order": 1
+    },
+    {
+      "section_key": "objectives",
+      "title": "Objetivos de aprendizaje",
+      "sort_order": 2
+    },
+    {
+      "section_key": "health_promotion",
+      "title": "Promoción de la salud",
+      "sort_order": 3
+    },
+    {
+      "section_key": "ottawa",
+      "title": "Carta de Ottawa",
+      "sort_order": 4
+    },
+    {
+      "section_key": "health_education",
+      "title": "Educación para la salud",
+      "sort_order": 5
+    },
+    {
+      "section_key": "differences",
+      "title": "Promoción, prevención y educación",
+      "sort_order": 6
+    },
+    {
+      "section_key": "nursing_role",
+      "title": "Rol de enfermería",
+      "sort_order": 7
+    },
+    {
+      "section_key": "assessment",
+      "title": "Valoración de necesidades educativas",
+      "sort_order": 8
+    },
+    {
+      "section_key": "readiness",
+      "title": "Disposición para aprender",
+      "sort_order": 9
+    },
+    {
+      "section_key": "objectives_learning",
+      "title": "Objetivos educativos",
+      "sort_order": 10
+    },
+    {
+      "section_key": "domains",
+      "title": "Dominios del aprendizaje",
+      "sort_order": 11
+    },
+    {
+      "section_key": "strategies",
+      "title": "Estrategias educativas",
+      "sort_order": 12
+    },
+    {
+      "section_key": "teach_back",
+      "title": "Teach-back",
+      "sort_order": 13
+    },
+    {
+      "section_key": "return_demo",
+      "title": "Demostración y retorno-demostración",
+      "sort_order": 14
+    },
+    {
+      "section_key": "health_literacy",
+      "title": "Alfabetización en salud",
+      "sort_order": 15
+    },
+    {
+      "section_key": "culture",
+      "title": "Cultura y comunicación",
+      "sort_order": 16
+    },
+    {
+      "section_key": "adult_learning",
+      "title": "Educación al adulto",
+      "sort_order": 17
+    },
+    {
+      "section_key": "chronic",
+      "title": "Enfermedad crónica",
+      "sort_order": 18
+    },
+    {
+      "section_key": "medications",
+      "title": "Educación sobre medicamentos",
+      "sort_order": 19
+    },
+    {
+      "section_key": "discharge",
+      "title": "Preparación para el alta",
+      "sort_order": 20
+    },
+    {
+      "section_key": "caregivers",
+      "title": "Familia y cuidadores",
+      "sort_order": 21
+    },
+    {
+      "section_key": "evaluation",
+      "title": "Evaluación del aprendizaje",
+      "sort_order": 22
+    },
+    {
+      "section_key": "documentation",
+      "title": "Documentación",
+      "sort_order": 23
+    },
+    {
+      "section_key": "panama",
+      "title": "Promoción de la salud en Panamá",
+      "sort_order": 24
+    },
+    {
+      "section_key": "cases",
+      "title": "Situaciones tipo examen",
+      "sort_order": 25
+    },
+    {
+      "section_key": "errors",
+      "title": "Errores frecuentes",
+      "sort_order": 26
+    },
+    {
+      "section_key": "memorize",
+      "title": "Qué memorizar",
+      "sort_order": 27
+    },
+    {
+      "section_key": "competencies",
+      "title": "Relación con competencias CICDE",
+      "sort_order": 28
+    },
+    {
+      "section_key": "sources",
+      "title": "Fuentes y validación",
+      "sort_order": 29
+    }
+  ],
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV Consejo Interinstitucional de Certificación Básica de Enfermería",
+      "publication_year": 2026,
+      "role": "Alcance oficial y competencias de educación en salud"
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter; Anne G. Perry; Patricia A. Stockert; Amy Hall",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023,
+      "role": "Educación del paciente, comunicación, documentación y cuidado centrado en la persona"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Plan Nacional de Promoción de la Salud 2016–2025",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2017,
+      "role": "Marco nacional citado por CICDE"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Ottawa Charter for Health Promotion",
+      "organization": "World Health Organization",
+      "publication_year": 1986,
+      "role": "Definición y áreas de acción de promoción de la salud"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Health Promotion Glossary of Terms 2021",
+      "organization": "World Health Organization",
+      "publication_year": 2021,
+      "role": "Marco conceptual actualizado"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Nursing and Midwifery",
+      "organization": "Pan American Health Organization / WHO",
+      "role": "Rol de enfermería en promoción y prevención"
+    }
+  ]
+}

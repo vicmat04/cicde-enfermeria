@@ -1,0 +1,95 @@
+{
+  "topic_code": "ADULT-15",
+  "area_code": "ADULT",
+  "title": "Manejo de la vía aérea",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Manejo de vía aérea del adulto: reconocimiento de obstrucción, apertura, aspiración, OPA/NPA, BVM, intubación, capnografía, cuidado de tubo y traqueostomía, y FBAO actualizado con AHA 2025.",
+  "coverage": {
+    "cicde_topic_exact": "Manejo de la vía aérea",
+    "includes": [
+      "ABC",
+      "signos de obstrucción",
+      "ronquido gorgoteo estridor",
+      "head tilt chin lift",
+      "jaw thrust",
+      "secreciones/vómito",
+      "aspiración orofaríngea",
+      "aspiración vía artificial",
+      "AARC suction 2022",
+      "OPA",
+      "NPA",
+      "BVM",
+      "hiperventilación",
+      "intubación",
+      "preparación",
+      "confirmación",
+      "capnografía",
+      "fijación",
+      "cuff",
+      "higiene oral",
+      "humidificación",
+      "obstrucción/desplazamiento ETT",
+      "traqueostomía",
+      "emergencia de traqueostomía",
+      "VAP prevención",
+      "FBAO AHA 2025",
+      "embarazo avanzado",
+      "FBAO inconsciente",
+      "no blind finger sweep",
+      "extubación",
+      "estridor postextubación",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "aarc_suction_2022_checked": true,
+    "aarc_tracheostomy_2021_checked": true,
+    "aha_bls_2025_fbao_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Artificial Airway Suctioning Clinical Practice Guideline",
+      "organization": "AARC",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Management of Adult Patients with Tracheostomy in the Acute Care Setting",
+      "organization": "AARC",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "2025 Guidelines for CPR and ECC — Adult Basic Life Support",
+      "organization": "American Heart Association",
+      "publication_year": 2025
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "topic_code": "ADULT-12",
+  "area_code": "ADULT",
+  "title": "Atención Pre–Post operatoria",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Cuidado perioperatorio del adulto: valoración preoperatoria, consentimiento, seguridad quirúrgica OMS, prevención de complicaciones, recuperación postanestésica, dolor, hemorragia, infección, tromboembolismo, movilización y alta.",
+  "coverage": {
+    "cicde_topic_exact": "Atención Pre–Post operatoria",
+    "includes": [
+      "fases perioperatorias",
+      "valoración preoperatoria",
+      "identidad sitio procedimiento",
+      "consentimiento",
+      "ayuno",
+      "medicamentos",
+      "preparación física y emocional",
+      "SSI",
+      "VTE",
+      "WHO surgical safety checklist",
+      "seguridad intraoperatoria",
+      "PACU",
+      "vía aérea",
+      "hipoxemia",
+      "atelectasia",
+      "hemorragia/shock",
+      "dolor",
+      "PONV",
+      "retención urinaria",
+      "íleo",
+      "herida/drenajes",
+      "dehiscencia/evisceración",
+      "infección",
+      "TVP/EP",
+      "delirium",
+      "movilización",
+      "enhanced recovery",
+      "alta",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_surgical_safety_checked": true,
+    "nice_ng180_checked": true,
+    "nice_qs216_2026_checked": true,
+    "cdc_ssi_current_page_checked": true,
+    "panama_patient_rights_framework_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO Surgical Safety Checklist",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Perioperative care in adults (NG180)",
+      "organization": "NICE",
+      "publication_year": 2020
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Perioperative care in adults Quality Standard (QS216)",
+      "organization": "NICE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guideline for the Prevention of Surgical Site Infection",
+      "organization": "Centers for Disease Control and Prevention"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Ley 68 de 20 de noviembre de 2003 y Decreto Ejecutivo 1458 de 2012",
+      "organization": "República de Panamá / Ministerio de Salud"
+    }
+  ]
+}

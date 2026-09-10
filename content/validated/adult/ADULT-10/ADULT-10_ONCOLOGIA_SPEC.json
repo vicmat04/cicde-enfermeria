@@ -1,0 +1,97 @@
+{
+  "topic_code": "ADULT-10",
+  "area_code": "ADULT",
+  "title": "Tratamiento de pacientes con afecciones oncológicas",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Atención de enfermería al paciente oncológico: tratamientos, toxicidades, mielosupresión, infección/neutropenia, trombocitopenia, mucositis, extravasación, inmunoterapia, emergencias oncológicas, educación y PAE.",
+  "coverage": {
+    "cicde_topic_exact": "Tratamiento de pacientes con afecciones oncológicas",
+    "includes": [
+      "cáncer y metástasis",
+      "objetivos curativo control paliativo",
+      "cirugía",
+      "quimioterapia",
+      "radioterapia",
+      "terapia dirigida",
+      "inmunoterapia",
+      "valoración previa",
+      "mielosupresión",
+      "neutropenia e infección",
+      "anemia",
+      "trombocitopenia",
+      "náuseas y vómitos",
+      "mucositis",
+      "fatiga",
+      "nutrición y caquexia",
+      "alopecia e imagen corporal",
+      "neuropatía",
+      "acceso venoso central",
+      "extravasación",
+      "reacciones de infusión",
+      "síndrome de lisis tumoral",
+      "compresión medular",
+      "hipercalcemia",
+      "tromboembolismo",
+      "apoyo psicosocial",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_cancer_2026_checked": true,
+    "nci_treatment_checked": true,
+    "nci_neutropenia_checked": true,
+    "ons_asco_extravasation_2025_checked": true,
+    "oncologic_emergencies_checked": true,
+    "requires_database_reviewer_traceability": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter et al.",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Cáncer",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Cancer Treatment / Side Effects / Infection and Neutropenia",
+      "organization": "National Cancer Institute"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "ONS/ASCO Guideline on the Management of Antineoplastic Extravasation",
+      "organization": "Oncology Nursing Society / American Society of Clinical Oncology",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Management of Adverse Effects of Cancer Therapy",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    }
+  ]
+}

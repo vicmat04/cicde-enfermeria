@@ -1,0 +1,50 @@
+{
+  "topic_code": "ADULT-01",
+  "area_code": "ADULT",
+  "title": "Atención ética en enfermería",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Principios éticos, deberes deontológicos, derechos del paciente, confidencialidad, decisión libre e informada, seguridad, delegación y responsabilidad profesional.",
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "panama_professional_code_checked": true,
+    "international_code_checked": true,
+    "panama_legal_framework_checked": true,
+    "database_publish_requires_reviewed_by_and_reviewed_at": true
+  },
+  "section_keys": [
+    "scope", "objectives", "concepts", "principles", "nurse_patient",
+    "confidentiality", "informed_decision", "patient_safety", "delegation",
+    "interprofessional", "equity", "pae", "documentation", "exam_cases",
+    "memorize", "common_errors", "sources", "quality_control"
+  ],
+  "source_records": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV Consejo Interinstitucional de Certificación Básica de Enfermería",
+      "publication_year": 2026,
+      "usage": "Alcance oficial y enfoque del examen"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Código Deontológico para Enfermeras de Panamá",
+      "organization": "Asociación Nacional de Enfermeras de Panamá",
+      "usage": "Principios, deberes, confidencialidad, responsabilidad y conducta profesional"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Código de Ética del CIE para las Enfermeras",
+      "organization": "Consejo Internacional de Enfermeras",
+      "publication_year": 2021,
+      "usage": "Marco ético internacional actualizado"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Ley 68 de 20 de noviembre de 2003 y Decreto Ejecutivo 1458 de 6 de noviembre de 2012",
+      "organization": "República de Panamá / Ministerio de Salud",
+      "usage": "Información y decisión libre e informada; derechos y obligaciones del paciente"
+    }
+  ]
+}

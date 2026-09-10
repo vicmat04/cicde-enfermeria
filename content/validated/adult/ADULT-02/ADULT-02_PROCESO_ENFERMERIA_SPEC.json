@@ -1,0 +1,195 @@
+{
+  "topic_code": "ADULT-02",
+  "area_code": "ADULT",
+  "title": "El proceso de enfermería",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Proceso de enfermería como marco sistemático, dinámico y centrado en la persona: valoración, diagnóstico, planificación/identificación de resultados, implementación y evaluación, con juicio clínico, priorización, seguridad y documentación.",
+  "coverage": {
+    "cicde_topic_exact": "El proceso de enfermería",
+    "classical_five_stage_model": [
+      "Valoración",
+      "Diagnóstico de enfermería",
+      "Planificación",
+      "Implementación/Ejecución",
+      "Evaluación"
+    ],
+    "contemporary_six_component_crosswalk": [
+      "Valoración",
+      "Diagnóstico/identificación del problema",
+      "Identificación de resultados",
+      "Planificación",
+      "Implementación",
+      "Evaluación"
+    ],
+    "includes": [
+      "datos subjetivos y objetivos",
+      "fuentes primarias y secundarias",
+      "valoración integral y focalizada",
+      "validación y agrupación de datos",
+      "razonamiento diagnóstico",
+      "problema actual y riesgo",
+      "priorización clínica",
+      "resultados esperados",
+      "intervenciones independientes, dependientes y colaborativas",
+      "implementación segura",
+      "delegación y supervisión",
+      "evaluación continua",
+      "documentación",
+      "comunicación y continuidad del cuidado",
+      "12 casos pedagógicos originales",
+      "errores frecuentes de examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "potter_11_publisher_toc_checked": true,
+    "ana_nursing_process_checked": true,
+    "nanda_2024_2026_current_edition_checked": true,
+    "nanda_proprietary_taxonomy_reproduced": false,
+    "requires_database_reviewer_traceability": true
+  },
+  "sections": [
+    {
+      "section_key": "scope",
+      "title": "Alcance oficial CICDE",
+      "sort_order": 1
+    },
+    {
+      "section_key": "objectives",
+      "title": "Objetivos de aprendizaje",
+      "sort_order": 2
+    },
+    {
+      "section_key": "definition",
+      "title": "Qué es el proceso de enfermería",
+      "sort_order": 3
+    },
+    {
+      "section_key": "models",
+      "title": "Cinco etapas clásicas y modelo contemporáneo",
+      "sort_order": 4
+    },
+    {
+      "section_key": "assessment",
+      "title": "Valoración",
+      "sort_order": 5
+    },
+    {
+      "section_key": "diagnosis",
+      "title": "Diagnóstico de enfermería",
+      "sort_order": 6
+    },
+    {
+      "section_key": "planning",
+      "title": "Planificación e identificación de resultados",
+      "sort_order": 7
+    },
+    {
+      "section_key": "implementation",
+      "title": "Implementación/Ejecución",
+      "sort_order": 8
+    },
+    {
+      "section_key": "evaluation",
+      "title": "Evaluación",
+      "sort_order": 9
+    },
+    {
+      "section_key": "cyclical",
+      "title": "Proceso cíclico",
+      "sort_order": 10
+    },
+    {
+      "section_key": "clinical_judgment",
+      "title": "Pensamiento crítico y juicio clínico",
+      "sort_order": 11
+    },
+    {
+      "section_key": "safety",
+      "title": "Seguridad del paciente",
+      "sort_order": 12
+    },
+    {
+      "section_key": "documentation",
+      "title": "Documentación",
+      "sort_order": 13
+    },
+    {
+      "section_key": "communication",
+      "title": "Comunicación y continuidad",
+      "sort_order": 14
+    },
+    {
+      "section_key": "cases",
+      "title": "Situaciones tipo examen",
+      "sort_order": 15
+    },
+    {
+      "section_key": "errors",
+      "title": "Errores frecuentes",
+      "sort_order": 16
+    },
+    {
+      "section_key": "memorize",
+      "title": "Qué memorizar",
+      "sort_order": 17
+    },
+    {
+      "section_key": "differences",
+      "title": "Diferencias clave",
+      "sort_order": 18
+    },
+    {
+      "section_key": "competencies",
+      "title": "Relación con competencias CICDE",
+      "sort_order": 19
+    },
+    {
+      "section_key": "sources",
+      "title": "Fuentes y validación",
+      "sort_order": 20
+    },
+    {
+      "section_key": "quality_control",
+      "title": "Control de calidad",
+      "sort_order": 21
+    }
+  ],
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV Consejo Interinstitucional de Certificación Básica de Enfermería",
+      "publication_year": 2026,
+      "role": "Fuente rectora del alcance y competencias"
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Fundamentos de Enfermería",
+      "authors": "Patricia A. Potter; Anne G. Perry; Patricia A. Stockert; Amy Hall",
+      "publisher": "Elsevier",
+      "edition": "11",
+      "publication_year": 2023,
+      "role": "Fuente bibliográfica CICDE principal; estructura de juicio clínico y proceso de enfermería"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Nursing: Scope and Standards of Practice / The Nursing Process",
+      "organization": "American Nurses Association",
+      "role": "Marco profesional contemporáneo del proceso de enfermería"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "NANDA International Nursing Diagnoses: Definitions and Classification 2024–2026",
+      "organization": "NANDA International / INKA",
+      "edition": "13",
+      "publication_year": 2024,
+      "role": "Referencia contemporánea para diagnóstico de enfermería; no se reproduce taxonomía propietaria"
+    }
+  ],
+  "licensing_notes": [
+    "No reproducir de forma masiva códigos, definiciones o taxonomía NANDA-I en la plataforma sin revisar y obtener la licencia que corresponda."
+  ]
+}
