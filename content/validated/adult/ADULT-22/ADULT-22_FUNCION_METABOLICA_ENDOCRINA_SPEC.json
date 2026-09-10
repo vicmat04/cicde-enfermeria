@@ -1,0 +1,104 @@
+{
+  "topic_code": "ADULT-22",
+  "area_code": "ADULT",
+  "title": "Función metabólica y endocrina",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Obesidad, hepatitis A/B, trastornos de vesícula, pancreatitis y diabetes con valoración, seguridad, urgencias metabólicas, educación y PAE.",
+  "coverage": {
+    "cicde_topic_exact": "Función metabólica y endocrina: Obesidad; Hepatitis A y B; Trastornos de la vesícula y pancreatitis; Valoración y tratamiento del paciente con diabetes",
+    "includes": [
+      "obesidad OMS",
+      "IMC",
+      "valoración y tratamiento obesidad",
+      "hepatitis A",
+      "hepatitis B",
+      "transmisión y prevención",
+      "HBV triple panel",
+      "deterioro hepático",
+      "colelitiasis",
+      "cólico biliar",
+      "colecistitis",
+      "coledocolitiasis/colangitis",
+      "pancreatitis aguda",
+      "diagnóstico 2 de 3",
+      "hidratación y nutrición pancreatitis",
+      "antibióticos/ERCP",
+      "diabetes tipo 1 y 2",
+      "criterios ADA 2026",
+      "hipoglucemia",
+      "insulina segura",
+      "SGLT2/GLP-1 contexto 2026",
+      "DKA",
+      "DKA euglucémica",
+      "HHS",
+      "complicaciones crónicas",
+      "pie diabético",
+      "sick-day care",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_obesity_2025_checked": true,
+    "cdc_hepatitis_a_2025_checked": true,
+    "cdc_hepatitis_b_2025_checked": true,
+    "merck_cholelithiasis_2026_checked": true,
+    "acg_pancreatitis_2024_checked": true,
+    "ada_standards_2026_checked": true,
+    "panama_vaccine_schedule_crosscheck_required_before_verified": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Obesity and overweight",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Clinical Overview of Hepatitis A",
+      "organization": "CDC",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Clinical Overview / Clinical Care of Hepatitis B",
+      "organization": "CDC",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Cholelithiasis / Acute Cholecystitis",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "ACG Clinical Guideline: Management of Acute Pancreatitis",
+      "organization": "American College of Gastroenterology",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Standards of Care in Diabetes—2026",
+      "organization": "American Diabetes Association",
+      "publication_year": 2026
+    }
+  ]
+}

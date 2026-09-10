@@ -1,0 +1,93 @@
+{
+  "topic_code": "ADULT-20",
+  "area_code": "ADULT",
+  "title": "Función musculoesquelética: Factores de riesgo musculoesqueléticos",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Función y valoración musculoesquelética con énfasis CICDE en factores de riesgo, ergonomía, movilidad, prevención, dolor lumbar, fracturas, inmovilización y síndrome compartimental.",
+  "coverage": {
+    "cicde_topic_exact": "Función musculoesquelética: Factores de riesgo musculoesqueléticos",
+    "includes": [
+      "función locomotora",
+      "valoración musculoesquelética",
+      "valoración funcional",
+      "estado neurovascular",
+      "factores de riesgo generales",
+      "NIOSH fuerza repetición postura vibración",
+      "factores psicosociales",
+      "ergonomía",
+      "manipulación de cargas",
+      "inmovilidad",
+      "dolor musculoesquelético",
+      "dolor lumbar",
+      "red flags",
+      "OMS lumbalgia crónica",
+      "artrosis",
+      "osteoporosis/fractura",
+      "caídas",
+      "fracturas",
+      "fractura abierta",
+      "inmovilización",
+      "yeso",
+      "síndrome compartimental",
+      "infección articular",
+      "rehabilitación",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_musculoskeletal_checked": true,
+    "niosh_ergonomic_risk_factors_checked": true,
+    "who_low_back_pain_guideline_checked": true,
+    "merck_joint_assessment_2025_checked": true,
+    "merck_compartment_2025_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Musculoskeletal health",
+      "organization": "World Health Organization",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO guideline for non-surgical management of chronic primary low back pain in adults",
+      "organization": "World Health Organization",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Ergonomics — Identify Risk Factors",
+      "organization": "CDC/NIOSH",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Evaluation of the Patient With Joint Symptoms",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Compartment Syndrome",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2025
+    }
+  ]
+}

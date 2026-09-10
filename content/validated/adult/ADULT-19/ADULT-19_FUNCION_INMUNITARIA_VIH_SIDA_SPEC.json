@@ -1,0 +1,103 @@
+{
+  "topic_code": "ADULT-19",
+  "area_code": "ADULT",
+  "title": "Función inmunitaria: VIH/SIDA",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Atención del adulto con VIH: inmunidad, transmisión, diagnóstico, CD4/carga viral, ART, U=U, infecciones oportunistas, PrEP, PEP, exposición ocupacional, bioseguridad, confidencialidad y contexto Panamá 2026.",
+  "coverage": {
+    "cicde_topic_exact": "Función inmunitaria: VIH/SIDA",
+    "includes": [
+      "inmunidad innata/adaptativa",
+      "VIH y CD4",
+      "VIH vs SIDA",
+      "transmisión y no transmisión",
+      "precauciones estándar",
+      "cortopunzantes",
+      "diagnóstico y ventana",
+      "infección aguda",
+      "CD4",
+      "carga viral",
+      "ART",
+      "adherencia",
+      "U=U",
+      "infecciones oportunistas",
+      "VIH avanzado",
+      "VIH/TB",
+      "PrEP",
+      "PEP",
+      "exposición ocupacional",
+      "embarazo",
+      "vacunación",
+      "cánceres asociados",
+      "salud sexual",
+      "salud mental",
+      "confidencialidad",
+      "interacciones",
+      "Panamá 2026",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_hiv_july_2026_checked": true,
+    "nih_arv_august_2026_checked": true,
+    "cdc_uu_checked": true,
+    "minsa_hiv_program_checked": true,
+    "minsa_resolution_953_2023_checked": true,
+    "minsa_ctarv_may_2026_checked": true,
+    "panama_art_regimen_document_update_anomaly": true,
+    "national_current_art_regimen_must_be_confirmed_before_specific_regimens_are_verified": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "HIV and AIDS",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidelines for the Use of Antiretroviral Agents in Adults and Adolescents With HIV",
+      "organization": "NIH Clinicalinfo",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Undetectable = Untransmittable",
+      "organization": "Centers for Disease Control and Prevention"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Programa Nacional de ITS/VIH y Hepatitis Virales",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 953 de 27 de diciembre de 2023 — Guía de profilaxis postexposición ocupacional y no ocupacional a ITS y VIH",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Clínicas de Terapia Antirretroviral mejoran estándares de atención para infecciones oportunistas",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

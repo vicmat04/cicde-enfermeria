@@ -1,0 +1,101 @@
+{
+  "topic_code": "ADULT-21",
+  "area_code": "ADULT",
+  "title": "Trastornos gastrointestinales y del recto",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Estreñimiento, diarrea, incontinencia fecal, apendicitis, obstrucción intestinal y nutrición parenteral con valoración, tratamiento, seguridad, PAE y casos.",
+  "coverage": {
+    "cicde_topic_exact": "Trastornos gastrointestinales y del recto: estreñimiento, diarrea, incontinencia, apendicitis y obstrucción intestinal; alimentación parenteral, tratamientos digestivos y gastrointestinales",
+    "includes": [
+      "valoración GI",
+      "red flags abdomen",
+      "estreñimiento",
+      "impactación",
+      "laxantes",
+      "diarrea",
+      "deshidratación",
+      "C. difficile",
+      "antidiarreicos",
+      "incontinencia fecal",
+      "apendicitis",
+      "WSES 2025/2026",
+      "perforación/peritonitis",
+      "obstrucción intestinal",
+      "estrangulación/isquemia",
+      "NG decompression",
+      "tratamientos GI",
+      "enteral vs parenteral",
+      "PN periférica/central",
+      "componentes PN",
+      "ASPEN PN safety",
+      "complicaciones PN",
+      "síndrome de realimentación",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "aga_acg_constipation_2023_checked": true,
+    "merck_constipation_2026_checked": true,
+    "merck_diarrhea_2026_checked": true,
+    "merck_fecal_incontinence_2025_checked": true,
+    "wses_appendicitis_2025_edition_published_2026_checked": true,
+    "merck_obstruction_checked": true,
+    "aspen_pn_safety_current_resources_checked": true,
+    "merck_pn_2025_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "AGA-ACG Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic Constipation",
+      "organization": "AGA/ACG",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Constipation / Diarrhea / Fecal Incontinence",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Diagnosis and Treatment of Acute Appendicitis: 2025 Edition of the WSES Jerusalem Guidelines",
+      "organization": "World Society of Emergency Surgery",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Intestinal Obstruction",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Parenteral Nutrition Safety Resources",
+      "organization": "ASPEN",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Parenteral Nutrition",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2025
+    }
+  ]
+}

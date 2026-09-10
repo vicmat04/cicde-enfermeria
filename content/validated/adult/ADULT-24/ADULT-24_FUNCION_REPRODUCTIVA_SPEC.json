@@ -1,0 +1,97 @@
+{
+  "topic_code": "ADULT-24",
+  "area_code": "ADULT",
+  "title": "Función reproductiva",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Cáncer cervicouterino, alteraciones mamarias y aparato reproductor masculino con prevención, valoración, tratamiento, emergencias y actualización normativa Panamá 2026.",
+  "coverage": {
+    "cicde_topic_exact": "Función reproductiva: Cáncer del cuello uterino; Alteración y tratamiento de pacientes con alteraciones mamarias; Aparato reproductor masculino",
+    "includes": [
+      "VPH y cáncer cervical",
+      "vacunación VPH",
+      "tamizaje cervical",
+      "OMS HPV 2026",
+      "MINSA Resolución 546/2026",
+      "síntomas y diagnóstico cervical",
+      "tratamiento cervical",
+      "valoración mamaria",
+      "alteraciones benignas",
+      "signos de alarma mama",
+      "cáncer de mama",
+      "postoperatorio y linfedema",
+      "mastitis",
+      "aparato reproductor masculino",
+      "HPB",
+      "retención urinaria",
+      "prostatitis",
+      "cáncer de próstata",
+      "torsión testicular",
+      "epididimitis",
+      "cáncer testicular",
+      "disfunción eréctil",
+      "fertilidad/sexualidad",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_hpv_genotyping_2026_checked": true,
+    "who_hpv_implementation_july_2026_checked": true,
+    "minsa_resolution_546_2026_checked": true,
+    "nci_breast_changes_checked": true,
+    "male_reproductive_red_flags_checked": true,
+    "panama_exact_screening_algorithm_to_be_extracted_before_operational_verified_content": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO guideline for screening and treatment of cervical pre-cancer lesions: HPV DNA genotyping",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Evidence-informed guidance for implementation of HPV-based cervical cancer screening programmes",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 546 de 24 de julio de 2026 — Programa de Prevención y Detección de Lesiones Preinvasoras de Cáncer del Cuello Uterino",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Understanding Breast Changes and Conditions / Benign and Precancerous Breast Conditions",
+      "organization": "National Cancer Institute",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Male reproductive and urologic disorders",
+      "organization": "Merck Manual Professional Edition"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Prostate Cancer / Testicular Cancer",
+      "organization": "National Cancer Institute"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "topic_code": "ADULT-28",
+  "area_code": "ADULT",
+  "title": "Enfermedades de la comunidad",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "ITS y arbovirosis comunitarias: sífilis, gonorrea, clamidia, tricomoniasis, herpes, VPH, dengue, chikunguña y Zika con prevención, tratamiento, alarmas y contexto Panamá 2026.",
+  "coverage": {
+    "cicde_topic_exact": "Enfermedades de la comunidad: tratamiento de pacientes con infecciones de transmisión sexual; enfermedades emergentes: Sika, Dengue, Chikunguña",
+    "terminology_note": "CICDE writes 'Sika'; clinical content uses the correct term 'Zika'.",
+    "includes": [
+      "ITS definition and asymptomatic infection",
+      "syphilis",
+      "gonorrhea",
+      "chlamydia",
+      "trichomoniasis",
+      "genital herpes",
+      "HPV",
+      "HIV cross-reference",
+      "partner management",
+      "Panama PEM HIV/STI 2025-2029 Resolution 107/2026",
+      "dengue",
+      "dengue phases",
+      "dengue warning signs",
+      "dengue fluid safety",
+      "avoid NSAIDs in suspected dengue",
+      "chikungunya",
+      "persistent arthralgia",
+      "Zika",
+      "pregnancy and Zika",
+      "sexual transmission of Zika",
+      "Guillain-Barre risk",
+      "vector prevention",
+      "Panama 2026 surveillance governance",
+      "PAE",
+      "12 exam cases"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "cicde_sika_typo_explicitly_preserved_in_traceability": true,
+    "who_sti_2025_checked": true,
+    "minsa_resolution_107_2026_checked": true,
+    "paho_dengue_chikungunya_zika_guideline_checked": true,
+    "paho_chikungunya_alert_2026_checked": true,
+    "minsa_dengue_2026_context_checked": true,
+    "national_specific_sti_drug_regimens_required_before_verified": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Sexually transmitted infections (STIs)",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 107 de 20 de febrero de 2026 — PEM para VIH y otras ITS 2025–2029",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Directrices para el diagnóstico clínico y el tratamiento del dengue, chikunguña y Zika",
+      "organization": "OPS/OMS",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Algoritmos para el manejo clínico de pacientes con dengue",
+      "organization": "OPS/OMS"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Chikungunya cases increasing in several countries in the Americas",
+      "organization": "OPS/OMS",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Vigilancia epidemiológica y control vectorial de dengue 2026",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

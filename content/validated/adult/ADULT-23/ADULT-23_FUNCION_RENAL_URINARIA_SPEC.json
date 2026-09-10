@@ -1,0 +1,110 @@
+{
+  "topic_code": "ADULT-23",
+  "area_code": "ADULT",
+  "title": "Función renal y urinaria",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Insuficiencia renal aguda/crónica y tratamiento, UTI e incontinencia, sondaje/CAUTI y urolitiasis-nefrolitiasis con prioridades de enfermería y seguridad.",
+  "coverage": {
+    "cicde_topic_exact": "Función renal y urinaria: Insuficiencia renal y tratamiento; Infecciones de las vías urinarias e incontinencias; Sondaje; Urolitiasis o nefrolitiasis",
+    "includes": [
+      "función renal",
+      "creatinina eGFR albuminuria",
+      "diuresis",
+      "AKI",
+      "prerrenal intrínseca posrenal",
+      "manejo AKI",
+      "hiperpotasemia",
+      "terapia reemplazo renal",
+      "hemodiálisis",
+      "fístula AV",
+      "diálisis peritoneal",
+      "CKD KDIGO 2024",
+      "complicaciones CKD",
+      "ajuste farmacológico",
+      "cistitis",
+      "pielonefritis",
+      "IDSA cUTI 2025",
+      "bacteriuria asintomática",
+      "incontinencia tipos",
+      "retención urinaria",
+      "sondaje",
+      "CAUTI",
+      "muestra urinaria",
+      "nefrolitiasis",
+      "cólico renal",
+      "obstrucción infectada",
+      "prevención recurrencia",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "merck_aki_feb_2026_checked": true,
+    "kdigo_ckd_2024_current_checked": true,
+    "kdigo_aki_2026_is_public_review_draft_not_final": true,
+    "idsa_cuti_2025_checked": true,
+    "cdc_cauti_current_checked": true,
+    "niddk_stones_checked": true,
+    "merck_urinary_calculi_2025_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Acute Kidney Injury",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "KDIGO 2024 Clinical Practice Guideline for Evaluation and Management of CKD",
+      "organization": "KDIGO",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Acute Kidney Injury / Acute Kidney Disease 2026 Public Review Draft status page",
+      "organization": "KDIGO",
+      "publication_year": 2026,
+      "notes": "Draft; not a final guideline"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "IDSA Guideline Update on Complicated Urinary Tract Infections",
+      "organization": "IDSA",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guideline for Prevention of Catheter-Associated Urinary Tract Infections / Clinical Safety CAUTI",
+      "organization": "CDC",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Kidney Stones",
+      "organization": "NIDDK / NIH"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Urinary Calculi",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2025
+    }
+  ]
+}

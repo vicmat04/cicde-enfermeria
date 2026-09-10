@@ -1,0 +1,96 @@
+{
+  "topic_code": "ADULT-18",
+  "area_code": "ADULT",
+  "title": "Función hemática: transfusión, anemias y defectos plaquetarios",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Función hemática del adulto: anemia, transfusión segura, reacciones transfusionales, trombocitopenia y trastornos plaquetarios con guías AABB 2023/2025.",
+  "coverage": {
+    "cicde_topic_exact": "Función hemática: transfusión, anemias, defectos plaquetarios",
+    "includes": [
+      "componentes de sangre",
+      "anemia",
+      "mecanismos",
+      "VCM",
+      "reticulocitos",
+      "ferropenia",
+      "B12/folato",
+      "enfermedad crónica",
+      "renal",
+      "hemólisis",
+      "aplasia",
+      "RBC transfusion",
+      "seguridad transfusional",
+      "reacción hemolítica",
+      "febril",
+      "alérgica/anafilaxia",
+      "TACO",
+      "TRALI",
+      "sepsis transfusional",
+      "plaquetas/hemostasia",
+      "trombocitopenia",
+      "ITP",
+      "TTP",
+      "CID",
+      "disfunción plaquetaria",
+      "AABB platelet 2025",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_anemia_2025_checked": true,
+    "merck_anemia_2026_checked": true,
+    "aabb_rbc_2023_checked": true,
+    "aabb_ictmg_platelet_2025_checked": true,
+    "merck_platelet_2026_checked": true,
+    "local_transfusion_protocol_required_before_verified": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Anaemia",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Overview of Anemia",
+      "organization": "Merck Manual",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Red Blood Cell Transfusion: AABB International Guidelines",
+      "organization": "AABB",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Platelet Transfusion: AABB and ICTMG International Clinical Practice Guidelines",
+      "organization": "AABB/ICTMG",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Overview of Thrombocytopenia / Platelet Disorders",
+      "organization": "Merck Manual",
+      "publication_year": 2026
+    }
+  ]
+}

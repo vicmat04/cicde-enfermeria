@@ -1,0 +1,83 @@
+{
+  "topic_code": "ADULT-26",
+  "area_code": "ADULT",
+  "title": "Función sensorial: valoración de pacientes con deficiencias auditivas",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Valoración del adulto con deficiencia auditiva: tipos de hipoacusia, cerumen, ruido, presbiacusia, ototoxicidad, tinnitus, pérdida súbita, audiometría, dispositivos y comunicación segura.",
+  "coverage": {
+    "cicde_topic_exact": "Función sensorial: valoración de pacientes con deficiencias auditivas",
+    "includes": [
+      "anatomía auditiva",
+      "conductiva",
+      "sensorineural",
+      "mixta",
+      "valoración auditiva",
+      "otoscopia",
+      "cerumen",
+      "presbiacusia",
+      "ruido",
+      "escucha segura",
+      "ototoxicidad",
+      "tinnitus",
+      "pérdida auditiva súbita",
+      "signos neurológicos",
+      "Weber/Rinne",
+      "audiometría",
+      "tamizaje",
+      "audífonos",
+      "implante coclear",
+      "comunicación",
+      "vértigo",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_hearing_loss_march_2026_checked": true,
+    "who_ear_care_march_2026_checked": true,
+    "who_safe_listening_march_2026_checked": true,
+    "who_tinnitus_march_2026_checked": true,
+    "nice_ng98_sudden_hearing_loss_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Deafness and hearing loss",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Deafness and hearing loss: ear care",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Safe listening / Tinnitus",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Hearing loss in adults: assessment and management (NG98)",
+      "organization": "NICE"
+    }
+  ]
+}

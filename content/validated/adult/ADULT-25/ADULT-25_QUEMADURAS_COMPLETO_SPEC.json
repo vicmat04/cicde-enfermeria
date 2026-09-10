@@ -1,0 +1,116 @@
+{
+  "topic_code": "ADULT-25",
+  "area_code": "ADULT",
+  "title": "Tratamiento de paciente con quemaduras (Completo)",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Manejo integral del adulto quemado: ABCDE, profundidad, TBSA, lesión inhalatoria, quemaduras térmicas/químicas/eléctricas, resucitación ABA 2024, heridas, infección, injertos, nutrición, rehabilitación y traslado.",
+  "coverage": {
+    "cicde_topic_exact": "Tratamiento de paciente con quemaduras (Completo)",
+    "includes": [
+      "ABCDE",
+      "primeros auxilios",
+      "profundidad",
+      "TBSA",
+      "regla de los 9",
+      "método palmar",
+      "Lund-Browder",
+      "lesión por inhalación",
+      "CO",
+      "cianuro",
+      "quemadura circunferencial",
+      "escarotomía",
+      "shock por quemadura",
+      "resucitación",
+      "Parkland histórica 4 mL",
+      "ABA 2024 2 mL",
+      "titulación por perfusión/diuresis",
+      "fluid creep",
+      "cristaloides/albúmina",
+      "temperatura",
+      "quemaduras químicas",
+      "ocular química",
+      "quemaduras eléctricas",
+      "alto voltaje",
+      "rabdomiólisis",
+      "dolor",
+      "heridas",
+      "antibióticos",
+      "tétanos",
+      "infección/sepsis",
+      "injertos",
+      "nutrición",
+      "rehabilitación",
+      "contracturas",
+      "salud mental",
+      "criterios ABA de traslado",
+      "áreas especiales",
+      "complicaciones",
+      "PAE",
+      "cálculos",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "aba_burn_shock_2024_checked": true,
+    "aba_referral_guidelines_checked": true,
+    "aba_first_aid_current_checked": true,
+    "merck_burns_2024_checked": true,
+    "merck_smoke_inhalation_2024_checked": true,
+    "historical_parkland_vs_current_aba_difference_explicitly_documented": true,
+    "panama_transfer_protocol_required_before_operational_verified_actions": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "American Burn Association Clinical Practice Guidelines on Burn Shock Resuscitation",
+      "organization": "American Burn Association",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidelines for Burn Patient Referral",
+      "organization": "American Burn Association",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Burn First Aid",
+      "organization": "American Burn Association",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Burns",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Smoke Inhalation",
+      "organization": "Merck Manual Professional Edition",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Burns and scalds",
+      "organization": "NHS",
+      "publication_year": 2026
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "topic_code": "ADULT-27",
+  "area_code": "ADULT",
+  "title": "Función Neurológica",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Alteraciones convulsivas, cefalea y meningitis: valoración neurológica, primeros auxilios, estatus epiléptico, cefaleas de alarma, meningitis bacteriana, aislamiento y complicaciones.",
+  "coverage": {
+    "cicde_topic_exact": "Función Neurológica: Alteraciones convulsivas; Cefalea; Meningitis",
+    "includes": [
+      "crisis vs epilepsia",
+      "tipos de crisis",
+      "primeros auxilios",
+      "estatus >=5 min",
+      "benzodiazepina contexto",
+      "causas reversibles",
+      "postictal",
+      "precauciones",
+      "antiepilépticos",
+      "cefaleas primarias/secundarias",
+      "cefalea en trueno",
+      "red flags",
+      "migraña",
+      "tensional",
+      "racimos",
+      "abuso de medicación",
+      "meningitis",
+      "meningococcemia",
+      "diagnóstico/LCR",
+      "antibióticos tempranos",
+      "precauciones por gotas",
+      "contactos",
+      "complicaciones",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_epilepsy_checked": true,
+    "cdc_seizure_first_aid_checked": true,
+    "nice_ng217_status_2025_checked": true,
+    "nice_headache_2025_checked": true,
+    "who_meningitis_guideline_2025_checked": true,
+    "cdc_meningitis_precautions_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Epilepsy",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "First Aid for Seizures",
+      "organization": "CDC",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Epilepsies in children, young people and adults (NG217)",
+      "organization": "NICE",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Headaches in over 12s: diagnosis and management (CG150)",
+      "organization": "NICE",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO guidelines on meningitis diagnosis, treatment and care",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Isolation Precautions Appendix A",
+      "organization": "CDC"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "topic_code": "ADULT-29",
+  "area_code": "ADULT",
+  "title": "Aspectos de la atención de enfermería en urgencias",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Urgencias del adulto: triage, obstrucción de vía aérea, shock hipovolémico, heridas, ofidismo/escorpionismo e ideas/intentos suicidas con prioridades actuales y contexto Panamá 2026.",
+  "coverage": {
+    "cicde_topic_exact": "Aspectos de la atención de enfermería en urgencias: Triage; Obstrucción de vías respiratorias; Shock hipovolémico; Heridas; Mordedura de ofidios – alacrán; Ideas e intentos suicidas",
+    "includes": [
+      "triage acuity-based",
+      "WHO IITT red-yellow-green",
+      "reassessment",
+      "ABCDE",
+      "AHA 2025 FBAO",
+      "hypovolemic shock",
+      "early compensated shock",
+      "hemorrhage control",
+      "direct pressure",
+      "tourniquet",
+      "wound packing",
+      "wound classification",
+      "wound cleaning",
+      "impaled object",
+      "evisceration",
+      "traumatic amputation",
+      "tetanus",
+      "snakebite first aid",
+      "no tourniquet/cuts/suction",
+      "antivenom",
+      "Panama snakebite program 2026",
+      "scorpion envenoming",
+      "suicidal ideation",
+      "direct suicide assessment",
+      "imminent-risk safety",
+      "attempt medical stabilization",
+      "safety planning",
+      "Panama Resolution 099/2026",
+      "PAE",
+      "12 exam cases"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_iitt_checked": true,
+    "who_basic_emergency_care_checked": true,
+    "aha_fbao_2025_checked": true,
+    "aha_red_cross_first_aid_2024_checked": true,
+    "who_snakebite_first_aid_checked": true,
+    "paho_panama_antivenom_2026_checked": true,
+    "minsa_scorpion_guide_2017_identified": true,
+    "minsa_suicide_resolution_099_2026_checked": true,
+    "panama_law_174_2020_checked": true,
+    "nimh_direct_questioning_safety_checked": true,
+    "samhsa_safety_plan_checked": true,
+    "panama_envenoming_protocol_update_check_required_before_verified": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Brunner y Suddarth. Enfermería Médicoquirúrgica",
+      "authors": "Janice L. Hinkle; Kerry H. Cheever",
+      "edition": "14",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Manual de procedimientos de enfermería",
+      "authors": "Opal Jones",
+      "organization": "Universidad de Panamá",
+      "edition": "3",
+      "publication_year": 2015
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Interagency Integrated Triage Tool",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Basic Emergency Care / Emergency Care Toolkit",
+      "organization": "World Health Organization / ICRC"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "2025 Guidelines for CPR and ECC — Adult BLS / FBAO",
+      "organization": "American Heart Association",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "2024 Guidelines for First Aid",
+      "organization": "American Heart Association / American Red Cross",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Snakebite envenoming: treatment and first aid",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Protocolo de Ofidismo de Panamá",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Guía para el abordaje integral de la picadura de escorpión",
+      "organization": "MINSA/CSS/ICGES",
+      "publication_year": 2017
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 099 de 11 de febrero de 2026 — Norma del Sistema de Vigilancia de la Conducta de Riesgo Suicida",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Ley 174 de 2 de noviembre de 2020",
+      "organization": "República de Panamá",
+      "publication_year": 2020
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Suicide prevention resources and direct assessment guidance",
+      "organization": "NIMH"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Safety Plan",
+      "organization": "SAMHSA",
+      "publication_year": 2025
+    }
+  ]
+}
