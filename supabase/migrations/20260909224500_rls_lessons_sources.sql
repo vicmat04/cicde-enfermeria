@@ -17,7 +17,7 @@ using (
   or
   exists (
     select 1 from public.profiles
-    where id = auth.uid() and role = 'ADMIN'
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
 
@@ -31,7 +31,7 @@ using (
   or
   exists (
     select 1 from public.profiles
-    where id = auth.uid() and role = 'ADMIN'
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
 
@@ -44,34 +44,38 @@ using (
   exists (
     select 1 from public.lessons
     where id = lesson_sections.lesson_id
-    and (
-      (status = 'VERIFIED' and is_current = true)
-      or
-      exists (
-        select 1 from public.profiles
-        where id = auth.uid() and role = 'ADMIN'
-      )
-    )
+    and (status = 'VERIFIED' and is_current = true)
+  )
+  or
+  exists (
+    select 1 from public.profiles
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
 
--- For lesson_sources, they can read if the parent lesson is readable.
+-- For lesson_sources, they can read if the parent lesson is readable and the source is verified.
 create policy "lesson_sources_select_student"
 on public.lesson_sources
 for select
 to authenticated
 using (
-  exists (
-    select 1 from public.lessons
-    where id = lesson_sources.lesson_id
-    and (
-      (status = 'VERIFIED' and is_current = true)
-      or
-      exists (
-        select 1 from public.profiles
-        where id = auth.uid() and role = 'ADMIN'
-      )
+  (
+    exists (
+      select 1 from public.lessons
+      where id = lesson_sources.lesson_id
+      and status = 'VERIFIED' and is_current = true
     )
+    and
+    exists (
+      select 1 from public.sources
+      where id = lesson_sources.source_id
+      and verified = true
+    )
+  )
+  or
+  exists (
+    select 1 from public.profiles
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
 
@@ -83,7 +87,7 @@ to authenticated
 using (
   exists (
     select 1 from public.profiles
-    where id = auth.uid() and role = 'ADMIN'
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
 
@@ -94,7 +98,7 @@ to authenticated
 using (
   exists (
     select 1 from public.profiles
-    where id = auth.uid() and role = 'ADMIN'
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
 
@@ -105,7 +109,7 @@ to authenticated
 using (
   exists (
     select 1 from public.profiles
-    where id = auth.uid() and role = 'ADMIN'
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
 
@@ -116,6 +120,6 @@ to authenticated
 using (
   exists (
     select 1 from public.profiles
-    where id = auth.uid() and role = 'ADMIN'
+    where id = (select auth.uid()) and role = 'ADMIN' and is_active = true
   )
 );
