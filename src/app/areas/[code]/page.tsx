@@ -46,7 +46,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
 
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbs} />
-        
+
         <div className="mb-8">
           <div className="flex items-center gap-4 mb-2">
             <span className="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1.5 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
@@ -60,7 +60,8 @@ export default async function AreaPage({ params }: AreaPageProps) {
             <p className="mt-2 text-lg text-gray-600">{area.description}</p>
           )}
           <p className="mt-2 text-sm text-gray-500">
-            {topics?.length || 0} {(topics?.length === 1) ? "tema" : "temas"} en esta área
+            {topics?.length || 0} {topics?.length === 1 ? "tema" : "temas"} en
+            esta área
           </p>
         </div>
 

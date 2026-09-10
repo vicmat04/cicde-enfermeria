@@ -12,7 +12,10 @@ export function AppHeader({ user }: AppHeaderProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 justify-between">
           <div className="flex items-center">
-            <Link href="/dashboard" className="text-xl font-bold text-indigo-600 hover:text-indigo-500">
+            <Link
+              href="/dashboard"
+              className="text-xl font-bold text-indigo-600 hover:text-indigo-500"
+            >
               CICDE Enfermería 2026
             </Link>
           </div>

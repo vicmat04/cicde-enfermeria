@@ -20,7 +20,8 @@ export function EmptyLessonState() {
         Contenido en preparación
       </h3>
       <p className="mt-1 text-sm text-gray-500">
-        La lección verificada para este tema aún no está disponible. Vuelve más tarde.
+        La lección verificada para este tema aún no está disponible. Vuelve más
+        tarde.
       </p>
     </div>
   );

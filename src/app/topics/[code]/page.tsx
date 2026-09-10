@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/AppHeader";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EmptyLessonState } from "@/components/EmptyLessonState";
+import { LessonView } from "@/components/LessonView";
 
 interface TopicPageProps {
   params: Promise<{ code: string }>;
@@ -38,8 +39,6 @@ export default async function TopicPage({ params }: TopicPageProps) {
     notFound();
   }
 
-  // Next.js Supabase typed join resolution
-  // We type cast just for safety if Supabase types aren't fully generated
   const area = Array.isArray(topic.areas) ? topic.areas[0] : topic.areas;
 
   if (!area) {
@@ -52,13 +51,66 @@ export default async function TopicPage({ params }: TopicPageProps) {
     { name: topic.title },
   ];
 
+  // Fetch the lesson
+  // We use the regular authenticated client, so RLS fully applies.
+  // Student won't see REVIEW lessons. Admin will.
+  const { data: lessonData } = await supabase
+    .from("lessons")
+    .select(`
+      id,
+      title,
+      summary,
+      status,
+      version,
+      is_current,
+      lesson_sections (
+        id,
+        title,
+        body,
+        sort_order
+      ),
+      lesson_sources (
+        is_primary,
+        usage_note,
+        sources (
+          id,
+          source_type,
+          title,
+          authors,
+          publication_year,
+          url,
+          verified
+        )
+      )
+    `)
+    .eq("topic_id", topic.id)
+    .eq("is_current", true)
+    .single();
+
+  // Fix up Supabase array vs object types for sources
+  const lesson = lessonData
+    ? {
+        ...lessonData,
+        lesson_sources: (lessonData.lesson_sources || []).map(
+          (ls: {
+            is_primary: boolean;
+            usage_note: string | null;
+            sources: unknown;
+          }) => ({
+            ...ls,
+            sources: Array.isArray(ls.sources) ? ls.sources[0] : ls.sources,
+          }),
+        ),
+      }
+    : null;
+
   return (
     <div className="min-h-screen bg-gray-50">
       <AppHeader user={user} />
 
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbs} />
-        
+
         <div className="mb-8">
           <div className="flex items-center gap-4 mb-2">
             <span className="inline-flex items-center rounded-md bg-indigo-50 px-2.5 py-1.5 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
@@ -75,9 +127,18 @@ export default async function TopicPage({ params }: TopicPageProps) {
           )}
         </div>
 
-        {/* Content Section - Placeholder since lessons don't exist yet */}
+        {/* Content Section */}
         <section className="mt-8">
-          <EmptyLessonState />
+          {/* SAFETY: The mapped object strictly matches the Lesson interface shape after resolving Supabase arrays */}
+          {lesson ? (
+            <LessonView
+              lesson={
+                lesson as unknown as import("@/components/LessonView").Lesson
+              }
+            />
+          ) : (
+            <EmptyLessonState />
+          )}
         </section>
       </main>
     </div>
