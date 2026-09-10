@@ -78,7 +78,10 @@ export function LessonSources({ sources }: LessonSourceProps) {
                 rel="noreferrer noopener"
                 className="mt-3 inline-flex min-h-11 items-center rounded-lg text-sm font-bold text-[#0d706d] underline decoration-[#9ac7bd] underline-offset-4"
               >
-                Consultar fuente <span className="ml-1" aria-hidden="true">↗</span>
+                Consultar fuente{" "}
+                <span className="ml-1" aria-hidden="true">
+                  ↗
+                </span>
               </a>
             ) : (
               source.url && (

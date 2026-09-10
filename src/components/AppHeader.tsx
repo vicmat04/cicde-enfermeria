@@ -23,7 +23,8 @@ export function AppHeader({ user }: AppHeaderProps) {
             <StudyIcon code="CICDE" className="h-5 w-5" />
           </span>
           <span className="leading-tight">
-            CICDE <span className="hidden text-[#0d706d] sm:inline">Enfermería</span>
+            CICDE{" "}
+            <span className="hidden text-[#0d706d] sm:inline">Enfermería</span>
             <small className="ml-1 font-medium text-[#617170]">2026</small>
           </span>
         </Link>

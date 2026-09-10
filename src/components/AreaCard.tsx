@@ -9,7 +9,12 @@ interface AreaCardProps {
   topicCount: number;
 }
 
-export function AreaCard({ code, name, description, topicCount }: AreaCardProps) {
+export function AreaCard({
+  code,
+  name,
+  description,
+  topicCount,
+}: AreaCardProps) {
   return (
     <Link
       href={`/areas/${code}`}
@@ -26,9 +31,12 @@ export function AreaCard({ code, name, description, topicCount }: AreaCardProps)
               {code}
             </span>
           </div>
-          <h2 className="text-xl font-bold tracking-tight text-[#173a37]">{name}</h2>
+          <h2 className="text-xl font-bold tracking-tight text-[#173a37]">
+            {name}
+          </h2>
           <p className="mt-3 text-sm leading-6 text-[#617170]">
-            {description || "Material organizado para avanzar con una preparación rigurosa."}
+            {description ||
+              "Material organizado para avanzar con una preparación rigurosa."}
           </p>
         </div>
         <footer className="flex items-center justify-between border-t border-[#e0e9e6] bg-[#fbfcfb] px-6 py-4">

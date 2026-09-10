@@ -141,17 +141,47 @@ body {
   scroll-margin-top: 6.5rem;
 }
 
-.lesson-focus-shell.is-focused .lesson-toc {
-  display: none;
+.lesson-progress-bar {
+  appearance: none;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  background: #e2ece9;
 }
 
-.lesson-focus-shell.is-focused .lesson-content-grid {
-  display: block;
+.lesson-progress-bar::-webkit-progress-bar {
+  background: #e2ece9;
 }
 
-.lesson-focus-shell.is-focused .lesson-article {
-  max-width: 48rem;
-  margin-inline: auto;
+.lesson-progress-bar::-webkit-progress-value,
+.lesson-progress-bar::-moz-progress-bar {
+  border-radius: 999px;
+  background: #0d706d;
+}
+
+@media print {
+  .lesson-mobile-index-toggle,
+  .lesson-mobile-index,
+  .lesson-study-shell > .grid > aside,
+  .lesson-mode-selector,
+  .lesson-reading-progress,
+  .lesson-study-controls {
+    display: none;
+  }
+
+  .lesson-reader,
+  .lesson-reader * {
+    box-shadow: none;
+  }
+
+  .lesson-reader {
+    border: 0;
+  }
+
+  .lesson-reader section,
+  .lesson-reader footer {
+    border-color: transparent;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

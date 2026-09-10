@@ -17,8 +17,8 @@ export function EmptyLessonState() {
         Contenido en preparación
       </h2>
       <p className="mx-auto mt-3 max-w-lg leading-7 text-[#617170]">
-        La lección disponible para este tema todavía se está preparando. Vuelve pronto para
-        consultar el material cuando esté listo.
+        La lección disponible para este tema todavía se está preparando. Vuelve
+        pronto para consultar el material cuando esté listo.
       </p>
     </section>
   );

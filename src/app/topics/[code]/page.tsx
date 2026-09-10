@@ -3,10 +3,21 @@ import { AppHeader } from "@/components/AppHeader";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EmptyLessonState } from "@/components/EmptyLessonState";
 import { LessonView } from "@/components/LessonView";
+import type { Lesson, LessonSource } from "@/components/lessonStructure";
 import { createClient } from "@/lib/supabase/server";
 
 interface TopicPageProps {
   params: Promise<{ code: string }>;
+}
+
+function normalizeSourceRelation(
+  source: LessonSource | LessonSource[] | null,
+): LessonSource | null {
+  if (Array.isArray(source)) {
+    return source[0] ?? null;
+  }
+
+  return source;
 }
 
 export default async function TopicPage({ params }: TopicPageProps) {
@@ -85,50 +96,52 @@ export default async function TopicPage({ params }: TopicPageProps) {
     ? {
         ...lessonData,
         lesson_sources: (lessonData.lesson_sources || []).map(
-          (lessonSource: {
-            is_primary: boolean;
-            usage_note: string | null;
-            sources: unknown;
-          }) => ({
+          (lessonSource) => ({
             ...lessonSource,
-            sources: Array.isArray(lessonSource.sources)
-              ? lessonSource.sources[0]
-              : lessonSource.sources,
+            sources: normalizeSourceRelation(lessonSource.sources),
           }),
         ),
       }
     : null;
   // SAFETY: The query selects every LessonView field and normalizes its source relation to one object.
-  const renderedLesson = lesson as unknown as import("@/components/LessonView").Lesson | null;
+  const renderedLesson = lesson as unknown as Lesson | null;
 
   return (
     <div className="page-wash min-h-screen">
       <AppHeader user={user} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <Breadcrumbs items={breadcrumbs} />
-        <header className="mb-8 max-w-4xl" aria-labelledby="topic-title">
-          <p className="text-sm font-bold uppercase tracking-[.16em] text-[#0d706d]">
-            {area.name} · {topic.code}
-          </p>
-          <h1
-            id="topic-title"
-            className="mt-2 text-3xl font-bold tracking-tight text-[#173a37] sm:text-4xl"
-          >
-            {topic.title}
-          </h1>
-          {topic.description && (
-            <p className="mt-4 rounded-2xl border border-[#d5e3df] bg-[#fffefd]/80 p-5 text-lg leading-8 text-[#526966]">
-              {topic.description}
-            </p>
-          )}
-        </header>
-        <section aria-label="Contenido de la lección">
-          {renderedLesson ? (
-            <LessonView lesson={renderedLesson} topicCode={topic.code} />
-          ) : (
+        {renderedLesson ? (
+          <section aria-label="Contenido de la lección">
+            <LessonView
+              lesson={renderedLesson}
+              areaName={area.name}
+              topicCode={topic.code}
+              topicTitle={topic.title}
+              topicDescription={topic.description}
+            />
+          </section>
+        ) : (
+          <section aria-label="Contenido de la lección">
+            <header className="mb-8 max-w-4xl" aria-labelledby="topic-title">
+              <p className="text-sm font-bold uppercase tracking-[.16em] text-[#0d706d]">
+                {area.name} · {topic.code}
+              </p>
+              <h1
+                id="topic-title"
+                className="mt-2 text-3xl font-bold tracking-tight text-[#173a37] sm:text-4xl"
+              >
+                {topic.title}
+              </h1>
+              {topic.description && (
+                <p className="mt-4 text-lg leading-8 text-[#526966]">
+                  {topic.description}
+                </p>
+              )}
+            </header>
             <EmptyLessonState />
-          )}
-        </section>
+          </section>
+        )}
       </main>
     </div>
   );

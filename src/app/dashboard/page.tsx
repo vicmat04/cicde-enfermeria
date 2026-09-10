@@ -47,8 +47,8 @@ export default async function DashboardPage() {
               Prepárate para el CICDE 2026
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-[#526966]">
-              Recorre las áreas activas, estudia a tu ritmo y consulta contenido estructurado para
-              una preparación clínica responsable.
+              Recorre las áreas activas, estudia a tu ritmo y consulta contenido
+              estructurado para una preparación clínica responsable.
             </p>
           </div>
         </section>
@@ -58,15 +58,21 @@ export default async function DashboardPage() {
           aria-label="Resumen de preparación"
         >
           <div className="rounded-2xl border border-[#d9e4e1] bg-[#fffefd] p-5">
-            <p className="text-sm font-semibold text-[#617170]">Material disponible</p>
+            <p className="text-sm font-semibold text-[#617170]">
+              Material disponible
+            </p>
             <p className="mt-2 text-2xl font-bold text-[#173a37]">
-              {totalTopics} {totalTopics === 1 ? "tema activo" : "temas activos"}
+              {totalTopics}{" "}
+              {totalTopics === 1 ? "tema activo" : "temas activos"}
             </p>
           </div>
           <div className="rounded-2xl border border-[#d9e4e1] bg-[#fffefd] p-5">
-            <p className="text-sm font-semibold text-[#617170]">Tu preparación</p>
+            <p className="text-sm font-semibold text-[#617170]">
+              Tu preparación
+            </p>
             <p className="mt-2 text-base leading-6 text-[#173a37]">
-              Elige un área para comenzar. El progreso se construye lección a lección.
+              Elige un área para comenzar. El progreso se construye lección a
+              lección.
             </p>
           </div>
         </section>

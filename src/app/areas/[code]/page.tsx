@@ -89,13 +89,17 @@ export default async function AreaPage({ params }: AreaPageProps) {
                 </p>
               )}
               <p className="mt-5 inline-flex rounded-full bg-[#e6f2ee] px-3 py-1.5 text-sm font-bold text-[#075957]">
-                {topics.length} {topics.length === 1 ? "tema disponible" : "temas disponibles"}
+                {topics.length}{" "}
+                {topics.length === 1 ? "tema disponible" : "temas disponibles"}
               </p>
             </div>
           </div>
         </section>
         <section aria-labelledby="topics-title">
-          <h2 id="topics-title" className="mb-4 text-xl font-bold text-[#173a37]">
+          <h2
+            id="topics-title"
+            className="mb-4 text-xl font-bold text-[#173a37]"
+          >
             Unidades de aprendizaje
           </h2>
           <TopicList topics={topics} />

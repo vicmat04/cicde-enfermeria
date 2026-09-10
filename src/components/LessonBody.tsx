@@ -120,12 +120,20 @@ export function LessonBody({ body }: { body: string }) {
       continue;
     }
 
-    if (current.includes("|") && lines[line + 1] && isDivider(lines[line + 1])) {
+    if (
+      current.includes("|") &&
+      lines[line + 1] &&
+      isDivider(lines[line + 1])
+    ) {
       const headers = tableCells(current);
       const rows: string[][] = [];
       line += 2;
 
-      while (line < lines.length && lines[line].includes("|") && lines[line].trim()) {
+      while (
+        line < lines.length &&
+        lines[line].includes("|") &&
+        lines[line].trim()
+      ) {
         rows.push(tableCells(lines[line]));
         line++;
       }
@@ -145,7 +153,10 @@ export function LessonBody({ body }: { body: string }) {
                 <tr key={rowIndex}>
                   {headers.map((_, columnIndex) => (
                     <td key={columnIndex}>
-                      {inline(row[columnIndex] || "", `cell-${rowIndex}-${columnIndex}`)}
+                      {inline(
+                        row[columnIndex] || "",
+                        `cell-${rowIndex}-${columnIndex}`,
+                      )}
                     </td>
                   ))}
                 </tr>
@@ -191,7 +202,11 @@ export function LessonBody({ body }: { body: string }) {
       !isHorizontalRule(lines[line]) &&
       !isBlockquote(lines[line]) &&
       !isListItem(lines[line]) &&
-      !(lines[line].includes("|") && lines[line + 1] && isDivider(lines[line + 1]))
+      !(
+        lines[line].includes("|") &&
+        lines[line + 1] &&
+        isDivider(lines[line + 1])
+      )
     ) {
       paragraph.push(lines[line]);
       line++;

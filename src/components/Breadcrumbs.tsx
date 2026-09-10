@@ -25,8 +25,13 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
           const isLast = index === items.length - 1;
 
           return (
-            <li key={`${item.name}-${index}`} className="flex items-center gap-2">
-              <span className="text-[#9aadaa]" aria-hidden="true">/</span>
+            <li
+              key={`${item.name}-${index}`}
+              className="flex items-center gap-2"
+            >
+              <span className="text-[#9aadaa]" aria-hidden="true">
+                /
+              </span>
               {isLast || !item.href ? (
                 <span
                   className="max-w-52 truncate font-medium text-[#617170]"
