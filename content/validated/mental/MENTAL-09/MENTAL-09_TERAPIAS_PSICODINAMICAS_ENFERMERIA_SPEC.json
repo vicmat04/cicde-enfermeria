@@ -1,0 +1,80 @@
+{
+  "topic_code": "MENTAL-09",
+  "area_code": "MENTAL",
+  "title": "Terapias psicodinámicas de enfermería",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Terapias individuales y grupales enumeradas por CICDE: supresión, apoyo, realidad, comunicación, remotivación y actividades, con aplicación segura de enfermería.",
+  "coverage": {
+    "cicde_topic_exact": "Terapias psicodinámicas de enfermería. Terapias individuales: supresión, apoyo, realidad. Terapias de grupo: comunicación, remotivación y de actividades",
+    "includes": [
+      "suppression",
+      "suppression vs repression",
+      "supportive nursing interventions",
+      "reality-oriented nursing interventions",
+      "psychosis reality presentation",
+      "reality orientation",
+      "group therapy principles",
+      "group communication",
+      "remotivation",
+      "activity groups",
+      "group eligibility",
+      "confidentiality limits",
+      "group dynamics",
+      "group leadership",
+      "support vs psychoeducation vs psychotherapy",
+      "therapeutic milieu",
+      "person-centred rights-based care",
+      "PAE",
+      "12 exam cases"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "cicde_historical_taxonomy_preserved": true,
+    "openstax_group_therapy_checked": true,
+    "openstax_therapeutic_communication_checked": true,
+    "who_person_centred_rights_guidance_checked": true,
+    "nice_deescalation_guideline_checked": true,
+    "exact_cicde_meaning_of_reality_requires_human_review": true,
+    "exact_cicde_meaning_of_remotivation_requires_human_review": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Psychiatric-Mental Health Nursing — Therapeutic Communication and Group Therapy",
+      "organization": "OpenStax"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidance on community mental health services: promoting person-centred and rights-based approaches",
+      "organization": "World Health Organization",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Violence and aggression: short-term management in mental health, health and community settings (NG10)",
+      "organization": "NICE"
+    }
+  ]
+}

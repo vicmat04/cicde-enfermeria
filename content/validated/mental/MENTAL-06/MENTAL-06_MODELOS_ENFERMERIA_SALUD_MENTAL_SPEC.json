@@ -1,0 +1,115 @@
+{
+  "topic_code": "MENTAL-06",
+  "area_code": "MENTAL",
+  "title": "Modelos de enfermería aplicados a la salud mental",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Modelos de Peplau, Travelbee, Roy y Johnson aplicados a valoración, relación terapéutica, adaptación, conducta y PAE en salud mental.",
+  "coverage": {
+    "cicde_topic_exact": "Modelos de enfermería aplicados a la salud mental: Relación Interpersonal – Hildergard Peplau; Persona a Persona – Joyce Travelbee; Adaptación – Callista Roy; Conductual – Dorothy Jonhson",
+    "terminology_note": "Academic content corrects CICDE spelling to Hildegard Peplau and Dorothy Johnson while preserving original wording for traceability.",
+    "includes": [
+      "purpose of nursing models",
+      "Peplau interpersonal relations",
+      "Peplau classical four phases",
+      "Peplau contemporary three-phase crosswalk",
+      "Peplau nursing roles",
+      "Travelbee human-to-human relationship",
+      "Travelbee five phases",
+      "suffering, meaning, hope",
+      "Roy adaptation model",
+      "focal/contextual/residual stimuli",
+      "regulator/cognator",
+      "four adaptive modes",
+      "Roy nursing process",
+      "Johnson behavioral system",
+      "seven behavioral subsystems",
+      "protection/nurturance/stimulation",
+      "model comparison",
+      "PAE integration",
+      "clinical safety boundaries",
+      "12 exam cases"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "peplau_pubmed_primary_source_checked": true,
+    "peplau_modern_nursing_text_checked": true,
+    "travelbee_peer_reviewed_appraisal_checked": true,
+    "travelbee_2026_contemporary_analysis_checked": true,
+    "roy_pubmed_sources_checked": true,
+    "johnson_pubmed_sources_checked": true,
+    "johnson_seven_subsystems_academic_archive_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Interpersonal relations: a theoretical framework for application in nursing practice",
+      "authors": "Hildegard E. Peplau",
+      "publication_year": 1992
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Therapeutic Communication and the Nurse-Client Relationship",
+      "organization": "NCBI Bookshelf / Open RN"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Appraising Travelbee’s Human-to-Human Relationship Model",
+      "authors": "G. Shelton",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Travelbee and relational AI: A triadic model for nursing",
+      "authors": "Hugo Neves et al.",
+      "publisher": "Nursing Outlook",
+      "publication_year": 2026,
+      "notes": "Contemporary analysis only; proposed triadic model is not part of CICDE scope."
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "The Roy Adaptation Model: theoretical update and knowledge for practice",
+      "authors": "Sister Callista Roy; C. P. Corliss",
+      "publication_year": 1993
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Roy Adaptation Model: Theory-Based Knowledge and Nursing Care",
+      "authors": "Candan et al.",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "An evaluation of the Johnson Behavioural System Model of Nursing",
+      "authors": "W. Reynolds; D. F. Cormack",
+      "publication_year": 1991
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Application of the Johnson Behavioral System Model in nursing practice",
+      "authors": "A. K. Derdiarian",
+      "publication_year": 1993
+    }
+  ]
+}

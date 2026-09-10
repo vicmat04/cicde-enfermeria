@@ -1,0 +1,103 @@
+{
+  "topic_code": "MENTAL-02",
+  "area_code": "MENTAL",
+  "title": "Mecanismos de la comunicación afectiva y efectiva",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Comunicación terapéutica afectiva y efectiva: escucha activa, empatía, preguntas, clarificación, reflexión, validación, límites, teach-back y adaptación a alteraciones de salud mental.",
+  "coverage": {
+    "cicde_topic_exact": "Mecanismos de la comunicación afectiva y efectiva",
+    "includes": [
+      "proceso comunicativo",
+      "comunicación afectiva",
+      "comunicación efectiva",
+      "verbal",
+      "no verbal",
+      "paraverbal",
+      "escucha activa",
+      "preguntas abiertas/cerradas",
+      "clarificación",
+      "reflexión",
+      "reformulación",
+      "focalización",
+      "silencio terapéutico",
+      "empatía",
+      "validación",
+      "presentar realidad",
+      "alucinaciones",
+      "depresión",
+      "ansiedad",
+      "agresividad",
+      "límites",
+      "falsa tranquilidad",
+      "consejos",
+      "cultura",
+      "intérprete",
+      "teach-back",
+      "confidencialidad",
+      "documentación",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_person_centred_rights_based_guidance_checked": true,
+    "ahrq_clear_communication_checked": true,
+    "ahrq_teach_back_checked": true,
+    "icn_code_ethics_2021_checked": true,
+    "cicde_local_file_links_marked_non_verifiable": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Manual Diagnóstico y Estadístico de los Trastornos Mentales (DSM-5)",
+      "organization": "American Psychiatric Association",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidance on community mental health services: promoting person-centred and rights-based approaches",
+      "organization": "World Health Organization",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "World Mental Health Report: Transforming Mental Health for All",
+      "organization": "World Health Organization",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Health Literacy Universal Precautions Toolkit — Clear Communication / Teach-Back",
+      "organization": "Agency for Healthcare Research and Quality",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Código de Ética del CIE para las Enfermeras",
+      "organization": "International Council of Nurses",
+      "publication_year": 2021
+    }
+  ]
+}

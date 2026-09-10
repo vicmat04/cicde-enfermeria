@@ -1,0 +1,115 @@
+{
+  "topic_code": "MENTAL-03",
+  "area_code": "MENTAL",
+  "title": "Estrategias para promover salud mental en cada etapa del ciclo vital",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Promoción de salud mental a lo largo del curso de vida, desde primera infancia hasta adultez mayor, con factores protectores, riesgos, transiciones y contexto Panamá.",
+  "coverage": {
+    "cicde_topic_exact": "Estrategias para promover salud mental en cada etapa del ciclo vital",
+    "includes": [
+      "concepto de salud mental",
+      "enfoque de curso de vida",
+      "factores protectores",
+      "factores de riesgo",
+      "primera infancia",
+      "salud mental del cuidador",
+      "niñez escolar",
+      "acoso escolar",
+      "adolescencia",
+      "tecnología y redes",
+      "señales de alarma",
+      "adultez joven",
+      "salud mental perinatal",
+      "adultez media",
+      "salud mental laboral",
+      "Panamá derechos en salud mental",
+      "adultez mayor",
+      "soledad/aislamiento",
+      "duelo",
+      "transiciones vitales",
+      "sueño",
+      "actividad física",
+      "sustancias",
+      "violencia",
+      "determinantes sociales",
+      "promoción universal/selectiva/indicada",
+      "entornos promotores",
+      "estigma",
+      "Programa Salud Mental MINSA",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_life_course_framework_2025_checked": true,
+    "who_mental_health_fact_sheet_2025_checked": true,
+    "who_promotion_prevention_checked": true,
+    "who_policy_guidance_2025_checked": true,
+    "minsa_programa_salud_mental_checked": true,
+    "panama_law_364_and_decree_61_current_context_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Framework to implement a life course approach in practice",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Mental health",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Promotion and prevention — Mental and brain health across the life course",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidance on mental health policy and strategic action plans",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Programa Salud Mental",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Ley 364 de 6 de febrero de 2023",
+      "organization": "República de Panamá",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Decreto Ejecutivo 61 de 27 de junio de 2024",
+      "organization": "República de Panamá",
+      "publication_year": 2024
+    }
+  ]
+}

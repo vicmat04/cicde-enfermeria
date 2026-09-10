@@ -1,0 +1,123 @@
+{
+  "topic_code": "MENTAL-07",
+  "area_code": "MENTAL",
+  "title": "Cuidado de Enfermería a las personas con trastornos mentales y del comportamiento",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Cuidado de enfermería en esquizofrenia, depresión mayor, ansiedad, bipolaridad, trastornos de personalidad, neurocognitivos, violencia y adicciones.",
+  "coverage": {
+    "cicde_topic_exact": "Cuidado de Enfermería a las personas con trastornos mentales y del comportamiento: Trastorno de esquizofrenia; Depresión mayor; Trastornos de Ansiedad; Trastorno bipolar; Trastorno de personalidad; Trastornos neurocognitivos; Violencia; Adicciones a sustancias.",
+    "includes": [
+      "schizophrenia positive/negative/cognitive symptoms",
+      "delusions and hallucinations",
+      "command hallucination safety",
+      "depression and suicide assessment",
+      "anxiety care",
+      "mania/hypomania",
+      "bipolar safety",
+      "personality disorders conceptual clusters",
+      "borderline personality nursing care",
+      "delirium",
+      "dementia",
+      "delirium vs dementia",
+      "violence",
+      "intimate partner violence",
+      "de-escalation",
+      "restrictive interventions",
+      "substance use disorders",
+      "alcohol intoxication/withdrawal",
+      "opioid overdose",
+      "stimulant toxicity",
+      "harm reduction",
+      "PAE",
+      "12 exam cases"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_schizophrenia_2025_checked": true,
+    "who_depression_2025_checked": true,
+    "who_anxiety_2025_checked": true,
+    "who_bipolar_2025_checked": true,
+    "who_dementia_2026_checked": true,
+    "who_violence_against_women_2026_checked": true,
+    "who_alcohol_2024_checked": true,
+    "nice_deescalation_restriction_guidance_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Manual Diagnóstico y Estadístico de los Trastornos Mentales (DSM-5)",
+      "organization": "American Psychiatric Association",
+      "publication_year": 2014,
+      "notes": "Referenced by CICDE; full diagnostic criteria are not reproduced."
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Schizophrenia",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Depressive disorder (depression)",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Anxiety disorders",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Bipolar disorder",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Dementia",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Violence against women",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Global status report on alcohol and health and treatment of substance use disorders",
+      "organization": "World Health Organization",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Violence and aggression: short-term management in mental health, health and community settings (NG10)",
+      "organization": "NICE"
+    }
+  ]
+}

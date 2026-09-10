@@ -1,0 +1,114 @@
+{
+  "topic_code": "MENTAL-08",
+  "area_code": "MENTAL",
+  "title": "Farmacología (antidepresivos, ansiolíticos, antipsicóticos)",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Psicofarmacología de alta prioridad para enfermería: antidepresivos, ansiolíticos y antipsicóticos, con efectos, interacciones, síndromes graves y monitorización.",
+  "coverage": {
+    "cicde_topic_exact": "Farmacología (antidepresivos, ansiolíticos, antipsicóticos)",
+    "includes": [
+      "antidepressant classes",
+      "SSRIs",
+      "SNRIs",
+      "tricyclics",
+      "MAOIs",
+      "atypical antidepressants",
+      "onset and adherence",
+      "suicide monitoring",
+      "serotonin syndrome",
+      "antidepressant withdrawal",
+      "benzodiazepines",
+      "benzodiazepine dependence/withdrawal",
+      "benzodiazepines with opioids/alcohol",
+      "buspirone",
+      "first-generation antipsychotics",
+      "second-generation antipsychotics",
+      "baseline and follow-up monitoring",
+      "acute dystonia",
+      "akathisia",
+      "parkinsonism",
+      "tardive dyskinesia",
+      "neuroleptic malignant syndrome",
+      "metabolic effects",
+      "prolactin",
+      "QT risk",
+      "clozapine",
+      "FDA clozapine REMS 2025 update",
+      "long-acting injectables",
+      "adherence",
+      "PAE",
+      "12 exam cases"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "fda_depression_medicines_checked": true,
+    "nice_depression_withdrawal_checked": true,
+    "nice_gad_benzodiazepine_guidance_checked": true,
+    "fda_benzodiazepine_boxed_warning_checked": true,
+    "nice_antipsychotic_monitoring_checked": true,
+    "fda_clozapine_2025_update_checked": true,
+    "panama_specific_doses_not_included": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Depression Medicines",
+      "organization": "U.S. Food and Drug Administration"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Depression in adults: treatment and management (NG222)",
+      "organization": "NICE",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Generalised anxiety disorder and panic disorder in adults: management (CG113)",
+      "organization": "NICE"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Benzodiazepine Drug Class: Boxed Warning Updated to Improve Safe Use",
+      "organization": "U.S. Food and Drug Administration",
+      "publication_year": 2020
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Psychosis and schizophrenia in adults: prevention and management (CG178)",
+      "organization": "NICE"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Bipolar disorder: assessment and management (CG185)",
+      "organization": "NICE"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "FDA removes REMS program for clozapine; ANC monitoring remains recommended",
+      "organization": "U.S. Food and Drug Administration",
+      "publication_year": 2025
+    }
+  ]
+}

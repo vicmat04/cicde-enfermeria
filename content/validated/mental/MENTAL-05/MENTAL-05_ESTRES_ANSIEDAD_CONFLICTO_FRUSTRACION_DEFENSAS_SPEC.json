@@ -1,0 +1,98 @@
+{
+  "topic_code": "MENTAL-05",
+  "area_code": "MENTAL",
+  "title": "Manejo de factores de riesgo: estrés, ansiedad, conflicto, frustración y mecanismos de defensa",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Estrés, ansiedad, conflicto, frustración, afrontamiento y mecanismos de defensa con valoración, manejo, seguridad y PAE.",
+  "coverage": {
+    "cicde_topic_exact": "Manejo de factores de riesgo: stress, ansiedad, conflicto, frustración, mecanismo de defensa",
+    "terminology_note": "CICDE uses 'stress'; academic content uses the Spanish term 'estrés'.",
+    "includes": [
+      "estrés y estresores",
+      "respuesta física/cognitiva/emocional/conductual",
+      "estrés agudo y crónico",
+      "afrontamiento",
+      "manejo OMS del estrés",
+      "ansiedad normal vs trastorno",
+      "niveles de ansiedad",
+      "ataque de pánico",
+      "trastornos de ansiedad",
+      "principios de tratamiento",
+      "conflicto",
+      "tipos clásicos de conflicto",
+      "frustración",
+      "tolerancia a frustración",
+      "mecanismos de defensa",
+      "negación",
+      "proyección",
+      "desplazamiento",
+      "racionalización",
+      "regresión",
+      "represión",
+      "supresión",
+      "formación reactiva",
+      "sublimación",
+      "intelectualización",
+      "compensación",
+      "conversión",
+      "crisis",
+      "señales de alarma",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_anxiety_2025_checked": true,
+    "who_stress_management_guide_checked": true,
+    "paho_latin_america_stress_guide_checked": true,
+    "openrn_ncbi_stress_coping_defense_2025_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Anxiety disorders",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+      "organization": "World Health Organization",
+      "publication_year": 2020
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "En tiempos de estrés, haz lo que importa. Versión adaptada para América Latina",
+      "organization": "OPS/OMS",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Nursing: Mental Health and Community Concepts, 2nd edition — Stress, Coping, and Crisis Intervention",
+      "organization": "NCBI Bookshelf / Open RN",
+      "publication_year": 2025
+    }
+  ]
+}

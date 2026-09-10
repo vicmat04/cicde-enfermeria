@@ -1,0 +1,111 @@
+{
+  "topic_code": "MENTAL-10",
+  "area_code": "MENTAL",
+  "title": "PAE de pacientes con alucinación, conductas agresivas, deprimido, ansioso, maniaco",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "PAE aplicado a alucinaciones, agresividad, depresión, ansiedad y manía, priorizando seguridad, evaluación de riesgos, comunicación y reevaluación.",
+  "coverage": {
+    "cicde_topic_exact": "PAE de pacientes con alucinación, conductas agresivas, deprimido, ansioso, maniaco",
+    "includes": [
+      "five nursing process stages",
+      "mental status assessment",
+      "medical causes before psychiatric attribution",
+      "hallucination assessment",
+      "command hallucinations",
+      "hallucination interventions",
+      "agitation assessment",
+      "early escalation signs",
+      "de-escalation",
+      "restrictive interventions principles",
+      "depression assessment",
+      "direct suicide assessment",
+      "imminent suicide safety",
+      "depression interventions",
+      "anxiety by severity",
+      "panic and medical differential",
+      "mania assessment",
+      "mania safety",
+      "nutrition and sleep in mania",
+      "SMART/observable outcomes",
+      "objective documentation",
+      "continuous reassessment",
+      "continuity of care",
+      "Panama Resolution 099/2026",
+      "12 exam cases"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_schizophrenia_2025_checked": true,
+    "who_depression_2025_checked": true,
+    "who_anxiety_2025_checked": true,
+    "who_bipolar_2025_checked": true,
+    "nice_violence_deescalation_checked": true,
+    "openstax_psychiatric_nursing_checked": true,
+    "minsa_resolution_099_2026_checked": true,
+    "proprietary_nursing_taxonomy_not_reproduced": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Schizophrenia",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Depressive disorder (depression)",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Anxiety disorders",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Bipolar disorder",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Violence and aggression: short-term management in mental health, health and community settings (NG10)",
+      "organization": "NICE"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Psychiatric-Mental Health Nursing",
+      "organization": "OpenStax"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 099 de 11 de febrero de 2026 — Norma del Sistema de Vigilancia de la Conducta de Riesgo Suicida",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

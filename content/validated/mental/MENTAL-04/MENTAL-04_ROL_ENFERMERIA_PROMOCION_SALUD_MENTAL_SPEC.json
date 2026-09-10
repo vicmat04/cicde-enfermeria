@@ -1,0 +1,136 @@
+{
+  "topic_code": "MENTAL-04",
+  "area_code": "MENTAL",
+  "title": "Rol del profesional de enfermería en la promoción de la salud mental en la población",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Rol de enfermería en promoción, prevención, detección, atención primaria, comunidad, derechos, crisis, vigilancia y continuidad de la salud mental poblacional.",
+  "coverage": {
+    "cicde_topic_exact": "Rol del profesional de enfermería en la promoción de la salud mental en la población",
+    "includes": [
+      "salud mental en todo el sistema",
+      "Programa Salud Mental MINSA",
+      "Norma Técnica 637/2022",
+      "enfoque OMS comunitario y derechos",
+      "promoción",
+      "prevención",
+      "detección temprana",
+      "tamizaje",
+      "relación terapéutica",
+      "psicoeducación",
+      "reducción de estigma",
+      "derechos humanos",
+      "autonomía/consentimiento",
+      "familia",
+      "comunidad",
+      "APS",
+      "continuidad",
+      "interdisciplinariedad",
+      "intersectorialidad",
+      "crisis",
+      "conducta suicida",
+      "Resolución 099/2026",
+      "SMAPS",
+      "visita domiciliaria",
+      "educación poblacional",
+      "sustancias",
+      "violencia",
+      "salud física y mental",
+      "adulto mayor",
+      "niñez/adolescencia",
+      "indicadores",
+      "documentación",
+      "confidencialidad",
+      "abogacía",
+      "autocuidado profesional",
+      "PAE comunitario",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_community_rights_guidance_checked": true,
+    "who_mental_health_policy_2025_checked": true,
+    "minsa_programa_salud_mental_checked": true,
+    "minsa_resolution_637_2022_identified": true,
+    "panama_law_364_decree_61_checked": true,
+    "minsa_resolution_099_2026_checked": true,
+    "cti_smaps_2026_checked": true,
+    "smaps_2026_2030_status_marked_as_in_construction_from_may_2026_source": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidance on community mental health services: promoting person-centred and rights-based approaches",
+      "organization": "World Health Organization",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidance on mental health policy and strategic action plans",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Framework to implement a life course approach in practice",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Programa Salud Mental",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 637 de 7 de octubre de 2022 — Norma Técnica Administrativa Nacional de Salud Mental",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Ley 364 de 6 de febrero de 2023",
+      "organization": "República de Panamá",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Decreto Ejecutivo 61 de 27 de junio de 2024",
+      "organization": "República de Panamá",
+      "publication_year": 2024
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución N.º 099 de 11 de febrero de 2026 — Norma del Sistema de Vigilancia de la Conducta de Riesgo Suicida",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Avances en la construcción del Plan Estratégico SMAPS 2026–2030",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

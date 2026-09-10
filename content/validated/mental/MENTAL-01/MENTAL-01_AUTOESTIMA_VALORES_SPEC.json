@@ -1,0 +1,95 @@
+{
+  "topic_code": "MENTAL-01",
+  "area_code": "MENTAL",
+  "title": "Estrategias de enfermería para fortalecer la autoestima y reforzar los valores",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Estrategias de enfermería para fortalecer autoestima, autoconcepto, autonomía, valores, fortalezas y recuperación desde una atención centrada en la persona.",
+  "coverage": {
+    "cicde_topic_exact": "Estrategias de enfermería para fortalecer la autoestima, reforzar los valores",
+    "includes": [
+      "autoconcepto",
+      "autoestima",
+      "identidad y dignidad",
+      "factores de riesgo",
+      "valoración de fortalezas",
+      "refuerzo positivo",
+      "metas realistas",
+      "autonomía",
+      "valores",
+      "clarificación de valores",
+      "conflicto de valores",
+      "valores profesionales",
+      "imagen corporal",
+      "enfermedad crónica y dependencia",
+      "estigma",
+      "validación emocional",
+      "autoeficacia",
+      "límites terapéuticos",
+      "riesgo suicida",
+      "recuperación",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "who_person_centred_rights_based_guidance_checked": true,
+    "who_recovery_planning_checked": true,
+    "icn_code_ethics_2021_checked": true,
+    "cicde_local_file_links_marked_non_verifiable": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica y Salud Mental",
+      "authors": "AMIR",
+      "publication_year": 2014
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Enfermería Psiquiátrica",
+      "authors": "José Luis Galiana Roch",
+      "publisher": "Elsevier",
+      "publication_year": 2016
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Manual Diagnóstico y Estadístico de los Trastornos Mentales (DSM-5)",
+      "organization": "American Psychiatric Association",
+      "publication_year": 2014,
+      "notes": "Referencia consignada por CICDE; no utilizada aquí para diagnosticar autoestima."
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "World Mental Health Report: Transforming Mental Health for All",
+      "organization": "World Health Organization",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Guidance on community mental health services: promoting person-centred and rights-based approaches",
+      "organization": "World Health Organization",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Person-centred recovery planning for mental health and well-being",
+      "organization": "World Health Organization",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Código de Ética del CIE para las Enfermeras",
+      "organization": "International Council of Nurses",
+      "publication_year": 2021
+    }
+  ]
+}
