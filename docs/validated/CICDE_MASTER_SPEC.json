@@ -1,0 +1,667 @@
+{
+  "source_document": {
+    "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+    "edition": "Tercera Edición",
+    "year": 2026,
+    "issuer": "IV Consejo Interinstitucional de Certificación Básica de Enfermería",
+    "country": "Panamá"
+  },
+  "exam": {
+    "question_style": "Las preguntas corresponderán a situaciones que permitan medir las competencias académicas del participante.",
+    "question_count": 200,
+    "passing_correct": 122,
+    "passing_percentage": 61,
+    "duration_minutes": 240,
+    "calculator_rule": "Se permiten calculadoras o sumadoras; no se aceptan celulares u otros medios electrónicos con dichas aplicaciones."
+  },
+  "areas": [
+    {
+      "code": "ADULT",
+      "name": "Salud de Adulto",
+      "topics": [
+        {
+          "code": "ADULT-01",
+          "title": "Atención ética en enfermería"
+        },
+        {
+          "code": "ADULT-02",
+          "title": "El proceso de enfermería"
+        },
+        {
+          "code": "ADULT-03",
+          "title": "Educación para la salud y promoción de la salud"
+        },
+        {
+          "code": "ADULT-04",
+          "title": "Valoración nutricional del adulto"
+        },
+        {
+          "code": "ADULT-05",
+          "title": "Homeostasis, estrés y adaptación individual y familiar"
+        },
+        {
+          "code": "ADULT-06",
+          "title": "Enfermedad crónica y discapacidad"
+        },
+        {
+          "code": "ADULT-07",
+          "title": "Atención de la salud del adulto mayor"
+        },
+        {
+          "code": "ADULT-08",
+          "title": "Tratamiento del dolor"
+        },
+        {
+          "code": "ADULT-09",
+          "title": "Líquidos y electrolitos"
+        },
+        {
+          "code": "ADULT-10",
+          "title": "Tratamiento de pacientes con afecciones oncológicas"
+        },
+        {
+          "code": "ADULT-11",
+          "title": "Paliativos"
+        },
+        {
+          "code": "ADULT-12",
+          "title": "Atención Pre – Post operatoria"
+        },
+        {
+          "code": "ADULT-13",
+          "title": "Intercambio de gases y la función respiratoria"
+        },
+        {
+          "code": "ADULT-14",
+          "title": "Tratamiento respiratorio sin invasión corporal"
+        },
+        {
+          "code": "ADULT-15",
+          "title": "Manejo de la vía aérea"
+        },
+        {
+          "code": "ADULT-16",
+          "title": "Intercambio de gases y función Respiratoria: del Asma, Neumonía, Broncoaspiración, Tuberculosis"
+        },
+        {
+          "code": "ADULT-17",
+          "title": "Función Cardiovascular y circulatoria",
+          "subtopics": [
+            "Angina de Pecho y arritmias",
+            "Edema pulmonar",
+            "Paro cardiorrespiratorio",
+            "Embolia y trombosis",
+            "Aneurisma",
+            "Hipertensión: crisis y valoración"
+          ]
+        },
+        {
+          "code": "ADULT-18",
+          "title": "Función Hemática",
+          "subtopics": [
+            "Transfusión",
+            "Anemias",
+            "Defectos plaquetarios"
+          ]
+        },
+        {
+          "code": "ADULT-19",
+          "title": "Función Inmunitaria: VIH- Sida"
+        },
+        {
+          "code": "ADULT-20",
+          "title": "Función musculoesquelética: Factores de riesgo musculoesqueléticos"
+        },
+        {
+          "code": "ADULT-21",
+          "title": "Trastornos gastrointestinales y del recto",
+          "subtopics": [
+            "estreñimiento, diarrea, incontinencia, apendicitis y la obstrucción intestinal",
+            "Alimentación parenteral, tratamiento digestivos y gastrointestinales"
+          ]
+        },
+        {
+          "code": "ADULT-22",
+          "title": "Función metabólica y endocrina",
+          "subtopics": [
+            "Obesidad",
+            "Hepatitis A y B",
+            "Trastornos de la vesícula y pancreatitis",
+            "Valoración y tratamiento del paciente con diabetes"
+          ]
+        },
+        {
+          "code": "ADULT-23",
+          "title": "Función renal y urinaria",
+          "subtopics": [
+            "Insuficiencia renal y tratamiento",
+            "Infecciones de las vías urinarias incontinencias",
+            "Sondaje",
+            "Urolitiasis o nefrolitiasis"
+          ]
+        },
+        {
+          "code": "ADULT-24",
+          "title": "Función reproductiva",
+          "subtopics": [
+            "Cáncer del cuello uterino",
+            "Alteración y tratamiento de pacientes con alteraciones mamarias",
+            "Aparato reproductor masculino"
+          ]
+        },
+        {
+          "code": "ADULT-25",
+          "title": "Tratamiento de paciente con quemaduras (Completo)"
+        },
+        {
+          "code": "ADULT-26",
+          "title": "Función sensorial: valoración de pacientes con deficiencias auditivas"
+        },
+        {
+          "code": "ADULT-27",
+          "title": "Función Neurológica",
+          "subtopics": [
+            "Alteraciones convulsivas",
+            "Cefalea",
+            "Meningitis"
+          ]
+        },
+        {
+          "code": "ADULT-28",
+          "title": "Enfermedades de la comunidad",
+          "subtopics": [
+            "Tratamiento de pacientes con infecciones de transmisión sexual",
+            "Enfermedades emergentes: Sika, Dengue, Chikunguña"
+          ]
+        },
+        {
+          "code": "ADULT-29",
+          "title": "Aspectos de la atención de enfermería en urgencias",
+          "subtopics": [
+            "Triage",
+            "Obstrucción de vías respiratorias",
+            "Shock hipovolémico",
+            "Heridas",
+            "Mordedura de ofidios – alacrán",
+            "Ideas e intentos suicidas"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "MENTAL",
+      "name": "Enfermería en Salud y Enfermedad Mental",
+      "topics": [
+        {
+          "code": "MENTAL-01",
+          "title": "Estrategias de enfermería para fortalecer la autoestima, reforzar los valores"
+        },
+        {
+          "code": "MENTAL-02",
+          "title": "Mecanismos de la comunicación afectiva y efectiva"
+        },
+        {
+          "code": "MENTAL-03",
+          "title": "Estrategias para promover salud mental en cada etapa del ciclo vital"
+        },
+        {
+          "code": "MENTAL-04",
+          "title": "Rol del profesional de enfermería en la promoción de la salud mental en la población"
+        },
+        {
+          "code": "MENTAL-05",
+          "title": "Manejo de factores de riesgo: stress, ansiedad, conflicto, frustración, mecanismo de defensa"
+        },
+        {
+          "code": "MENTAL-06",
+          "title": "Modelos de enfermería aplicados a la salud mental",
+          "subtopics": [
+            "Relación Interpersonal – Hildergard Peplau",
+            "Persona a Persona – Joyce Travelbee",
+            "Adaptación – Callista Roy",
+            "Conductual – Dorothy Jonhson"
+          ]
+        },
+        {
+          "code": "MENTAL-07",
+          "title": "Cuidado de Enfermería a las personas con trastornos mentales y del comportamiento",
+          "subtopics": [
+            "Trastorno de esquizofrenia",
+            "Depresión mayor",
+            "Trastornos de Ansiedad",
+            "Trastorno bipolar",
+            "Trastorno de personalidad",
+            "Trastornos neurocognitivos",
+            "Violencia",
+            "Adicciones a sustancias"
+          ]
+        },
+        {
+          "code": "MENTAL-08",
+          "title": "Farmacología (antidepresivos, ansiolíticos, antipsicóticos)"
+        },
+        {
+          "code": "MENTAL-09",
+          "title": "Terapias psicodinámicas de enfermería",
+          "subtopics": [
+            "Terapias individuales: supresión, apoyo, realidad",
+            "Terapias de grupo: comunicación, remotivación y de actividades"
+          ]
+        },
+        {
+          "code": "MENTAL-10",
+          "title": "PAE de pacientes con alucinación, conductas agresivas, deprimido, ansioso, maniaco"
+        }
+      ]
+    },
+    {
+      "code": "PUBLIC_HEALTH",
+      "name": "Salud Pública",
+      "topics": [
+        {
+          "code": "PUBLIC-01",
+          "title": "Interacción entre el Ser Humano y su Entorno",
+          "subtopics": [
+            "Conceptos de Ecología, Ecología Humana, Ambiente, Ecosistema, Salud y Biosistema",
+            "Cómo las actividades humanas afectan los Ejemplos de deterioro ambiental y sus consecuencias en la salud humana (contaminación del aire, agua, etc.)",
+            "Efectos del cambio climático en la salud seres humanos, los animales y el medio ambiente",
+            "Enfermedades relacionadas con el clima (enfermedades respiratorias, enfermedades transmitidas por vectores)"
+          ]
+        },
+        {
+          "code": "PUBLIC-02",
+          "title": "Enfermedades Zoonóticas y Ecología",
+          "subtopics": [
+            "Alteración del hábitat animal y la transmisión de enfermedades zoonóticas"
+          ]
+        },
+        {
+          "code": "PUBLIC-03",
+          "title": "Urbanización y Salud",
+          "subtopics": [
+            "Efectos de la urbanización en la salud pública (contaminación, acceso a servicios, espacios verdes)",
+            "Importancia de educar a las comunidades sobre la relación entre ecología y salud",
+            "Ambientes donde se desarrolla el ser humano (vivienda, escuelas, comunidad)"
+          ]
+        },
+        {
+          "code": "PUBLIC-04",
+          "title": "Riesgos para la salud del individuo y el medio ambiente",
+          "subtopics": [
+            "Calidad del agua (diferentes tipos de agua)",
+            "Calidad de la vivienda",
+            "Calidad de los alimentos (toda la cadena de producción)",
+            "Disposición de excretas, control de artrópodos y roedores"
+          ]
+        },
+        {
+          "code": "PUBLIC-05",
+          "title": "Políticas de Salud Pública globales"
+        },
+        {
+          "code": "PUBLIC-06",
+          "title": "Las funciones esenciales de salud pública"
+        },
+        {
+          "code": "PUBLIC-07",
+          "title": "Los determinantes de la salud"
+        },
+        {
+          "code": "PUBLIC-08",
+          "title": "Enfermería en Salud Pública",
+          "subtopics": [
+            "Concepto de Salud, Salud Pública, Enfermería en Salud Pública",
+            "Indicadores de salud",
+            "Proceso salud-enfermedad: tríada ecológica, cadena epidemiológica",
+            "Estructura Organizativa y Administrativa del Sistema de Salud en Panamá",
+            "Organización",
+            "Políticas de Salud 2026-2035",
+            "Programas de Salud",
+            "Rol de la Enfermera en los programas",
+            "Visita Domiciliaria"
+          ]
+        },
+        {
+          "code": "PUBLIC-09",
+          "title": "Promoción de la Salud",
+          "subtopics": [
+            "Educación para la salud"
+          ]
+        },
+        {
+          "code": "PUBLIC-10",
+          "title": "Prevención de la Enfermedad",
+          "subtopics": [
+            "Niveles de prevención",
+            "Papel de la enfermera en los diferentes niveles de prevención"
+          ]
+        },
+        {
+          "code": "PUBLIC-11",
+          "title": "Programa ampliado de inmunización",
+          "subtopics": [
+            "Conceptos (vacuna e inmunización)",
+            "Características de las vacunas",
+            "Tipos de inmunidad",
+            "Tipos de vacunas",
+            "Manejo y conservación de las vacunas",
+            "Efectos adversos atribuibles a las vacunas",
+            "Enfermedades que tienen protección especificas con vacuna",
+            "Esquema actual de inmunizaciones de Panamá"
+          ]
+        },
+        {
+          "code": "PUBLIC-12",
+          "title": "Concepto, estructura y tipos de familias"
+        },
+        {
+          "code": "PUBLIC-13",
+          "title": "Diagnóstico integral de salud",
+          "subtopics": [
+            "Investigación en salud",
+            "Participación comunitaria",
+            "Construcción de indicadores",
+            "Etapas del diagnóstico en salud (Recolección de datos, priorización de problemas, planeación de intervenciones, implementación y evaluación)"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "OBGYN",
+      "name": "Enfermería Gineco-Obstétrica",
+      "topics": [
+        {
+          "code": "OBGYN-01",
+          "title": "Atención maternal, salud sexual y reproductiva",
+          "subtopics": [
+            "Promoción de la salud reproductiva humana",
+            "Bases anatomo- fisiológicas del aparato reproductor femenino y masculino",
+            "Climaterio y menopausia",
+            "Planificación familiar y anticoncepción",
+            "Trastorno de fertilidad de la pareja"
+          ]
+        },
+        {
+          "code": "OBGYN-02",
+          "title": "Embarazo normal y patológico",
+          "subtopics": [
+            "Desarrollo fetal",
+            "Cambios fisiológicos durante el embarazo",
+            "Pruebas durante el embarazo",
+            "Valoración física de la mujer embarazada",
+            "Cuidados de enfermería a la mujer durante el embarazo",
+            "Cuidados de enfermería de la mujer con alteraciones gineco obstétricas"
+          ]
+        },
+        {
+          "code": "OBGYN-03",
+          "title": "Labor y parto, cuidados de enfermería en la fase de parto normal, mecanismos en los diferentes periodos del parto",
+          "subtopics": [
+            "Labor y parto normal",
+            "Cambios fisiológicos durante el puerperio",
+            "Intervenciones de enfermería durante el puerperio",
+            "Cuidados de enfermería en cesárea y farmacología"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PEDIATRICS",
+      "name": "Enfermería Pediátrica",
+      "topics": [
+        {
+          "code": "PEDS-01",
+          "title": "Crecimiento, desarrollo y promoción de la salud infantil",
+          "subtopics": [
+            "Fundamentos, principios y factores que influyen en el crecimiento, desarrollo y maduración",
+            "Valoración del crecimiento: peso, talla/longitud, perímetro cefálico, índice de masa corporal, curvas y patrones de crecimiento",
+            "Desarrollo del niño según etapas: recién nacido, lactante, preescolar, escolar y adolescente",
+            "Áreas del desarrollo: motora, cognitiva, lenguaje, social y emocional",
+            "Vigilancia de hitos del desarrollo, factores de riesgo, signos de alarma y detección temprana de alteraciones",
+            "Promoción del crecimiento y desarrollo saludable: nutrición, lactancia materna, estimulación oportuna, juego, vínculo afectivo y participación familiar",
+            "Promoción y mantenimiento de la salud en la infancia y adolescencia",
+            "Sexualidad, nutrición y estilos de vida saludables en la adolescencia",
+            "Rol de enfermería en la valoración, seguimiento, educación anticipatoria y promoción de la salud"
+          ]
+        },
+        {
+          "code": "PEDS-02",
+          "title": "Atención de enfermería al recién nacido sano y con alteraciones de salud",
+          "subtopics": [
+            "Atención integral del recién nacido normal",
+            "Examen físico y neurológico",
+            "Técnicas somatométricas y valoración de signos vitales",
+            "Lactancia materna, vacunación y fortalecimiento del vínculo madre-hijo",
+            "Cuidados de enfermería al recién nacido pretérmino",
+            "Malformaciones congénitas y cardiopatías",
+            "Problemas respiratorios",
+            "Enfermedades hemolíticas",
+            "VIH/SIDA y otras alteraciones de salud neonatal"
+          ]
+        },
+        {
+          "code": "PEDS-03",
+          "title": "Valoración integral y cuidados de enfermería al niño y adolescente",
+          "subtopics": [
+            "Valoración física y funcional del niño y adolescente",
+            "Medición e interpretación de signos vitales",
+            "Técnicas antropométricas",
+            "Alimentación y valoración nutricional",
+            "Utilización de instrumentos y escalas de valoración pediátrica",
+            "Identificación de necesidades y problemas prioritarios",
+            "Participación de la familia en el cuidado"
+          ]
+        },
+        {
+          "code": "PEDS-04",
+          "title": "Cuidados de enfermería en las principales alteraciones de salud pediátricas",
+          "subtopics": [
+            "Trastornos gastrointestinales y nutricionales: gastroenteritis, deshidratación, diarrea aguda, síndrome de mala absorción, parasitosis, hepatitis y problemas crónicos de alimentación",
+            "Alteraciones del equilibrio hidroelectrolítico y ácido-base",
+            "Enfermedades infecciosas y exantemáticas",
+            "Procesos respiratorios agudos y crónicos",
+            "Alteraciones endocrinas y metabólicas, incluyendo diabetes mellitus",
+            "Enfermedades renales y urinarias",
+            "Alteraciones neurológicas",
+            "Enfermedades cardiovasculares y circulatorias",
+            "Neoplasias pediátricas",
+            "Patologías quirúrgicas frecuentes: hernias y apendicitis",
+            "Urgencias pediátricas"
+          ]
+        },
+        {
+          "code": "PEDS-05",
+          "title": "Cuidados especializados de enfermería pediátrica",
+          "subtopics": [
+            "Atención de enfermería al paciente pediátrico preoperatorio y postoperatorio",
+            "Cuidados paliativos pediátricos y acompañamiento al niño y su familia",
+            "Principios de seguridad y calidad en el cuidado pediátrico"
+          ]
+        },
+        {
+          "code": "PEDS-06",
+          "title": "Metrología, administración farmacológica y Proceso de Atención de Enfermería",
+          "subtopics": [
+            "Sistemas de medidas y conversiones aplicadas a pediatría",
+            "Cálculo y preparación de medicamentos según peso y edad",
+            "Principios de seguridad en la administración farmacológica pediátrica",
+            "Aplicación del Proceso de Atención de Enfermería en el niño y adolescente",
+            "Valoración, diagnóstico, planificación, ejecución y evaluación de los cuidados",
+            "Integración de la familia en el proceso de cuidado"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ADMINISTRATION",
+      "name": "Administración",
+      "topics": [
+        {
+          "code": "ADMIN-01",
+          "title": "Antecedentes históricos"
+        },
+        {
+          "code": "ADMIN-02",
+          "title": "Teoría general de la administración"
+        },
+        {
+          "code": "ADMIN-03",
+          "title": "Administración contemporánea"
+        },
+        {
+          "code": "ADMIN-04",
+          "title": "Conceptos básicos"
+        },
+        {
+          "code": "ADMIN-05",
+          "title": "Funciones administrativas"
+        },
+        {
+          "code": "ADMIN-06",
+          "title": "Gestión del cuidado",
+          "subtopics": [
+            "Atención humanizada y de calidad",
+            "Reunión de Planeación del Cuidado"
+          ]
+        },
+        {
+          "code": "ADMIN-07",
+          "title": "Proceso administrativo aplicado en Enfermería",
+          "subtopics": [
+            "Planeación, organización, dirección (liderazgo y toma de decisiones), control (supervisión)"
+          ]
+        },
+        {
+          "code": "ADMIN-08",
+          "title": "La comunicación en el proceso administrativo"
+        },
+        {
+          "code": "ADMIN-09",
+          "title": "Dotación de recursos humanos"
+        },
+        {
+          "code": "ADMIN-10",
+          "title": "Manejo de instrumentos administrativos para evaluar la atención de enfermería"
+        },
+        {
+          "code": "ADMIN-11",
+          "title": "Elaboración de informes"
+        }
+      ]
+    },
+    {
+      "code": "RESEARCH",
+      "name": "Investigación",
+      "topics": [
+        {
+          "code": "RESEARCH-01",
+          "title": "Concepto de investigación"
+        },
+        {
+          "code": "RESEARCH-02",
+          "title": "Metodología de investigación"
+        },
+        {
+          "code": "RESEARCH-03",
+          "title": "Tipos de Investigación"
+        }
+      ]
+    },
+    {
+      "code": "ETHICS_LEGAL",
+      "name": "Aspectos Éticos y Legales",
+      "topics": [
+        {
+          "code": "ETHICS-01",
+          "title": "Concepto de ética y bioética"
+        },
+        {
+          "code": "ETHICS-02",
+          "title": "Dilemas éticos"
+        },
+        {
+          "code": "ETHICS-03",
+          "title": "Principios éticos y sus características"
+        },
+        {
+          "code": "ETHICS-04",
+          "title": "Código Deontológico de ANEP"
+        },
+        {
+          "code": "ETHICS-05",
+          "title": "Derechos del paciente (Ley 68 del 20 noviembre de 2003, que reglamento los derechos y deberes del paciente)"
+        }
+      ]
+    },
+    {
+      "code": "PHARMACOLOGY",
+      "name": "Farmacología",
+      "topics": [
+        {
+          "code": "PHARM-01",
+          "title": "Conceptos básicos en farmacología",
+          "subtopics": [
+            "Farmacocinética",
+            "farmacodinámica"
+          ]
+        },
+        {
+          "code": "PHARM-02",
+          "title": "Normas generales para la administración y dosificación de fármacos"
+        },
+        {
+          "code": "PHARM-03",
+          "title": "Sistema de conversión y equivalencias"
+        },
+        {
+          "code": "PHARM-04",
+          "title": "Seguridad de los medicamentos"
+        },
+        {
+          "code": "PHARM-05",
+          "title": "Errores de medicación"
+        },
+        {
+          "code": "PHARM-06",
+          "title": "Fluidos y balance electrolítico"
+        },
+        {
+          "code": "PHARM-07",
+          "title": "Metrología"
+        }
+      ]
+    }
+  ],
+  "competencies": {
+    "administration_management": [
+      "Aplica el pensamiento crítico en el proceso administrativo.",
+      "Capacidad para comunicarse efectivamente en forma oral y escrita.",
+      "Capacidad para aplicar los conocimientos administrativos y de gestión en los cuidados de enfermería y de salud.",
+      "Integra conocimientos teóricos prácticos en la solución de problemas y toma de decisiones.",
+      "Aplica las normas de bioseguridad y de la profesión de enfermería en la administración y gestión del cuidado."
+    ],
+    "care": [
+      "Brinda cuidados de enfermería durante el ciclo vital de las personas en distintos escenarios.",
+      "Aplica las teorías y modelos de enfermería en el proceso d atención de las personas, familia y comunidad.",
+      "Habilidad y destreza para brindar cuidado holístico con sensibilidad social y calidad humana, en diversas situaciones y escenarios.",
+      "Capacidad para ejecutar los procedimientos terapéuticos del cuidado de enfermería haciendo uso de recursos tecnológicos disponibles, en forma correcta y segura.",
+      "Documenta sus intervenciones y evalúa los resultados de la atención planificada.",
+      "Establece prioridades para los cuidados, en colaboración con los pacientes, familiares considerando el equipo multidisciplinario de atención de salud.",
+      "Habilidad para proporcionar cuidado de enfermería, aplicando aspectos éticos, legales y espirituales en diversos contextos.",
+      "Capacidad para aplicar la bioseguridad en el cuidado de enfermería."
+    ],
+    "research": [
+      "Aplica el método científico en la disciplina de enfermería y otras áreas de salud.",
+      "Capacidad para divulgar los resultados de las investigaciones de forma oral y escrita.",
+      "Capacidad para utilizar la informática en el desarrollo de las investigaciones.",
+      "Capacidad para aplicar los resultados de las investigaciones en la mejora del cuidado a las personas, familia y comunidad.",
+      "Desarrolla estudios de investigación aplicando el consentimiento informado, basado en el Código de Núremberg, la declaración de Helsinki y la Ley 84 del 2019."
+    ],
+    "health_education": [
+      "Capacidad para promover el proceso de aprendizaje permanente a personas, familia y comunidad, que favorezcan los estilos de vida saludable.",
+      "Desarrolla habilidades educativas para estimular el auto aprendizaje y el autocuidado en personas, familia y comunidad.",
+      "Aplica las teorías de aprendizaje y la tecnología educativa en el proceso de enseñanza -aprendizaje de las personas, familia y comunidad.",
+      "Capacidad para diseñar, ejecutar y evaluar programas de educación en salud formal y no formal, según las necesidades del contexto social."
+    ]
+  }
+}
