@@ -322,24 +322,26 @@ function ReadingProgress({
     totalUnits === 0 ? 0 : Math.round((visitedCount / totalUnits) * 100);
 
   return (
-    <div className="lesson-reading-progress sticky top-16 z-20 -mx-5 mb-7 border-y border-[#d9e4e1] bg-[#fffefd]/95 px-5 py-3 backdrop-blur-sm sm:-mx-8 sm:px-8">
-      <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1 text-sm text-[#526966]">
-        <div>
-          <p className="font-bold text-[#173a37]">Avance de lectura</p>
-          <p>
-            {visitedCount} de {totalUnits} secciones · {readingProgress}%
-          </p>
+    <div className="lesson-reading-progress sticky top-16 z-20 -mx-5 mb-5 border-y border-[#d9e4e1] bg-[#fffefd] px-5 py-2.5 shadow-sm sm:-mx-8 sm:px-8">
+      <div className="flex flex-col gap-2">
+        <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1 text-sm text-[#526966]">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span className="font-bold text-[#173a37]">Avance de lectura</span>
+            <span>
+              {visitedCount} / {totalUnits} · {readingProgress}%
+            </span>
+          </div>
+          <span className="shrink-0 font-medium">
+            Capítulo {activeIndex + 1} de {chapterCount}
+          </span>
         </div>
-        <p className="shrink-0">
-          Capítulo {activeIndex + 1} de {chapterCount}
-        </p>
+        <progress
+          className="lesson-progress-bar h-1.5 w-full"
+          aria-label={`Avance de lectura: ${visitedCount} de ${totalUnits} unidades revisadas, ${readingProgress} por ciento`}
+          max={totalUnits}
+          value={visitedCount}
+        />
       </div>
-      <progress
-        className="lesson-progress-bar mt-2 h-2 w-full"
-        aria-label={`Avance de lectura: ${visitedCount} de ${totalUnits} secciones visitadas, ${readingProgress}%`}
-        max={totalUnits}
-        value={visitedCount}
-      />
     </div>
   );
 }
@@ -619,7 +621,7 @@ function useFullReadingChapterObserver(
 
         setActiveIndex(chapterIndex);
       },
-      { rootMargin: "-6.5rem 0px -65% 0px", threshold: 0 },
+      { rootMargin: "-10% 0px -65% 0px", threshold: 0 },
     );
 
     chapters.forEach((chapter) => {
@@ -661,7 +663,7 @@ function useFullReadingVisitObserver(
           });
         }
       },
-      { rootMargin: "-6.5rem 0px -30% 0px", threshold: 0 },
+      { rootMargin: "-15% 0px -15% 0px", threshold: 0 },
     );
 
     chapters.forEach((chapter) => {
