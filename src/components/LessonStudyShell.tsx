@@ -44,6 +44,14 @@ const studySectionVariants = {
   sources: "border-[#c4b0cc] bg-[#fbf8fc]",
 } as const satisfies Record<Exclude<LessonSectionKind, "standard">, string>;
 
+function totalVisitableUnits(chapters: LessonChapter[]) {
+  return chapters.reduce(
+    (total, chapter) =>
+      total + (chapter.sections.length > 0 ? chapter.sections.length : 1),
+    0,
+  );
+}
+
 function studyOpenSections(chapter: LessonChapter) {
   if (isSourcesTitle(chapter.root.title)) {
     return new Set<string>();
@@ -302,23 +310,35 @@ function StudySection({
 function ReadingProgress({
   activeIndex,
   chapterCount,
+  visitedCount,
+  totalUnits,
 }: {
   activeIndex: number;
   chapterCount: number;
+  visitedCount: number;
+  totalUnits: number;
 }) {
+  const readingProgress =
+    totalUnits === 0 ? 0 : Math.round((visitedCount / totalUnits) * 100);
+
   return (
-    <div className="lesson-reading-progress mb-7">
-      <div className="flex items-end justify-between gap-4 text-sm text-[#526966]">
-        <span className="font-bold text-[#173a37]">Progreso de lectura</span>
-        <span>
-          Sección {activeIndex + 1} de {chapterCount}
-        </span>
+    <div className="lesson-reading-progress sticky top-16 z-20 -mx-5 mb-7 border-y border-[#d9e4e1] bg-[#fffefd]/95 px-5 py-3 backdrop-blur-sm sm:-mx-8 sm:px-8">
+      <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1 text-sm text-[#526966]">
+        <div>
+          <p className="font-bold text-[#173a37]">Avance de lectura</p>
+          <p>
+            {visitedCount} de {totalUnits} secciones · {readingProgress}%
+          </p>
+        </div>
+        <p className="shrink-0">
+          Capítulo {activeIndex + 1} de {chapterCount}
+        </p>
       </div>
       <progress
         className="lesson-progress-bar mt-2 h-2 w-full"
-        aria-label="Progreso de lectura"
-        max={chapterCount}
-        value={activeIndex + 1}
+        aria-label={`Avance de lectura: ${visitedCount} de ${totalUnits} secciones visitadas, ${readingProgress}%`}
+        max={totalUnits}
+        value={visitedCount}
       />
     </div>
   );
@@ -372,8 +392,7 @@ function StudyChapterView({
   );
 
   return (
-    <div className="px-5 py-8 sm:px-8 sm:py-10">
-      <ReadingProgress activeIndex={activeIndex} chapterCount={chapterCount} />
+    <div className="px-5 pb-8 sm:px-8 sm:pb-10">
       <section
         id={lessonSectionAnchor(activeChapter.root.id)}
         className={studyRootSectionClassName(
@@ -475,7 +494,7 @@ function FullReadingView({
   sources: SourceWrapper[];
 }) {
   return (
-    <div className="px-5 py-8 sm:px-8 sm:py-10">
+    <div className="px-5 pb-8 sm:px-8 sm:pb-10">
       <p className="mb-8 text-sm leading-6 text-[#526966]">
         Lectura completa muestra toda la lección de forma continua para buscar,
         revisar o imprimir.
@@ -577,7 +596,6 @@ function useFullReadingChapterObserver(
   chapters: LessonChapter[],
   mode: ReaderMode,
   setActiveIndex: Dispatch<SetStateAction<number>>,
-  setVisited: Dispatch<SetStateAction<Set<string>>>,
 ) {
   useEffect(() => {
     if (mode !== "full") return;
@@ -600,9 +618,6 @@ function useFullReadingChapterObserver(
         if (chapterIndex < 0) return;
 
         setActiveIndex(chapterIndex);
-        setVisited((visitedChapters) =>
-          new Set(visitedChapters).add(chapters[chapterIndex].id),
-        );
       },
       { rootMargin: "-6.5rem 0px -65% 0px", threshold: 0 },
     );
@@ -613,7 +628,59 @@ function useFullReadingChapterObserver(
     });
 
     return () => observer.disconnect();
-  }, [chapters, mode, setActiveIndex, setVisited]);
+  }, [chapters, mode, setActiveIndex]);
+}
+
+function useFullReadingVisitObserver(
+  chapters: LessonChapter[],
+  mode: ReaderMode,
+  setVisitedUnits: Dispatch<SetStateAction<Set<string>>>,
+) {
+  useEffect(() => {
+    if (mode !== "full") return;
+
+    const elementToUnitId = new Map<Element, string>();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const newlyVisited = entries
+          .filter((entry) => entry.isIntersecting)
+          .map((entry) => elementToUnitId.get(entry.target))
+          .filter((id): id is string => id !== undefined);
+
+        if (newlyVisited.length > 0) {
+          setVisitedUnits((current) => {
+            let changed = false;
+            const next = new Set(current);
+            newlyVisited.forEach((id) => {
+              if (!next.has(id)) {
+                next.add(id);
+                changed = true;
+              }
+            });
+            return changed ? next : current;
+          });
+        }
+      },
+      { rootMargin: "-6.5rem 0px -30% 0px", threshold: 0 },
+    );
+
+    chapters.forEach((chapter) => {
+      const unitIds =
+        chapter.sections.length > 0
+          ? chapter.sections.map((s) => s.id)
+          : [chapter.root.id];
+
+      unitIds.forEach((unitId) => {
+        const element = findSectionElement(unitId);
+        if (element) {
+          elementToUnitId.set(element, unitId);
+          observer.observe(element);
+        }
+      });
+    });
+
+    return () => observer.disconnect();
+  }, [chapters, mode, setVisitedUnits]);
 }
 
 interface ReaderNavigationRefs {
@@ -626,6 +693,7 @@ interface ReaderNavigationSetters {
   setMode: Dispatch<SetStateAction<ReaderMode>>;
   setActiveIndex: Dispatch<SetStateAction<number>>;
   setVisited: Dispatch<SetStateAction<Set<string>>>;
+  setVisitedUnits: Dispatch<SetStateAction<Set<string>>>;
   setOpenSections: Dispatch<SetStateAction<Set<string>>>;
   setSourcesOpen: Dispatch<SetStateAction<boolean>>;
   setMobileIndexOpen: Dispatch<SetStateAction<boolean>>;
@@ -638,6 +706,22 @@ function visitChapter(
   setVisited((current) => new Set(current).add(chapter.id));
 }
 
+function markVisitedUnits(
+  chapter: LessonChapter,
+  currentOpenSections: Set<string>,
+  setVisitedUnits: Dispatch<SetStateAction<Set<string>>>,
+) {
+  setVisitedUnits((current) => {
+    const next = new Set(current);
+    if (chapter.sections.length === 0) {
+      next.add(chapter.root.id);
+    } else {
+      currentOpenSections.forEach((id) => next.add(id));
+    }
+    return next;
+  });
+}
+
 function activateStudyChapter(
   chapters: LessonChapter[],
   index: number,
@@ -645,6 +729,7 @@ function activateStudyChapter(
   {
     setActiveIndex,
     setVisited,
+    setVisitedUnits,
     setOpenSections,
     setSourcesOpen,
     setMobileIndexOpen,
@@ -655,7 +740,9 @@ function activateStudyChapter(
 
   setActiveIndex(index);
   visitChapter(chapter, setVisited);
-  setOpenSections(studyOpenSections(chapter));
+  const opened = studyOpenSections(chapter);
+  setOpenSections(opened);
+  markVisitedUnits(chapter, opened, setVisitedUnits);
   setSourcesOpen(false);
   setMobileIndexOpen(false);
   window.requestAnimationFrame(() => scrollTo(readerStart.current));
@@ -716,6 +803,8 @@ function returnToStudyMode(
   { readerStart }: ReaderNavigationRefs,
   {
     setMode,
+    setVisited,
+    setVisitedUnits,
     setOpenSections,
     setSourcesOpen,
     setMobileIndexOpen,
@@ -724,7 +813,10 @@ function returnToStudyMode(
   if (mode !== "full" || !activeChapter) return;
 
   setMode("study");
-  setOpenSections(studyOpenSections(activeChapter));
+  visitChapter(activeChapter, setVisited);
+  const opened = studyOpenSections(activeChapter);
+  setOpenSections(opened);
+  markVisitedUnits(activeChapter, opened, setVisitedUnits);
   setSourcesOpen(false);
   setMobileIndexOpen(false);
   window.requestAnimationFrame(() => scrollTo(readerStart.current));
@@ -742,17 +834,30 @@ function toggledSectionSet(current: Set<string>, sectionId: string) {
 
 function toggleStudySection(
   sectionId: string,
+  openSections: Set<string>,
   setOpenSections: Dispatch<SetStateAction<Set<string>>>,
+  setVisitedUnits: Dispatch<SetStateAction<Set<string>>>,
 ) {
+  const isOpening = !openSections.has(sectionId);
   setOpenSections((current) => toggledSectionSet(current, sectionId));
+  if (isOpening) {
+    setVisitedUnits((current) => new Set(current).add(sectionId));
+  }
 }
 
 function expandStudySections(
   activeChapter: LessonChapter | undefined,
   setOpenSections: Dispatch<SetStateAction<Set<string>>>,
+  setVisitedUnits: Dispatch<SetStateAction<Set<string>>>,
 ) {
   if (!activeChapter) return;
-  setOpenSections(new Set(activeChapter.sections.map((section) => section.id)));
+  const sectionIds = activeChapter.sections.map((section) => section.id);
+  setOpenSections(new Set(sectionIds));
+  setVisitedUnits((current) => {
+    const next = new Set(current);
+    sectionIds.forEach((id) => next.add(id));
+    return next;
+  });
 }
 
 function collapseStudySections(
@@ -778,6 +883,7 @@ interface CreateReaderNavigationActionsOptions {
   mode: ReaderMode;
   activeIndex: number;
   activeChapter: LessonChapter | undefined;
+  openSections: Set<string>;
   refs: ReaderNavigationRefs;
   setters: ReaderNavigationSetters;
 }
@@ -787,6 +893,7 @@ function createReaderNavigationActions({
   mode,
   activeIndex,
   activeChapter,
+  openSections,
   refs,
   setters,
 }: CreateReaderNavigationActionsOptions) {
@@ -800,9 +907,18 @@ function createReaderNavigationActions({
     returnToStudyMode: () =>
       returnToStudyMode(mode, activeChapter, refs, setters),
     toggleSection: (sectionId: string) =>
-      toggleStudySection(sectionId, setters.setOpenSections),
+      toggleStudySection(
+        sectionId,
+        openSections,
+        setters.setOpenSections,
+        setters.setVisitedUnits,
+      ),
     expandAllSections: () =>
-      expandStudySections(activeChapter, setters.setOpenSections),
+      expandStudySections(
+        activeChapter,
+        setters.setOpenSections,
+        setters.setVisitedUnits,
+      ),
     collapseAllSections: () => collapseStudySections(setters.setOpenSections),
     toggleSources: () => toggleDisclosure(setters.setSourcesOpen),
     toggleMobileIndex: () => toggleDisclosure(setters.setMobileIndexOpen),
@@ -817,12 +933,23 @@ function useReaderNavigation(
 ) {
   const [mode, setMode] = useState<ReaderMode>("study");
   const [activeIndex, setActiveIndex] = useState(0);
-  const [visited, setVisited] = useState(
-    () => new Set(chapters[0] ? [chapters[0].id] : []),
-  );
+  const [visited, setVisited] = useState(() => new Set<string>());
   const [openSections, setOpenSections] = useState(() =>
     chapters[0] ? studyOpenSections(chapters[0]) : new Set<string>(),
   );
+  const [visitedUnits, setVisitedUnits] = useState(() => {
+    const initial = new Set<string>();
+    const chapter = chapters[0];
+    if (chapter) {
+      const opened = studyOpenSections(chapter);
+      if (chapter.sections.length === 0) {
+        initial.add(chapter.root.id);
+      } else {
+        opened.forEach((id) => initial.add(id));
+      }
+    }
+    return initial;
+  });
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const [mobileIndexOpen, setMobileIndexOpen] = useState(false);
   const activeChapter = chapters[activeIndex];
@@ -830,17 +957,21 @@ function useReaderNavigation(
     setMode,
     setActiveIndex,
     setVisited,
+    setVisitedUnits,
     setOpenSections,
     setSourcesOpen,
     setMobileIndexOpen,
   };
 
-  useFullReadingChapterObserver(chapters, mode, setActiveIndex, setVisited);
+  useFullReadingChapterObserver(chapters, mode, setActiveIndex);
+  useFullReadingVisitObserver(chapters, mode, setters.setVisitedUnits);
 
   return {
     mode,
     activeIndex,
     visited,
+    visitedUnits,
+    totalUnits: totalVisitableUnits(chapters),
     openSections,
     sourcesOpen,
     mobileIndexOpen,
@@ -850,6 +981,7 @@ function useReaderNavigation(
       mode,
       activeIndex,
       activeChapter,
+      openSections,
       refs,
       setters,
     }),
@@ -936,7 +1068,7 @@ export function LessonStudyShell({
         </aside>
         <article
           ref={readerStart}
-          className="lesson-reader paper-shadow overflow-hidden rounded-3xl border border-[#d5e3df] bg-[#fffefd]"
+          className="lesson-reader paper-shadow overflow-clip rounded-3xl border border-[#d5e3df] bg-[#fffefd]"
         >
           <ReaderHeader
             areaName={areaName}
@@ -948,6 +1080,12 @@ export function LessonStudyShell({
             mode={reader.mode}
             onStudyMode={reader.returnToStudyMode}
             onFullMode={reader.setFullMode}
+          />
+          <ReadingProgress
+            activeIndex={reader.activeIndex}
+            chapterCount={chapters.length}
+            visitedCount={reader.visitedUnits.size}
+            totalUnits={reader.totalUnits}
           />
           {reader.mode === "study" ? (
             <StudyChapterView
