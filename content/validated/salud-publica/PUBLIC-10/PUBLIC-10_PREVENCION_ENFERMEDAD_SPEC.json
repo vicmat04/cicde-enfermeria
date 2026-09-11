@@ -1,0 +1,117 @@
+{
+  "topic_code": "PUBLIC-10",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Prevención de la Enfermedad",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Prevención primaria, secundaria y terciaria, tamizaje, detección temprana, rehabilitación y papel de enfermería, con contexto panameño 2026.",
+  "coverage": {
+    "cicde_topic_exact": "Prevención de la Enfermedad",
+    "subtopics_exact": [
+      "Niveles de prevención",
+      "Papel de la enfermera en los diferentes niveles de prevención"
+    ],
+    "includes": [
+      "prevención de enfermedad",
+      "promoción vs prevención",
+      "historia natural de la enfermedad",
+      "prevención primaria",
+      "protección específica",
+      "vacunación",
+      "prevención de transmisibles",
+      "prevención de no transmisibles",
+      "prevención secundaria",
+      "tamizaje",
+      "sensibilidad y especificidad",
+      "falsos positivos",
+      "falsos negativos",
+      "detección temprana",
+      "tamizaje vs diagnóstico",
+      "prevención terciaria",
+      "rehabilitación",
+      "prevención de complicaciones",
+      "curso de vida",
+      "rol de enfermería primaria",
+      "rol de enfermería secundaria",
+      "rol de enfermería terciaria",
+      "valoración",
+      "educación preventiva",
+      "comunidad",
+      "determinantes sociales",
+      "prevención basada en evidencia",
+      "sobreprevención",
+      "sobrediagnóstico",
+      "prevención infecciosa",
+      "prevención cardiovascular",
+      "prevención cáncer",
+      "prevención lesiones",
+      "Política Nacional Panamá 2026-2035",
+      "Ley 522 de 2026",
+      "autocuidado 2026",
+      "Cuida tu Corazón 2026",
+      "indicadores",
+      "PAE",
+      "12 casos tipo examen",
+      "Ley 522 Gaceta Oficial 30524-D",
+      "diagnóstico temprano ENT",
+      "seguimiento de enfermedades no transmisibles",
+      "sistema nacional de información y vigilancia ENT"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "paho_primary_secondary_tertiary_prevention_checked": true,
+    "who_health_promotion_checked": true,
+    "minsa_health_policy_2026_2035_checked": true,
+    "minsa_law_522_2026_checked": true,
+    "minsa_prevention_self_care_2026_checked": true,
+    "minsa_cuida_tu_corazon_2026_checked": true,
+    "law_522_full_text_rechecked_2026_09_10": true,
+    "gaceta_30524d_rechecked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Health promotion and disease prevention",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Health Promotion",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Política Nacional de Salud 2026-2035",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Ley No. 522 de 12 de mayo de 2026 - marco legal para la prevención, diagnóstico y control de las enfermedades no transmisibles",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026,
+      "notes": "Publicada en Gaceta Oficial Digital No. 30524-D el 14 de mayo de 2026."
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Prevención y autocuidado claves para evitar enfermedades prevenibles",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Cuida tu Corazón 2026",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

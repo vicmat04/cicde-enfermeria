@@ -1,0 +1,82 @@
+{
+  "topic_code": "PUBLIC-06",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Las funciones esenciales de salud pública",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Marco renovado OPS de las 11 Funciones Esenciales de Salud Pública, organizado en evaluación, desarrollo de políticas, asignación de recursos y acceso.",
+  "coverage": {
+    "cicde_topic_exact": "Las funciones esenciales de salud pública",
+    "includes": [
+      "FESP",
+      "marco renovado OPS",
+      "derechos humanos",
+      "equidad",
+      "determinantes sociales",
+      "ciclo de políticas",
+      "FESP 1 monitoreo y evaluación",
+      "FESP 2 vigilancia riesgos emergencias",
+      "FESP 3 investigación y conocimiento",
+      "FESP 4 políticas y legislación",
+      "FESP 5 participación y movilización social",
+      "FESP 6 recursos humanos",
+      "FESP 7 medicamentos y tecnologías",
+      "FESP 8 financiamiento",
+      "FESP 9 acceso a servicios integrales",
+      "FESP 10 promoción y reducción de riesgos",
+      "FESP 11 determinantes sociales",
+      "rectoría",
+      "APS",
+      "salud universal",
+      "evaluación de capacidades",
+      "implementación regional 2025",
+      "RedFESP 2026",
+      "Panamá",
+      "rol de enfermería",
+      "vacunación",
+      "agua segura",
+      "PAE comunitario",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "paho_renewed_ephf_framework_2020_checked": true,
+    "paho_11_functions_current_page_checked": true,
+    "paho_implementation_report_2025_checked": true,
+    "paho_redfesp_2026_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Las funciones esenciales de la salud pública en las Américas. Una renovación para el siglo XXI. Marco conceptual y descripción",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2020
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Funciones esenciales de salud pública",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Implementación de las Funciones Esenciales de Salud Pública en las Américas: Evaluación y fortalecimiento de capacidades",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "RedFESP pone en marcha el primer eje estratégico de su Plan de Trabajo 2026",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2026
+    }
+  ]
+}

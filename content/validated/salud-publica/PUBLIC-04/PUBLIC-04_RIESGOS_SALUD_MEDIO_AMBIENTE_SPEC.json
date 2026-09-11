@@ -1,0 +1,132 @@
+{
+  "topic_code": "PUBLIC-04",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Riesgos para la salud del individuo y el medio ambiente",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Riesgos sanitarios relacionados con agua, vivienda, inocuidad alimentaria, excretas, artrópodos y roedores, con enfoque de prevención y saneamiento ambiental.",
+  "coverage": {
+    "cicde_topic_exact": "Riesgos para la salud del individuo y el medio ambiente",
+    "subtopics_exact": [
+      "Calidad del agua (diferentes tipos de agua)",
+      "Calidad de la vivienda",
+      "Calidad de los alimentos (toda la cadena de producción)",
+      "Disposición de excretas, control de artrópodos y roedores"
+    ],
+    "includes": [
+      "calidad del agua",
+      "tipos de agua",
+      "agua superficial",
+      "agua subterránea",
+      "agua de lluvia",
+      "agua almacenada",
+      "riesgos microbiológicos",
+      "riesgos químicos",
+      "agua segura en emergencias",
+      "WASH",
+      "vivienda saludable",
+      "hacinamiento",
+      "temperatura",
+      "humedad y moho",
+      "lesiones",
+      "accesibilidad",
+      "inocuidad alimentaria",
+      "cadena de producción",
+      "contaminación biológica",
+      "contaminación química",
+      "contaminación física",
+      "contaminación cruzada",
+      "cinco claves de alimentos seguros",
+      "higiene de manos",
+      "disposición de excretas",
+      "artrópodos",
+      "Aedes",
+      "control integrado de vectores",
+      "roedores",
+      "control de roedores",
+      "Panamá 2025-2026",
+      "visita domiciliaria",
+      "rol de enfermería",
+      "PAE comunitario",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_wash_2026_checked": true,
+    "paho_wash_checked": true,
+    "who_housing_guidelines_checked": true,
+    "who_food_safety_2026_checked": true,
+    "who_vector_housing_guidance_checked": true,
+    "minsa_herrera_water_2025_checked": true,
+    "minsa_panama_east_vector_2026_checked": true,
+    "minsa_veraguas_food_inspection_2026_checked": true,
+    "minsa_rodent_control_2026_checked": true,
+    "who_wash_2026_rechecked": true,
+    "who_food_safety_june_2026_rechecked": true,
+    "minsa_environmental_health_sources_rechecked_2026_09_10": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "State of systems for drinking-water, sanitation and hygiene: global update 2025",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Agua, Saneamiento e Higiene (WASH)",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO Housing and health guidelines",
+      "organization": "World Health Organization",
+      "publication_year": 2018
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Inocuidad de los alimentos",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Keeping the vector out - Housing improvements for vector control and sustainable development",
+      "organization": "World Health Organization",
+      "publication_year": 2017
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Región de Salud de Herrera reitera medidas sanitarias ante situación del agua potable",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Región de Salud en Panamá Este activa medidas de control y prevención en comunidades",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Dirección Nacional de Control de Alimentos y Vigilancia Veterinaria realiza operativos por Fiestas Patronales de Santiago 2026",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Salud refuerza acciones de control de roedores en Belisario Frías",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

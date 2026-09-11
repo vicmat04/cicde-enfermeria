@@ -1,0 +1,85 @@
+{
+  "topic_code": "PUBLIC-07",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Los determinantes de la salud",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Determinantes sociales y estructurales de la salud, inequidades, gradiente social, acción intersectorial y aplicación al contexto panameño 2026–2035.",
+  "coverage": {
+    "cicde_topic_exact": "Los determinantes de la salud",
+    "includes": [
+      "determinantes sociales de la salud",
+      "determinantes estructurales",
+      "determinantes intermedios",
+      "gradiente social",
+      "desigualdad e inequidad",
+      "educación",
+      "ingreso y pobreza",
+      "empleo",
+      "vivienda",
+      "alimentación",
+      "agua y saneamiento",
+      "transporte",
+      "redes sociales",
+      "discriminación",
+      "género",
+      "territorio",
+      "ruralidad",
+      "curso de vida",
+      "cambio climático",
+      "acceso a servicios",
+      "protección social",
+      "determinantes comerciales",
+      "enfermedades crónicas",
+      "enfermedades transmisibles",
+      "salud mental",
+      "acción intersectorial",
+      "participación comunitaria",
+      "Política Nacional de Salud Panamá 2026-2035",
+      "marco operacional OPS 2026",
+      "rol de enfermería",
+      "valoración comunitaria",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_social_determinants_2025_checked": true,
+    "paho_social_determinants_checked": true,
+    "paho_operational_framework_2026_checked": true,
+    "panama_health_policy_decree_17_2026_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Determinantes sociales de la salud",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Determinantes sociales de la salud",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Marco operacional para la inclusión del enfoque de equidad, determinantes sociales y promoción de la salud en la atención primaria de salud",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Decreto Ejecutivo No. 17 de 23 de marzo de 2026 - Política Nacional de Salud 2026-2035",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

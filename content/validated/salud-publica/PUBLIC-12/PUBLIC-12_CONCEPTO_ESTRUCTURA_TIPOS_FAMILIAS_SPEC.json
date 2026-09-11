@@ -1,0 +1,107 @@
+{
+  "topic_code": "PUBLIC-12",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Concepto, estructura y tipos de familias",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Familia como unidad de cuidado: concepto, estructura, tipos, funciones, roles, ciclo vital, genograma, ecomapa y valoración de enfermería.",
+  "coverage": {
+    "cicde_topic_exact": "Concepto, estructura y tipos de familias",
+    "includes": [
+      "concepto de familia",
+      "familia y hogar",
+      "familia como unidad de salud",
+      "estructura familiar",
+      "familia nuclear",
+      "familia extensa",
+      "familia monoparental",
+      "familia reconstituida",
+      "pareja sin hijos",
+      "familia adoptiva",
+      "cuidadores no parentales",
+      "diversidad familiar",
+      "funciones familiares",
+      "función afectiva",
+      "función de cuidado",
+      "socialización",
+      "función económica",
+      "roles",
+      "jerarquía",
+      "límites",
+      "comunicación",
+      "cohesión",
+      "adaptabilidad",
+      "ciclo de vida familiar",
+      "transiciones",
+      "crisis familiar",
+      "factores protectores",
+      "factores de riesgo",
+      "determinantes sociales",
+      "APS",
+      "valoración familiar",
+      "genograma",
+      "ecomapa",
+      "APGAR familiar",
+      "visita domiciliaria",
+      "cuidador principal",
+      "educación familiar",
+      "autonomía",
+      "confidencialidad",
+      "niños y adolescentes",
+      "adulto mayor",
+      "enfermedad crónica",
+      "discapacidad",
+      "violencia familiar",
+      "duelo",
+      "Panamá",
+      "rol de enfermería",
+      "PAE familiar",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_primary_health_care_checked": true,
+    "paho_primary_health_care_checked": true,
+    "paho_nursing_primary_health_care_checked": true,
+    "minsa_home_visit_2026_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "What is Primary Health Care?",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Primary Health Care",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Expanding the Roles of Nurses in Primary Health Care",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2018
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Strategic Directions for Nursing in the Region of the Americas",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2019
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Equipo de Salud de Pueblo Nuevo fortalece la atención integral con visitas domiciliarias",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

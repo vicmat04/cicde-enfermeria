@@ -1,0 +1,110 @@
+{
+  "topic_code": "PUBLIC-02",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Enfermedades Zoonóticas y Ecología",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Zoonosis y ecología desde Una Salud, con alteración de hábitat, rutas de transmisión, vigilancia, prevención y contexto panameño.",
+  "coverage": {
+    "cicde_topic_exact": "Enfermedades Zoonóticas y Ecología",
+    "subtopics_exact": [
+      "Alteración del hábitat animal y la transmisión de enfermedades zoonóticas"
+    ],
+    "includes": [
+      "zoonosis",
+      "transmisión zoonótica",
+      "Una Salud",
+      "interfaz humano-animal-ambiente",
+      "alteración de hábitat",
+      "fragmentación",
+      "biodiversidad",
+      "urbanización",
+      "agricultura y ganadería",
+      "comercio animal",
+      "cambio climático",
+      "reservorio",
+      "huésped",
+      "vector",
+      "contacto animal",
+      "mordeduras",
+      "rabia",
+      "alimentos",
+      "agua",
+      "leptospirosis",
+      "influenza aviar zoonótica",
+      "roedores",
+      "animales domésticos",
+      "riesgo ocupacional",
+      "vigilancia epidemiológica",
+      "vigilancia integrada",
+      "Panamá Una Salud 2025",
+      "Panamá biovigilancia 2026",
+      "prevención",
+      "rol de enfermería",
+      "historia epidemiológica",
+      "investigación de brotes",
+      "PAE comunitario",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_one_health_2026_checked": true,
+    "who_environment_one_health_checked": true,
+    "who_zoonotic_monitoring_2025_checked": true,
+    "minsa_panama_event_surveillance_2025_checked": true,
+    "minsa_panama_biosurveillance_2026_checked": true,
+    "bibliographic_audit_2026_09_10": true,
+    "who_one_health_numeric_claim_rechecked_2026_09_10": true,
+    "panama_one_health_sources_rechecked_2026_09_10": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Salud pública: introducción y generalidades",
+      "authors": "C. M. Ríos González",
+      "publication_year": 2022,
+      "publisher": "Servilibro S.R.L.",
+      "isbn": "978-99925-16-26-3",
+      "notes": "Edición a cargo de Carlos Miguel Ríos González; 1.ª edición, 2022."
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "One Health / Una sola salud",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "A health perspective on the role of the environment in One Health",
+      "organization": "World Health Organization",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Monitoring and evaluation for effective management of zoonotic diseases",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Jornada Epidemiológica Nacional sobre Vigilancia Basada en Eventos y Preparación Comunitaria ante Virus con Potencial Pandémico",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Primera cumbre de biovigilancia fuera de EE. UU. coloca a Panamá en el centro de la seguridad sanitaria regional",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

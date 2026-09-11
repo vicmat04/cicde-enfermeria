@@ -1,0 +1,113 @@
+{
+  "topic_code": "PUBLIC-01",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Interacción entre el Ser Humano y su Entorno",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Ecología, ambiente, ecosistemas y salud, con contaminación, cambio climático, enfermedades respiratorias/vectoriales y rol de enfermería.",
+  "coverage": {
+    "cicde_topic_exact": "Interacción entre el Ser Humano y su Entorno",
+    "subtopics_exact": [
+      "Conceptos de Ecología, Ecología Humana, Ambiente, Ecosistema, Salud y Biosistema",
+      "Cómo las actividades humanas afectan los Ejemplos de deterioro ambiental y sus consecuencias en la salud humana (contaminación del aire, agua, etc.)",
+      "Efectos del cambio climático en la salud seres humanos, los animales y el medio ambiente",
+      "Enfermedades relacionadas con el clima (enfermedades respiratorias, enfermedades transmitidas por vectores)"
+    ],
+    "includes": [
+      "ecología",
+      "ecología humana",
+      "ambiente",
+      "ecosistema",
+      "biosistema",
+      "contaminación del aire",
+      "contaminación del agua",
+      "saneamiento",
+      "cambio climático",
+      "vulnerabilidad",
+      "calor extremo",
+      "incendios",
+      "enfermedades respiratorias",
+      "enfermedades vectoriales",
+      "El Niño 2026-2027",
+      "inundaciones",
+      "sequías",
+      "seguridad alimentaria",
+      "Una Salud",
+      "vigilancia clima-salud",
+      "Panamá",
+      "rol de enfermería",
+      "PAE comunitario",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_climate_health_checked": true,
+    "who_one_health_2026_checked": true,
+    "paho_climate_health_checked": true,
+    "paho_el_nino_2026_2027_checked": true,
+    "panama_miambiente_climate_targets_checked": true,
+    "panama_minsa_climate_vulnerability_source_checked": true,
+    "bibliographic_audit_2026_09_10": true,
+    "panama_climate_sources_rechecked_2026_09_10": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Salud pública: introducción y generalidades",
+      "authors": "C. M. Ríos González",
+      "publication_year": 2022,
+      "publisher": "Servilibro S.R.L.",
+      "isbn": "978-99925-16-26-3",
+      "notes": "Edición a cargo de Carlos Miguel Ríos González; 1.ª edición, 2022."
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Ecología humana: el impacto de la actividad humana en el medio ambiente",
+      "authors": "O. Sala; M. Albaladejo",
+      "publication_year": 2020,
+      "notes": "Referencia listada por CICDE; ficha editorial exacta no corroborada de forma independiente al 2026-09-10."
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Climate change and health",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "One Health / Una sola salud",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Climate Change and Health",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Public Health Situation Analysis: El Niño in the Americas, 2026–2027",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Vulnerabilidad al Cambio Climático en la República de Panamá y su Repercusión en la Salud",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Metas de Cambio Climático 2024–2028 — Salud Pública",
+      "organization": "Ministerio de Ambiente de Panamá"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "topic_code": "PUBLIC-03",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Urbanización y Salud",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Efectos de la urbanización sobre salud pública, contaminación, acceso a servicios, espacios verdes, vivienda, escuelas, comunidad y equidad.",
+  "coverage": {
+    "cicde_topic_exact": "Urbanización y Salud",
+    "subtopics_exact": [
+      "Efectos de la urbanización en la salud pública (contaminación, acceso a servicios, espacios verdes)",
+      "Importancia de educar a las comunidades sobre la relación entre ecología y salud",
+      "Ambientes donde se desarrolla el ser humano (vivienda, escuelas, comunidad)"
+    ],
+    "includes": [
+      "urbanización",
+      "salud urbana",
+      "beneficios y riesgos",
+      "contaminación del aire",
+      "ruido",
+      "transporte",
+      "caminabilidad",
+      "islas de calor",
+      "espacios verdes",
+      "espacios azules",
+      "agua y saneamiento",
+      "residuos",
+      "vivienda",
+      "hacinamiento",
+      "ventilación",
+      "escuelas",
+      "comunidad",
+      "acceso a servicios",
+      "inequidades",
+      "asentamientos informales",
+      "vectores",
+      "tuberculosis",
+      "salud mental",
+      "educación ambiental",
+      "participación comunitaria",
+      "urbanismo saludable",
+      "rol de enfermería",
+      "PAE comunitario",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_urban_health_2025_checked": true,
+    "who_green_spaces_2025_checked": true,
+    "who_housing_health_guidelines_checked": true,
+    "who_urban_health_initiative_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Urban health",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Green spaces: sectoral solutions for air pollution and health",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO Housing and health guidelines",
+      "organization": "World Health Organization",
+      "publication_year": 2018
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Urban Health Initiative",
+      "organization": "World Health Organization"
+    }
+  ]
+}

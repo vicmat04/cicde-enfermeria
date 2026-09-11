@@ -1,0 +1,157 @@
+{
+  "topic_code": "PUBLIC-13",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Diagnóstico integral de salud",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Diagnóstico integral y ASIS: investigación en salud, participación comunitaria, indicadores, recolección de datos, priorización, planeación, implementación y evaluación.",
+  "coverage": {
+    "cicde_topic_exact": "Diagnóstico integral de salud",
+    "subtopics_exact": [
+      "Investigación en salud",
+      "Participación comunitaria",
+      "Construcción de indicadores",
+      "Recolección de datos",
+      "Priorización",
+      "Planeación",
+      "Implementación",
+      "Evaluación"
+    ],
+    "includes": [
+      "diagnóstico integral de salud",
+      "ASIS",
+      "finalidad del diagnóstico",
+      "enfoque integral",
+      "investigación en salud",
+      "pregunta de investigación",
+      "fuentes primarias",
+      "fuentes secundarias",
+      "datos cuantitativos",
+      "datos cualitativos",
+      "métodos mixtos",
+      "población",
+      "muestra",
+      "sesgo",
+      "ética",
+      "recolección de datos",
+      "plan de recolección",
+      "calidad de datos",
+      "triangulación",
+      "participación comunitaria",
+      "activos comunitarios",
+      "construcción de indicadores",
+      "numerador",
+      "denominador",
+      "indicadores demográficos",
+      "indicadores epidemiológicos",
+      "indicadores de servicios",
+      "estructura proceso resultado",
+      "desagregación",
+      "línea basal",
+      "meta",
+      "priorización",
+      "magnitud",
+      "gravedad",
+      "vulnerabilidad",
+      "factibilidad",
+      "priorización participativa",
+      "matriz de priorización",
+      "análisis causal",
+      "planeación",
+      "objetivos",
+      "actividades",
+      "responsables",
+      "recursos",
+      "cronograma",
+      "implementación",
+      "monitoreo",
+      "evaluación de proceso",
+      "evaluación de resultado",
+      "evaluación de impacto",
+      "retroalimentación",
+      "Guía ASIS Panamá",
+      "indicadores MINSA",
+      "REGES 2026",
+      "participación comunitaria Panamá 2026",
+      "rol de enfermería",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "minsa_asis_guide_checked": true,
+    "minsa_asis_repository_checked": true,
+    "minsa_health_indicators_checked": true,
+    "minsa_health_statistics_checked": true,
+    "minsa_reges_digital_transformation_2026_checked": true,
+    "minsa_community_participation_2026_checked": true,
+    "who_unicef_phc_measurement_framework_checked": true,
+    "who_social_participation_checked": true,
+    "paho_health_indicators_asis_checked": true,
+    "final_documentary_audit_2026_09_10": true,
+    "minsa_asis_repository_rechecked_2026_09_10": true,
+    "minsa_reges_project_rechecked_2026_09_10": true,
+    "resolution_112_exact_title_rechecked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Guía para la elaboración del Análisis de Situación de Salud (ASIS)",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Análisis de Situación de Salud (ASIS)",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Indicadores de Salud",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Estadísticas de Salud",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Minsa impulsa la transformación digital de las estadísticas de salud para fortalecer la toma de decisiones",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Resolución No. 112 de 25 de febrero de 2026 - Lineamientos Operacionales para la Participación de los Agentes Comunitarios en la Eliminación de la Malaria en Panamá",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026,
+      "notes": "Publicada en Gaceta Oficial Digital No. 30500-E el 9 de abril de 2026."
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Primary health care measurement framework and indicators: monitoring health systems through a primary health care lens",
+      "organization": "World Health Organization & UNICEF",
+      "publication_year": 2022
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Social participation for universal health coverage: technical paper",
+      "organization": "World Health Organization",
+      "publication_year": 2023
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Indicadores de Salud: elementos básicos para el análisis de situación de salud",
+      "organization": "Pan American Health Organization",
+      "publication_year": 2001
+    }
+  ]
+}

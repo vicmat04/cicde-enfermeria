@@ -1,0 +1,119 @@
+{
+  "topic_code": "PUBLIC-09",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Promoción de la Salud",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Promoción de la salud y educación sanitaria: Carta de Ottawa, equidad, entornos saludables, participación comunitaria, alfabetización en salud y rol de enfermería.",
+  "coverage": {
+    "cicde_topic_exact": "Promoción de la Salud",
+    "subtopics_exact": [
+      "Educación para la salud"
+    ],
+    "includes": [
+      "promoción de la salud",
+      "prevención vs promoción",
+      "educación para la salud",
+      "Carta de Ottawa",
+      "políticas públicas saludables",
+      "entornos favorables",
+      "acción comunitaria",
+      "habilidades personales",
+      "reorientación de servicios",
+      "abogar",
+      "facilitar",
+      "mediar",
+      "equidad",
+      "determinantes sociales",
+      "Carta de Ginebra",
+      "OPS 2019-2030",
+      "entornos saludables",
+      "curso de vida",
+      "valoración educativa",
+      "objetivos educativos",
+      "dominios de aprendizaje",
+      "teach-back",
+      "retorno-demostración",
+      "alfabetización en salud",
+      "comunicación clara",
+      "educación individual",
+      "educación grupal",
+      "educación comunitaria",
+      "cultura",
+      "cambio de conducta",
+      "autocuidado",
+      "educación al alta",
+      "familia y cuidadores",
+      "evaluación del aprendizaje",
+      "Plan MINSA 2016-2025",
+      "Política Nacional 2026-2035",
+      "Cuida tu Corazón 2026",
+      "rol de enfermería",
+      "PAE",
+      "12 casos tipo examen"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_ottawa_checked": true,
+    "who_health_promotion_checked": true,
+    "who_geneva_charter_checked": true,
+    "paho_health_promotion_checked": true,
+    "minsa_promotion_plan_2016_2025_checked": true,
+    "minsa_health_policy_2026_2035_checked": true,
+    "minsa_cuida_tu_corazon_2026_checked": true,
+    "final_documentary_audit_2026_09_10": true,
+    "minsa_promotion_plan_temporal_status_rechecked": true,
+    "minsa_health_policy_current_context_rechecked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "CICDE",
+      "title": "Plan Nacional de Promoción de la Salud 2016-2025",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2017
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Ottawa Charter for Health Promotion",
+      "organization": "World Health Organization",
+      "publication_year": 1986
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Health Promotion",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Geneva Charter for Well-being",
+      "organization": "World Health Organization",
+      "publication_year": 2021
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Health Promotion",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Política Nacional de Salud 2026-2035",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Cuida tu corazón 2026",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

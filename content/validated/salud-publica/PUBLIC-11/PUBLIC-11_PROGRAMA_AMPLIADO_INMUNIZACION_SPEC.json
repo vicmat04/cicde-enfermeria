@@ -1,0 +1,141 @@
+{
+  "topic_code": "PUBLIC-11",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Programa ampliado de inmunización",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Vacunas, inmunidad, tipos de vacunas, cadena de frío, eventos adversos, enfermedades prevenibles y Esquema Nacional de Vacunación de Panamá 2026.",
+  "coverage": {
+    "cicde_topic_exact": "Programa ampliado de inmunización",
+    "subtopics_exact": [
+      "Vacuna e inmunización",
+      "Características de las vacunas",
+      "Tipos de inmunidad",
+      "Tipos de vacunas",
+      "Manejo y conservación",
+      "Efectos adversos atribuibles a la vacunación e inmunización",
+      "Enfermedades con protección específica",
+      "Esquema actual de inmunizaciones de Panamá"
+    ],
+    "includes": [
+      "vacuna",
+      "vacunación",
+      "inmunización",
+      "inmunidad activa",
+      "inmunidad pasiva",
+      "vacunas vivas atenuadas",
+      "vacunas inactivadas",
+      "toxoides",
+      "recombinantes",
+      "conjugadas",
+      "ARNm",
+      "hexavalente",
+      "PAI",
+      "rol de enfermería",
+      "cadena de frío",
+      "2 a 8 grados Celsius",
+      "manejo y conservación",
+      "diluyentes",
+      "reconstitución",
+      "seguridad de administración",
+      "evento adverso posterior a inmunización",
+      "vigilancia de eventos",
+      "enfermedades prevenibles",
+      "esquema Panamá 2026",
+      "recién nacido",
+      "menores de 1 año",
+      "1 a 4 años",
+      "5 a 19 años",
+      "VPH",
+      "embarazo",
+      "Tdap",
+      "VRS",
+      "adultos mayores",
+      "neumococo 20-valente",
+      "población general",
+      "grupos especiales",
+      "esquema de rescate",
+      "registro",
+      "cobertura",
+      "12 casos tipo examen",
+      "hepatitis B neonatal primeras 12 horas",
+      "BCG rescate según historial",
+      "rotavirus límite de edad",
+      "VRS embarazo 30-36 semanas",
+      "VRS alto riesgo desde 28 semanas por indicación médica",
+      "nirsevimab 2026 anticuerpo monoclonal"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "minsa_national_vaccination_schedule_2026_checked": true,
+    "conapi_revision_january_2026_checked": true,
+    "minsa_25_vaccines_march_2026_checked": true,
+    "minsa_vaccine_updates_2026_checked": true,
+    "who_vaccine_safety_checked": true,
+    "who_cold_chain_checked": true,
+    "minsa_schedule_numeric_audit_2026_09_10": true,
+    "minsa_rsv_updates_august_2026_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Esquema Nacional de Vacunación 2026",
+      "organization": "Ministerio de Salud de Panamá - Programa Ampliado de Inmunización",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Panamá tiene su esquema de vacunación garantizado",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Refuerzan actualización en vacunas para prevenir brotes y fortalecer cobertura nacional",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Vacunación protege la salud y fortalece la prevención en la población panameña",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Minsa refuerza vigilancia epidemiológica y exhorta a completar la vacunación para prevenir la tos ferina",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Vaccines and immunization: Vaccine safety",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Controlled temperature chain",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Vaccine management guidance",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Minsa inicia aplicación de anticuerpo monoclonal para fortalecer la protección de recién nacidos frente al VRS",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    }
+  ]
+}

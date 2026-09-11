@@ -1,0 +1,119 @@
+{
+  "topic_code": "PUBLIC-05",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Políticas de Salud Pública globales",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Marcos globales de salud pública: derecho a la salud, ODS, cobertura universal, APS, Salud en Todas las Políticas, RSI y Acuerdo de la OMS sobre Pandemias.",
+  "coverage": {
+    "cicde_topic_exact": "Políticas de Salud Pública globales",
+    "includes": [
+      "políticas de salud pública",
+      "gobernanza global",
+      "OMS",
+      "Asamblea Mundial de la Salud",
+      "derecho a la salud",
+      "ODS",
+      "ODS 3",
+      "cobertura sanitaria universal",
+      "protección financiera",
+      "APS",
+      "Alma-Ata",
+      "Astaná",
+      "Salud en Todas las Políticas",
+      "equidad",
+      "Reglamento Sanitario Internacional",
+      "enmiendas RSI 2024",
+      "vigencia RSI 2025",
+      "Acuerdo OMS sobre Pandemias 2025",
+      "adopción vs ratificación",
+      "seguridad sanitaria",
+      "vigilancia",
+      "vacunación",
+      "resistencia antimicrobiana",
+      "enfermedades no transmisibles",
+      "salud mental",
+      "cambio climático",
+      "política basada en evidencia",
+      "evaluación",
+      "Panamá",
+      "rol de enfermería",
+      "12 casos tipo examen",
+      "RSI 11 Estados Partes rechazaron enmiendas 2024",
+      "PABS en negociación 2026",
+      "WHA79 extensión negociaciones PABS",
+      "estado del Acuerdo sobre Pandemias al 10 septiembre 2026"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "who_uhc_2025_checked": true,
+    "who_ihr_2025_checked": true,
+    "who_pandemic_agreement_2025_checked": true,
+    "who_primary_health_care_checked": true,
+    "un_sdg3_checked": true,
+    "paho_health_in_all_policies_checked": true,
+    "ihr_2024_amendments_scope_rechecked_2026_09_10": true,
+    "pandemic_agreement_pabs_status_rechecked_2026_09_10": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Universal health coverage (UHC)",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "International Health Regulations",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Amended International Health Regulations enter into force",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO Pandemic Agreement",
+      "organization": "World Health Organization",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Primary health care",
+      "organization": "World Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Sustainable Development Goal 3",
+      "organization": "United Nations"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Health in All Policies",
+      "organization": "Pan American Health Organization"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "WHO Member States continue negotiations on the Pathogen Access and Benefit Sharing Annex",
+      "organization": "World Health Organization",
+      "publication_year": 2026
+    }
+  ]
+}

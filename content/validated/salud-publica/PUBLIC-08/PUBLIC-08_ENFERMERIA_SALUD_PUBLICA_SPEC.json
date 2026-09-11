@@ -1,0 +1,193 @@
+{
+  "topic_code": "PUBLIC-08",
+  "area_code": "PUBLIC_HEALTH",
+  "title": "Enfermería en Salud Pública",
+  "status": "REVIEW",
+  "version": 1,
+  "is_current": true,
+  "summary": "Fundamentos de enfermería en salud pública, indicadores, tríada y cadena epidemiológica, sistema de salud panameño, política 2026–2035, programas, rol de enfermería y visita domiciliaria.",
+  "coverage": {
+    "cicde_topic_exact": "Enfermería en Salud Pública",
+    "subtopics_exact": [
+      "Concepto de Salud, Salud Pública, Enfermería en Salud Pública",
+      "Indicadores de salud",
+      "Proceso salud-enfermedad: tríada ecológica, cadena epidemiológica",
+      "Estructura Organizativa y Administrativa del Sistema de Salud en Panamá",
+      "Organización",
+      "Políticas de Salud 2026-2035",
+      "Programas de Salud",
+      "Rol de la Enfermera en los programas",
+      "Visita Domiciliaria"
+    ],
+    "includes": [
+      "salud",
+      "salud pública",
+      "enfermería en salud pública",
+      "indicadores de salud",
+      "incidencia",
+      "prevalencia",
+      "mortalidad",
+      "mortalidad infantil",
+      "mortalidad materna",
+      "letalidad",
+      "morbilidad",
+      "cobertura",
+      "calidad de datos",
+      "epidemiología",
+      "tríada epidemiológica",
+      "agente",
+      "huésped",
+      "ambiente",
+      "cadena epidemiológica",
+      "reservorio",
+      "puerta de salida",
+      "modo de transmisión",
+      "puerta de entrada",
+      "huésped susceptible",
+      "romper la cadena",
+      "sistema de salud de Panamá",
+      "MINSA",
+      "CSS",
+      "rectoría",
+      "integración MINSA-CSS 2026",
+      "niveles de atención",
+      "referencia y contrarreferencia",
+      "Política Nacional de Salud 2026-2035",
+      "programas MINSA",
+      "PAI",
+      "tuberculosis",
+      "niñez",
+      "embarazo",
+      "adulto y adulto mayor",
+      "VIH",
+      "rol de enfermería",
+      "vigilancia epidemiológica",
+      "promoción",
+      "visita domiciliaria",
+      "interdisciplinariedad",
+      "PAE comunitario",
+      "12 casos tipo examen",
+      "Decreto de Gabinete No. 1 de 1969",
+      "Decreto Ejecutivo No. 17 de 2026",
+      "Gaceta Oficial 30491-C",
+      "Ley Orgánica CSS texto único vigente 2025",
+      "Decreto Ejecutivo No. 26 de 2025",
+      "integración funcional gradual MINSA-CSS",
+      "programas MINSA directorio vigente"
+    ]
+  },
+  "validation": {
+    "scope_checked_against_cicde_2026": true,
+    "master_spec_checked": true,
+    "cdc_epidemiology_indicators_checked": true,
+    "cdc_epidemiologic_triad_checked": true,
+    "cdc_chain_of_infection_checked": true,
+    "minsa_health_indicators_checked": true,
+    "minsa_health_policy_decree_17_2026_checked": true,
+    "minsa_health_policy_publication_2026_checked": true,
+    "minsa_programs_checked": true,
+    "minsa_service_levels_checked": true,
+    "minsa_nursing_role_checked": true,
+    "minsa_css_integration_january_2026_checked": true,
+    "minsa_css_integration_august_2026_checked": true,
+    "minsa_home_visit_2026_checked": true,
+    "minsa_home_visit_guidance_catalog_checked": true,
+    "minsa_legal_organization_audit_2026_09_10": true,
+    "css_organic_law_current_text_checked": true,
+    "minsa_decree_26_integration_checked": true,
+    "minsa_program_directory_current_checked": true
+  },
+  "sources": [
+    {
+      "source_type": "CICDE",
+      "title": "Lineamientos para el Examen de Competencias de Profesionales de Enfermería",
+      "organization": "IV CICDE",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Principles of Epidemiology in Public Health Practice",
+      "organization": "Centers for Disease Control and Prevention"
+    },
+    {
+      "source_type": "COMPLEMENTARY",
+      "title": "Chain of Infection Components",
+      "organization": "Centers for Disease Control and Prevention"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Decreto Ejecutivo No. 17 de 23 de marzo de 2026 - Política Nacional de Salud 2026-2035",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Política Nacional de Salud, sus objetivos estratégicos y líneas de acción para el periodo 2026-2035",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Indicadores de Salud",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Programas",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Cartera de servicio por nivel de atención",
+      "organization": "Ministerio de Salud de Panamá"
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Enfermería: Pilar fundamental en la salud pública",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Instalan Comisión para la Integración de los servicios de salud entre Minsa-CSS",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Integración del sistema público de salud avanza en Chiriquí y Bocas del Toro",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Equipo de Salud de Pueblo Nuevo fortalece la atención integral con visitas domiciliarias",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2026
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Orientaciones técnicas sobre la visita domiciliaria",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2011
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Decreto de Gabinete No. 1 de 15 de enero de 1969 - creación, estructura y funciones del Ministerio de Salud",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 1969
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Texto Único de la Ley 51 de 2005, Orgánica de la Caja de Seguro Social, con reformas vigentes incluida la Ley 462 de 2025",
+      "organization": "Caja de Seguro Social",
+      "publication_year": 2025
+    },
+    {
+      "source_type": "PANAMA_OFFICIAL",
+      "title": "Decreto Ejecutivo No. 26 de 26 de noviembre de 2025 - crea la Comisión de Integración de los Servicios Públicos de Salud",
+      "organization": "Ministerio de Salud de Panamá",
+      "publication_year": 2025
+    }
+  ]
+}
