@@ -4,6 +4,11 @@ export function ContentStatusBadge({ status }: { status: string }) {
   let label = status;
 
   switch (status) {
+    case "SOURCE_VALIDATED":
+      bgColor = "bg-blue-100";
+      textColor = "text-blue-800";
+      label = "Validado con fuentes";
+      break;
     case "REVIEW":
       bgColor = "bg-yellow-100";
       textColor = "text-yellow-800";
