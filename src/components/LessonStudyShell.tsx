@@ -322,25 +322,27 @@ function ReadingProgress({
     totalUnits === 0 ? 0 : Math.round((visitedCount / totalUnits) * 100);
 
   return (
-    <div className="lesson-reading-progress sticky top-16 z-20 -mx-5 mb-5 border-y border-[#d9e4e1] bg-[#fffefd] px-5 py-2.5 shadow-sm sm:-mx-8 sm:px-8">
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1 text-sm text-[#526966]">
-          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <span className="font-bold text-[#173a37]">Avance de lectura</span>
-            <span>
-              {visitedCount} / {totalUnits} · {readingProgress}%
+    <div className="lesson-reading-progress sticky top-16 z-20 border-b border-[#d9e4e1] bg-[#fffefd] px-4 py-4 sm:px-8 sm:py-5">
+      <div className="rounded-2xl border border-[#cce8df] bg-[#f4f9fc] p-4 shadow-sm sm:px-6 sm:py-5">
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 text-sm text-[#526966]">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="font-bold text-[#173a37]">Avance de lectura</span>
+              <span className="font-medium">
+                {visitedCount} / {totalUnits} revisadas · {readingProgress}%
+              </span>
+            </div>
+            <span className="shrink-0 font-medium">
+              Capítulo {activeIndex + 1} de {chapterCount}
             </span>
           </div>
-          <span className="shrink-0 font-medium">
-            Capítulo {activeIndex + 1} de {chapterCount}
-          </span>
+          <progress
+            className="lesson-progress-bar h-1.5 w-full rounded-full"
+            aria-label={`Avance de lectura: ${visitedCount} de ${totalUnits} unidades revisadas, ${readingProgress} por ciento`}
+            max={totalUnits}
+            value={visitedCount}
+          />
         </div>
-        <progress
-          className="lesson-progress-bar h-1.5 w-full"
-          aria-label={`Avance de lectura: ${visitedCount} de ${totalUnits} unidades revisadas, ${readingProgress} por ciento`}
-          max={totalUnits}
-          value={visitedCount}
-        />
       </div>
     </div>
   );
