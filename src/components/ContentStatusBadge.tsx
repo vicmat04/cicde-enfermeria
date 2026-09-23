@@ -7,6 +7,10 @@ const states: Record<string, { label: string; className: string }> = {
     label: "En revisión",
     className: "bg-[#fff4d8] text-[#805c1d]",
   },
+  SOURCE_VALIDATED: {
+    label: "Validado con fuentes",
+    className: "bg-[#e3f3e9] text-[#17653f]",
+  },
   VERIFIED: {
     label: "Verificado",
     className: "bg-[#e3f3e9] text-[#17653f]",
