@@ -1,12 +1,14 @@
 import { AppHeader } from "@/components/AppHeader";
 import { AreaCard } from "@/components/AreaCard";
 import { createClient } from "@/lib/supabase/server";
+import { getUserProfile } from "@/lib/supabase/profiles";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  const profile = await getUserProfile();
   const [{ data: areas }, { data: activeTopics }] = await Promise.all([
     supabase
       .from("areas")
@@ -26,7 +28,7 @@ export default async function DashboardPage() {
 
   return (
     <div className="page-wash min-h-screen">
-      <AppHeader user={user} />
+      <AppHeader user={user} profile={profile} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <section
           className="paper-shadow relative overflow-hidden rounded-3xl border border-[#c9ddd7] bg-[#f9fdfb] px-6 py-10 sm:px-10 sm:py-14"

@@ -327,7 +327,9 @@ function ReadingProgress({
         <div className="flex flex-col gap-3">
           <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2 text-sm text-[#526966]">
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="font-bold text-[#173a37]">Avance de lectura</span>
+              <span className="font-bold text-[#173a37]">
+                Avance de lectura
+              </span>
               <span className="font-medium">
                 {visitedCount} / {totalUnits} revisadas · {readingProgress}%
               </span>

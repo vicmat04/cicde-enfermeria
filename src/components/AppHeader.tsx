@@ -2,12 +2,14 @@ import { User } from "@supabase/supabase-js";
 import Link from "next/link";
 import { logout } from "@/app/dashboard/actions";
 import { StudyIcon } from "./StudyIcon";
+import type { UserProfile } from "@/lib/supabase/profiles";
 
 interface AppHeaderProps {
   user: User | null;
+  profile: UserProfile | null;
 }
 
-export function AppHeader({ user }: AppHeaderProps) {
+export function AppHeader({ user, profile }: AppHeaderProps) {
   return (
     <header className="sticky top-0 z-30 border-b border-[#d9e4e1]/90 bg-[#fffefd]/92 backdrop-blur-md">
       <nav
@@ -35,13 +37,18 @@ export function AppHeader({ user }: AppHeaderProps) {
           >
             Áreas de estudio
           </Link>
-          {user && (
-            <span
-              className="hidden max-w-48 truncate text-sm text-[#617170] lg:block"
-              title={user.email ?? undefined}
-            >
-              {user.email}
-            </span>
+          {user && profile && (
+            <div className="hidden flex-col items-end gap-0.5 lg:flex">
+              <span
+                className="max-w-48 truncate text-sm font-semibold text-[#173a37]"
+                title={profile.full_name ?? user.email ?? undefined}
+              >
+                {profile.full_name || "Usuario"}
+              </span>
+              <span className="text-xs font-medium text-[#617170]">
+                {profile.role === "ADMIN" ? "Administrador" : "Estudiante"}
+              </span>
+            </div>
           )}
           <form action={logout}>
             <button

@@ -5,6 +5,7 @@ import { EmptyLessonState } from "@/components/EmptyLessonState";
 import { LessonView } from "@/components/LessonView";
 import type { Lesson, LessonSource } from "@/components/lessonStructure";
 import { createClient } from "@/lib/supabase/server";
+import { getUserProfile } from "@/lib/supabase/profiles";
 
 interface TopicPageProps {
   params: Promise<{ code: string }>;
@@ -26,6 +27,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  const profile = await getUserProfile();
   const { data: topic } = await supabase
     .from("topics")
     .select(`
@@ -108,7 +110,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
   return (
     <div className="page-wash min-h-screen">
-      <AppHeader user={user} />
+      <AppHeader user={user} profile={profile} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <Breadcrumbs items={breadcrumbs} />
         {renderedLesson ? (

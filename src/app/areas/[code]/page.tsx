@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { StudyIcon } from "@/components/StudyIcon";
 import { TopicList } from "@/components/TopicList";
 import { createClient } from "@/lib/supabase/server";
+import { getUserProfile } from "@/lib/supabase/profiles";
 
 interface AreaPageProps {
   params: Promise<{ code: string }>;
@@ -27,6 +28,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  const profile = await getUserProfile();
   const { data: area } = await supabase
     .from("areas")
     .select("id, code, name, description")
@@ -62,7 +64,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
 
   return (
     <div className="page-wash min-h-screen">
-      <AppHeader user={user} />
+      <AppHeader user={user} profile={profile} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <Breadcrumbs items={breadcrumbs} />
         <section
