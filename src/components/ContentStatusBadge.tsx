@@ -1,34 +1,35 @@
-export function ContentStatusBadge({ status }: { status: string }) {
-  let bgColor = "bg-gray-100";
-  let textColor = "text-gray-800";
-  let label = status;
+interface ContentStatusBadgeProps {
+  status: string | null | undefined;
+}
 
-  switch (status) {
-    case "SOURCE_VALIDATED":
-      bgColor = "bg-blue-100";
-      textColor = "text-blue-800";
-      label = "Validado con fuentes";
-      break;
-    case "REVIEW":
-      bgColor = "bg-yellow-100";
-      textColor = "text-yellow-800";
-      label = "EN REVISIÓN";
-      break;
-    case "VERIFIED":
-      bgColor = "bg-green-100";
-      textColor = "text-green-800";
-      label = "VERIFICADO";
-      break;
-    case "DRAFT":
-      bgColor = "bg-gray-100";
-      textColor = "text-gray-800";
-      label = "BORRADOR";
-      break;
-  }
+const states: Record<string, { label: string; className: string }> = {
+  REVIEW: {
+    label: "En revisión",
+    className: "bg-[#fff4d8] text-[#805c1d]",
+  },
+  SOURCE_VALIDATED: {
+    label: "Validado con fuentes",
+    className: "bg-[#e3f3e9] text-[#17653f]",
+  },
+  VERIFIED: {
+    label: "Verificado",
+    className: "bg-[#e3f3e9] text-[#17653f]",
+  },
+  DRAFT: {
+    label: "Borrador",
+    className: "bg-[#edf1f0] text-[#526966]",
+  },
+};
+
+export function ContentStatusBadge({ status }: ContentStatusBadgeProps) {
+  const state = status ? states[status] : undefined;
+  const label = state?.label ?? "En preparación";
+  const className = state?.className ?? "bg-[#edf1f0] text-[#526966]";
 
   return (
     <span
-      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${bgColor} ${textColor}`}
+      className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-bold ${className}`}
+      aria-label={`Estado del contenido: ${label}`}
     >
       {label}
     </span>
