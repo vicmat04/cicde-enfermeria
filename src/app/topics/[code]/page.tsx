@@ -3,9 +3,12 @@ import { AppHeader } from "@/components/AppHeader";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EmptyLessonState } from "@/components/EmptyLessonState";
 import { LessonView } from "@/components/LessonView";
+import { LessonCompletionButton } from "@/components/progress/LessonCompletionButton";
 import type { Lesson, LessonSource } from "@/components/lessonStructure";
 import { createClient } from "@/lib/supabase/server";
 import { getUserProfile } from "@/lib/supabase/profiles";
+import { getLessonProgress } from "@/lib/progress/queries";
+import { startLessonAction } from "./actions";
 
 interface TopicPageProps {
   params: Promise<{ code: string }>;
@@ -108,21 +111,40 @@ export default async function TopicPage({ params }: TopicPageProps) {
   // SAFETY: The query selects every LessonView field and normalizes its source relation to one object.
   const renderedLesson = lesson as unknown as Lesson | null;
 
+  // Get progress for this lesson (if it exists)
+  let lessonProgress = null;
+  if (renderedLesson) {
+    lessonProgress = await getLessonProgress(renderedLesson.id);
+    
+    // Mark lesson as started (idempotent)
+    if (user) {
+      await startLessonAction(renderedLesson.id);
+    }
+  }
+
   return (
     <div className="page-wash min-h-screen">
       <AppHeader user={user} profile={profile} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
         <Breadcrumbs items={breadcrumbs} />
         {renderedLesson ? (
-          <section aria-label="Contenido de la lección">
-            <LessonView
-              lesson={renderedLesson}
-              areaName={area.name}
-              topicCode={topic.code}
-              topicTitle={topic.title}
-              topicDescription={topic.description}
-            />
-          </section>
+          <>
+            <section aria-label="Contenido de la lección">
+              <LessonView
+                lesson={renderedLesson}
+                areaName={area.name}
+                topicCode={topic.code}
+                topicTitle={topic.title}
+                topicDescription={topic.description}
+              />
+            </section>
+            <section className="mx-auto mt-8 max-w-4xl" aria-label="Control de progreso">
+              <LessonCompletionButton
+                lessonId={renderedLesson.id}
+                isCompleted={lessonProgress?.completed ?? false}
+              />
+            </section>
+          </>
         ) : (
           <section aria-label="Contenido de la lección">
             <header className="mb-8 max-w-4xl" aria-labelledby="topic-title">

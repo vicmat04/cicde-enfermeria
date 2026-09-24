@@ -1,7 +1,9 @@
 import { AppHeader } from "@/components/AppHeader";
 import { AreaCard } from "@/components/AreaCard";
+import { GlobalProgressCard } from "@/components/progress/GlobalProgressCard";
 import { createClient } from "@/lib/supabase/server";
 import { getUserProfile } from "@/lib/supabase/profiles";
+import { getGlobalProgress } from "@/lib/progress/queries";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -9,14 +11,17 @@ export default async function DashboardPage() {
     data: { user },
   } = await supabase.auth.getUser();
   const profile = await getUserProfile();
-  const [{ data: areas }, { data: activeTopics }] = await Promise.all([
+  
+  const [{ data: areas }, { data: activeTopics }, globalProgress] = await Promise.all([
     supabase
       .from("areas")
       .select("id, code, name, description")
       .eq("is_active", true)
       .order("sort_order", { ascending: true }),
     supabase.from("topics").select("area_id").eq("is_active", true),
+    getGlobalProgress(),
   ]);
+  
   const topicCounts = (activeTopics || []).reduce<Record<string, number>>(
     (counts, topic) => {
       counts[topic.area_id] = (counts[topic.area_id] || 0) + 1;
@@ -64,19 +69,14 @@ export default async function DashboardPage() {
               Material disponible
             </p>
             <p className="mt-2 text-2xl font-bold text-[#173a37]">
-              {totalTopics}{" "}
-              {totalTopics === 1 ? "tema activo" : "temas activos"}
+              {globalProgress.totalLessons}{" "}
+              {globalProgress.totalLessons === 1 ? "lección" : "lecciones"}
+            </p>
+            <p className="mt-1 text-xs text-[#617170]">
+              {totalTopics} {totalTopics === 1 ? "tema" : "temas"}
             </p>
           </div>
-          <div className="rounded-2xl border border-[#d9e4e1] bg-[#fffefd] p-5">
-            <p className="text-sm font-semibold text-[#617170]">
-              Tu preparación
-            </p>
-            <p className="mt-2 text-base leading-6 text-[#173a37]">
-              Elige un área para comenzar. El progreso se construye lección a
-              lección.
-            </p>
-          </div>
+          <GlobalProgressCard progress={globalProgress.completedLessons > 0 ? globalProgress : null} />
         </section>
 
         <section className="mt-12" aria-labelledby="areas-title">
