@@ -96,9 +96,14 @@ function isEmptyBody(section: LessonStructureSection) {
 }
 
 /**
- * Groups authored sections without interpreting or changing their content.
- * Empty-body sections express the primary hierarchy. Numbered titles are used
- * only when no later authored divider exists.
+ * Improved navigation derivation that exposes meaningful structure
+ * across diverse lesson formats.
+ * 
+ * Strategy:
+ * 1. Authored dividers (empty body sections) create primary chapters
+ * 2. When no dividers exist, numbered sections become navigation items
+ * 3. When neither exists, expose all titled sections as navigation
+ * 4. Filter out non-navigational metadata sections
  */
 export function buildLessonChapters(
   sections: LessonStructureSection[],
@@ -116,27 +121,90 @@ export function buildLessonChapters(
     return [];
   }
 
-  const hasAuthoredDividers = sortedSections
+  // Filter out metadata-only sections from navigation
+  const navigableSections = sortedSections.filter(section => {
+    const title = section.title.toLowerCase();
+    // Keep most sections, filter only clear metadata
+    if (title.includes('estado académico del paquete')) return false;
+    return true;
+  });
+
+  if (!navigableSections.length) {
+    return [];
+  }
+
+  // Check for authored dividers (empty body sections)
+  const hasAuthoredDividers = navigableSections
     .slice(1)
     .some((section) => isEmptyBody(section));
-  const isBoundary = (section: LessonStructureSection, index: number) =>
-    index === 0 ||
-    (hasAuthoredDividers
-      ? isEmptyBody(section)
-      : numberedTitle.test(section.title));
 
+  if (hasAuthoredDividers) {
+    // Use authored dividers as primary boundaries
+    return buildChaptersFromDividers(navigableSections);
+  }
+
+  // Check for numbered sections ("1. Title", "2. Title")
+  const numberedSections = navigableSections.filter((s, i) => 
+    i > 0 && numberedTitle.test(s.title)
+  );
+
+  if (numberedSections.length >= 3) {
+    // Sufficient numbered structure exists
+    return buildChaptersFromNumbered(navigableSections);
+  }
+
+  // Fallback: expose titled sections directly as chapters
+  // Limit to avoid overwhelming sidebar (max 20 top-level items)
+  return buildChaptersFromTitles(navigableSections, 20);
+}
+
+function buildChaptersFromDividers(
+  sections: LessonStructureSection[],
+): LessonChapter[] {
   const chapters: LessonChapter[] = [];
   let chapter: LessonChapter | undefined;
 
-  sortedSections.forEach((section, index) => {
-    if (isBoundary(section, index)) {
+  sections.forEach((section, index) => {
+    if (index === 0 || isEmptyBody(section)) {
       chapter = { id: section.id, root: section, sections: [] };
       chapters.push(chapter);
       return;
     }
-
     chapter?.sections.push(section);
   });
 
   return chapters;
+}
+
+function buildChaptersFromNumbered(
+  sections: LessonStructureSection[],
+): LessonChapter[] {
+  const chapters: LessonChapter[] = [];
+  let chapter: LessonChapter | undefined;
+
+  sections.forEach((section, index) => {
+    if (index === 0 || numberedTitle.test(section.title)) {
+      chapter = { id: section.id, root: section, sections: [] };
+      chapters.push(chapter);
+      return;
+    }
+    chapter?.sections.push(section);
+  });
+
+  return chapters;
+}
+
+function buildChaptersFromTitles(
+  sections: LessonStructureSection[],
+  maxItems: number,
+): LessonChapter[] {
+  // For lessons without clear structure, expose all titled sections
+  // but limit to avoid overwhelming sidebar
+  const toExpose = sections.slice(0, maxItems);
+  
+  return toExpose.map(section => ({
+    id: section.id,
+    root: section,
+    sections: [],
+  }));
 }

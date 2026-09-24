@@ -75,8 +75,22 @@ function isBlockquote(row: string) {
   return /^\s*>\s?/.test(row);
 }
 
+/**
+ * Filter internal integration metadata from lesson content.
+ * Removes: "Estado académico del paquete: REVIEW" lines (integration workflow metadata)
+ * Preserves: All academic content and student-facing information
+ */
+function filterInternalMetadata(markdown: string): string {
+  return markdown
+    // Remove "Estado académico del paquete" lines (integration metadata, not academic content)
+    .replace(/^\*\*Estado académico del paquete:\*\*\s+`[^`]+`\s*$/gm, '')
+    // Remove duplicate blank lines created by filtering
+    .replace(/\n{3,}/g, '\n\n');
+}
+
 export function LessonBody({ body }: { body: string }) {
-  const lines = body.replace(/\r\n/g, "\n").split("\n");
+  const filteredBody = filterInternalMetadata(body);
+  const lines = filteredBody.replace(/\r\n/g, "\n").split("\n");
   const blocks: ReactNode[] = [];
   let line = 0;
 
