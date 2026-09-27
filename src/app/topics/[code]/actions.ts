@@ -10,7 +10,8 @@ import { revalidatePath } from "next/cache";
 import { 
   markLessonStarted, 
   markLessonCompleted, 
-  unmarkLessonCompleted 
+  unmarkLessonCompleted,
+  updateLastSection 
 } from "@/lib/progress/mutations";
 import { createClient } from "@/lib/supabase/server";
 
@@ -51,6 +52,24 @@ export async function toggleCompletionAction(lessonId: string, currentlyComplete
 
   revalidatePath('/dashboard');
   revalidatePath(`/topics/${lessonId}`);
+
+  return { success: true, data };
+}
+
+/**
+ * Update last visited section for resume functionality
+ */
+export async function updateLastSectionAction(
+  lessonId: string,
+  sectionId: string | null
+) {
+  const { data, error } = await updateLastSection(lessonId, sectionId);
+
+  if (error) {
+    return { error: error.message };
+  }
+
+  revalidatePath('/dashboard');
 
   return { success: true, data };
 }

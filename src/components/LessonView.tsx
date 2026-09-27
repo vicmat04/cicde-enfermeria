@@ -7,6 +7,7 @@ interface LessonViewProps {
     topicCode: string;
     topicTitle: string;
     topicDescription: string | null;
+    initialSectionId?: string | null;
 }
 
 /** Keeps lesson grouping on the server; the interactive reader receives data only. */
@@ -16,12 +17,14 @@ export function LessonView({
     topicCode,
     topicTitle,
     topicDescription,
+    initialSectionId,
 }: LessonViewProps) {
     const sections = lesson.lesson_sections || [];
     const chapters = buildLessonChapters(sections);
 
     return (
         <LessonStudyShell
+            lessonId={lesson.id}
             areaName={areaName}
             topicCode={topicCode}
             topicTitle={topicTitle}
@@ -34,6 +37,7 @@ export function LessonView({
             }}
             chapters={chapters}
             sectionCount={sections.length}
+            initialSectionId={initialSectionId}
         />
     );
 }

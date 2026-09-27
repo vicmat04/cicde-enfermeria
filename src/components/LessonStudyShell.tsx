@@ -8,6 +8,7 @@ import {
   type RefObject,
   type SetStateAction,
 } from "react";
+import { updateLastSectionAction } from "@/app/topics/[code]/actions";
 import { ContentStatusBadge } from "./ContentStatusBadge";
 import { LessonBody } from "./LessonBody";
 import { LessonSection, lessonSectionAnchor } from "./LessonSection";
@@ -21,10 +22,12 @@ import {
   type LessonStructureSection,
   type SourceWrapper,
 } from "./lessonStructure";
+import { normalizeNavigationLabel } from "@/lib/normalizeLabel";
 
 type ReaderMode = "study" | "full";
 
 interface LessonStudyShellProps {
+  lessonId: string;
   areaName: string;
   topicCode: string;
   topicTitle: string;
@@ -32,6 +35,7 @@ interface LessonStudyShellProps {
   lesson: LessonShellData;
   chapters: LessonChapter[];
   sectionCount: number;
+  initialSectionId?: string | null;
 }
 
 const studySectionVariants = {
@@ -182,7 +186,7 @@ function ChapterIndex({
                 <span className="sr-only">
                   {indexChapterDescription(active, wasVisited)}
                 </span>
-                {chapter.root.title}
+                {normalizeNavigationLabel(chapter.root.title)}
               </span>
             </button>
           </li>
@@ -936,16 +940,18 @@ function createReaderNavigationActions({
 function useReaderNavigation(
   chapters: LessonChapter[],
   refs: ReaderNavigationRefs,
+  startingIndex: number,
 ) {
   const [mode, setMode] = useState<ReaderMode>("study");
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(startingIndex);
   const [visited, setVisited] = useState(() => new Set<string>());
-  const [openSections, setOpenSections] = useState(() =>
-    chapters[0] ? studyOpenSections(chapters[0]) : new Set<string>(),
-  );
+  const [openSections, setOpenSections] = useState(() => {
+    const chapter = chapters[startingIndex] || chapters[0];
+    return chapter ? studyOpenSections(chapter) : new Set<string>();
+  });
   const [visitedUnits, setVisitedUnits] = useState(() => {
     const initial = new Set<string>();
-    const chapter = chapters[0];
+    const chapter = chapters[startingIndex] || chapters[0];
     if (chapter) {
       const opened = studyOpenSections(chapter);
       if (chapter.sections.length === 0) {
@@ -995,6 +1001,7 @@ function useReaderNavigation(
 }
 
 export function LessonStudyShell({
+  lessonId,
   areaName,
   topicCode,
   topicTitle,
@@ -1002,16 +1009,75 @@ export function LessonStudyShell({
   lesson,
   chapters,
   sectionCount,
+  initialSectionId,
 }: LessonStudyShellProps) {
+  // Resume: find chapter containing initialSectionId if provided
+  const resumeChapterIndex = initialSectionId
+    ? chapters.findIndex(
+        (chapter) =>
+          chapter.root.id === initialSectionId ||
+          chapter.sections.some((s) => s.id === initialSectionId)
+      )
+    : -1;
+  
+  const startingChapterIndex = resumeChapterIndex >= 0 ? resumeChapterIndex : 0;
   const readerStart = useRef<HTMLElement>(null);
   const mobileIndex = useRef<HTMLElement>(null);
   const desktopIndex = useRef<HTMLElement>(null);
-  const reader = useReaderNavigation(chapters, {
-    readerStart,
-    mobileIndex,
-    desktopIndex,
-  });
+  const reader = useReaderNavigation(
+    chapters, 
+    {
+      readerStart,
+      mobileIndex,
+      desktopIndex,
+    },
+    startingChapterIndex
+  );
   const sourcePlacementIndex = sourcePlacementChapterIndex(chapters);
+
+  // Persist active section for resume (debounced to avoid excessive writes)
+  useEffect(() => {
+    if (!reader.activeChapter) return;
+    
+    // Determine which section to save:
+    // - If chapter has subsections and some are open, save first open subsection
+    // - Otherwise save chapter root
+    let sectionToSave = reader.activeChapter.root.id;
+    
+    if (reader.activeChapter.sections.length > 0 && reader.openSections.size > 0) {
+      const firstOpenSubsection = reader.activeChapter.sections.find(
+        (s) => reader.openSections.has(s.id)
+      );
+      if (firstOpenSubsection) {
+        sectionToSave = firstOpenSubsection.id;
+      }
+    }
+    
+    // Debounce: save after user settles on a section
+    const timeoutId = setTimeout(() => {
+      updateLastSectionAction(lessonId, sectionToSave).catch((err) => {
+        console.error('Failed to save section progress:', err);
+      });
+    }, 1500); // 1.5s debounce
+    
+    return () => clearTimeout(timeoutId);
+  }, [lessonId, reader.activeChapter, reader.openSections]);
+
+  // Resume: scroll to initial section after mount
+  useEffect(() => {
+    if (!initialSectionId) return;
+    
+    // Wait for DOM to be ready
+    const timeoutId = setTimeout(() => {
+      const targetElement = findSectionElement(initialSectionId);
+      if (targetElement) {
+        scrollTo(targetElement);
+      }
+    }, 100);
+    
+    return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only on mount - initialSectionId is stable from server
 
   if (!reader.activeChapter) return null;
 

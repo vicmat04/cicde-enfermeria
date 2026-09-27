@@ -5,12 +5,15 @@ import { StudyIcon } from "@/components/StudyIcon";
 import { TopicList } from "@/components/TopicList";
 import { createClient } from "@/lib/supabase/server";
 import { getUserProfile } from "@/lib/supabase/profiles";
+import { getAllUserProgress } from "@/lib/progress/queries";
+import type { LessonState } from "@/components/LessonStateBadge";
 
 interface AreaPageProps {
   params: Promise<{ code: string }>;
 }
 
 interface LessonSummary {
+  id: string;
   status: string;
   is_current: boolean;
 }
@@ -42,15 +45,29 @@ export default async function AreaPage({ params }: AreaPageProps) {
 
   const { data: topicRows } = await supabase
     .from("topics")
-    .select("id, code, title, description, lessons(status, is_current)")
+    .select("id, code, title, description, lessons(id, status, is_current)")
     .eq("area_id", area.id)
     .eq("is_active", true)
     .order("sort_order", { ascending: true });
+  
+  // Get all user progress
+  const allProgress = await getAllUserProgress();
+  const progressMap = new Map(allProgress.map(p => [p.lesson_id, p]));
+  
   const topics = (topicRows || []).map((topic) => {
     const lessons = normalizeLessons(topic.lessons);
     const currentLesson = lessons.find(
-      (lesson: { is_current: boolean }) => lesson.is_current,
+      (lesson: { is_current: boolean; id?: string }) => lesson.is_current,
     );
+    
+    // Determine lesson state
+    let lessonState: LessonState = "NOT_STARTED";
+    if (currentLesson?.id) {
+      const progress = progressMap.get(currentLesson.id);
+      if (progress) {
+        lessonState = progress.completed ? "COMPLETED" : "IN_PROGRESS";
+      }
+    }
 
     return {
       id: topic.id,
@@ -58,6 +75,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
       title: topic.title,
       description: topic.description,
       lessonStatus: currentLesson?.status || null,
+      lessonState,
     };
   });
   const breadcrumbs = [{ name: area.name }];
