@@ -74,7 +74,7 @@ END $$;
 
 INSERT INTO topics (area_id, code, title, description, sort_order)
 VALUES (
-  '343aead7-4fda-4225-a0cc-e17354094470',
+  (SELECT id FROM areas WHERE code = 'PEDIATRICS'),
   'PEDS-01',
   $TITLE$Crecimiento, desarrollo y promoción de la salud infantil$TITLE$,
   $SUMMARY$Fundamentos de crecimiento, desarrollo y maduración; valoración antropométrica y curvas OMS; etapas y áreas del desarrollo; vigilancia de hitos y signos de alarma; promoción de nutrición, lactancia, juego, vínculo y estilos de vida saludables; atención integral del adolescente y rol de enfermería, con contexto Panamá 2026.$SUMMARY$,
@@ -83,7 +83,7 @@ VALUES (
 
 INSERT INTO topics (area_id, code, title, description, sort_order)
 VALUES (
-  '343aead7-4fda-4225-a0cc-e17354094470',
+  (SELECT id FROM areas WHERE code = 'PEDIATRICS'),
   'PEDS-02',
   $TITLE$Atención de enfermería al recién nacido sano y con alteraciones de salud$TITLE$,
   $SUMMARY$Atención integral y valoración del recién nacido; examen físico y neurológico; somatometría y signos vitales; lactancia, vínculo, vacunación y tamizajes; prematuridad y bajo peso; malformaciones y cardiopatías; dificultad respiratoria; enfermedad hemolítica, ictericia, VIH perinatal y otras urgencias neonatales, con normativa Panamá 2024-2026.$SUMMARY$,
@@ -92,7 +92,7 @@ VALUES (
 
 INSERT INTO topics (area_id, code, title, description, sort_order)
 VALUES (
-  '343aead7-4fda-4225-a0cc-e17354094470',
+  (SELECT id FROM areas WHERE code = 'PEDIATRICS'),
   'PEDS-03',
   $TITLE$Valoración integral y cuidados de enfermería al niño y adolescente$TITLE$,
   $SUMMARY$Valoración integral pediátrica y del adolescente; examen físico y funcional, signos vitales, antropometría y curvas de crecimiento, alimentación y nutrición, escalas pediátricas, identificación de prioridades, seguridad y participación familiar, con normativa panameña 2024 y referencias OMS/AHA actualizadas.$SUMMARY$,
@@ -101,7 +101,7 @@ VALUES (
 
 INSERT INTO topics (area_id, code, title, description, sort_order)
 VALUES (
-  '343aead7-4fda-4225-a0cc-e17354094470',
+  (SELECT id FROM areas WHERE code = 'PEDIATRICS'),
   'PEDS-04',
   $TITLE$Cuidados de enfermería en las principales alteraciones de salud pediátricas$TITLE$,
   $SUMMARY$Cuidados de enfermería ante alteraciones gastrointestinales, hidroelectrolíticas, infecciosas, respiratorias, endocrinas, renales, neurológicas, cardiovasculares, oncológicas, quirúrgicas y urgencias pediátricas, con enfoque ABCDE, seguridad y fuentes 2024–2026.$SUMMARY$,
@@ -110,7 +110,7 @@ VALUES (
 
 INSERT INTO topics (area_id, code, title, description, sort_order)
 VALUES (
-  '343aead7-4fda-4225-a0cc-e17354094470',
+  (SELECT id FROM areas WHERE code = 'PEDIATRICS'),
   'PEDS-05',
   $TITLE$Cuidados especializados de enfermería pediátrica$TITLE$,
   $SUMMARY$Atención pediátrica preoperatoria y postoperatoria, cuidados paliativos y acompañamiento familiar, seguridad quirúrgica, manejo del dolor, prevención de eventos adversos, medicamentos, infecciones, dispositivos, deterioro y calidad.$SUMMARY$,
@@ -119,7 +119,7 @@ VALUES (
 
 INSERT INTO topics (area_id, code, title, description, sort_order)
 VALUES (
-  '343aead7-4fda-4225-a0cc-e17354094470',
+  (SELECT id FROM areas WHERE code = 'PEDIATRICS'),
   'PEDS-06',
   $TITLE$Metrología, administración farmacológica y Proceso de Atención de Enfermería$TITLE$,
   $SUMMARY$Sistemas de medidas, conversiones, cálculo de dosis por peso, dosis diaria vs dosis por administración, preparación y volumen, infusiones, seguridad farmacológica pediátrica, superficie corporal, prevención de errores y aplicación completa del Proceso de Atención de Enfermería con participación familiar.$SUMMARY$,

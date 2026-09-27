@@ -1,3 +1,3 @@
 BEGIN;
-UPDATE lessons SET status='SOURCE_VALIDATED' WHERE topic_id IN (SELECT id FROM topics WHERE code LIKE 'PHARMACOLOGY%') AND status='REVIEW';
+UPDATE lessons SET status='SOURCE_VALIDATED' WHERE topic_id IN (SELECT id FROM topics WHERE code LIKE 'PHARM-%') AND status='REVIEW';
 COMMIT;
