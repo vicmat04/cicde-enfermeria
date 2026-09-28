@@ -4,11 +4,11 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EmptyLessonState } from "@/components/EmptyLessonState";
 import { LessonView } from "@/components/LessonView";
 import { LessonCompletionButton } from "@/components/progress/LessonCompletionButton";
+import { LessonStartTracker } from "@/components/progress/LessonStartTracker";
 import type { Lesson, LessonSource } from "@/components/lessonStructure";
 import { createClient } from "@/lib/supabase/server";
 import { getUserProfile } from "@/lib/supabase/profiles";
 import { getLessonProgress } from "@/lib/progress/queries";
-import { startLessonAction } from "./actions";
 
 interface TopicPageProps {
   params: Promise<{ code: string }>;
@@ -122,11 +122,6 @@ export default async function TopicPage({ params, searchParams }: TopicPageProps
   let lessonProgress = null;
   if (renderedLesson) {
     lessonProgress = await getLessonProgress(renderedLesson.id);
-    
-    // Mark lesson as started (idempotent)
-    if (user) {
-      await startLessonAction(renderedLesson.id);
-    }
   }
 
   return (
@@ -136,6 +131,9 @@ export default async function TopicPage({ params, searchParams }: TopicPageProps
         <Breadcrumbs items={breadcrumbs} />
         {renderedLesson ? (
           <>
+            {user && (
+              <LessonStartTracker lessonId={renderedLesson.id} />
+            )}
             <section aria-label="Contenido de la lección">
               <LessonView
                 lesson={renderedLesson}
