@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContentStatusBadge } from "./ContentStatusBadge";
+import { LessonStateBadge, type LessonState } from "./LessonStateBadge";
 
 interface Topic {
   id: string;
@@ -7,6 +8,7 @@ interface Topic {
   title: string;
   description: string | null;
   lessonStatus?: string | null;
+  lessonState?: LessonState;
 }
 
 interface TopicListProps {
@@ -47,7 +49,12 @@ export function TopicList({ topics }: TopicListProps) {
               )}
             </span>
             <span className="shrink-0 text-right">
-              <ContentStatusBadge status={topic.lessonStatus} />
+              <div className="flex flex-col items-end gap-2">
+                <ContentStatusBadge status={topic.lessonStatus} />
+                {topic.lessonState && (
+                  <LessonStateBadge state={topic.lessonState} />
+                )}
+              </div>
               <span
                 className="mt-2 block text-lg text-[#0d706d]"
                 aria-hidden="true"

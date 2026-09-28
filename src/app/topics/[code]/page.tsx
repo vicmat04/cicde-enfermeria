@@ -12,6 +12,7 @@ import { startLessonAction } from "./actions";
 
 interface TopicPageProps {
   params: Promise<{ code: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 function normalizeSourceRelation(
@@ -24,8 +25,14 @@ function normalizeSourceRelation(
   return source;
 }
 
-export default async function TopicPage({ params }: TopicPageProps) {
+export default async function TopicPage({ params, searchParams }: TopicPageProps) {
   const { code } = await params;
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  
+  // Extract section ID from URL fragment (client-side) or search params (fallback)
+  // URL: /topics/CODE#section-UUID or /topics/CODE?section=UUID
+  const sectionParam = resolvedSearchParams?.section;
+  const initialSectionId = typeof sectionParam === 'string' ? sectionParam : null;
   const supabase = await createClient();
   const {
     data: { user },
@@ -136,6 +143,7 @@ export default async function TopicPage({ params }: TopicPageProps) {
                 topicCode={topic.code}
                 topicTitle={topic.title}
                 topicDescription={topic.description}
+                initialSectionId={initialSectionId}
               />
             </section>
             <section className="mx-auto mt-8 max-w-4xl" aria-label="Control de progreso">

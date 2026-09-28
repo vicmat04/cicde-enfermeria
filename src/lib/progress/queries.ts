@@ -151,3 +151,46 @@ export async function getAreaProgress(areaId: string): Promise<AreaProgress | nu
     progressPercent: percent,
   };
 }
+
+/**
+ * Get last studied lesson (most recently visited)
+ * Uses effective_last_visit (COALESCE(last_visited_at, updated_at))
+ * Returns null if no progress exists
+ */
+export async function getLastStudiedLesson() {
+  const supabase = await createClient();
+
+  const { data: progressData, error } = await supabase
+    .from('user_lesson_progress')
+    .select(`
+      *,
+      lessons!inner(
+        id,
+        title,
+        topics!inner(
+          id,
+          code,
+          areas!inner(name)
+        )
+      )
+    `)
+    .order('effective_last_visit', { ascending: false })
+    .limit(1)
+    .maybeSingle();
+
+  if (error || !progressData) {
+    return null;
+  }
+
+  const lesson = progressData.lessons;
+  const topic = Array.isArray(lesson.topics) ? lesson.topics[0] : lesson.topics;
+  const area = Array.isArray(topic.areas) ? topic.areas[0] : topic.areas;
+
+  return {
+    progress: progressData as UserLessonProgress,
+    lessonId: lesson.id,
+    lessonTitle: lesson.title,
+    topicCode: topic.code,
+    areaName: area.name,
+  };
+}

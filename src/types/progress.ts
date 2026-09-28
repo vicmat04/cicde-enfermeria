@@ -9,6 +9,11 @@
 /**
  * Database row from user_lesson_progress table
  * Matches backend schema exactly
+ * 
+ * Resume fields added in migration 0db32b5:
+ * - last_section_id: UUID of last visited section (nullable)
+ * - last_visited_at: explicit visit timestamp (nullable)
+ * - effective_last_visit: COALESCE(last_visited_at, updated_at) - computed/generated
  */
 export interface UserLessonProgress {
   id: string;                    // UUID
@@ -18,6 +23,9 @@ export interface UserLessonProgress {
   started_at: string;            // ISO timestamp (auto-set on INSERT)
   completed_at: string | null;   // ISO timestamp (auto-set when completed=true)
   updated_at: string;            // ISO timestamp (auto-updated)
+  last_section_id: string | null;     // UUID (FK to lesson_sections.id) - resume point
+  last_visited_at: string | null;     // ISO timestamp - explicit section visit
+  effective_last_visit: string;       // ISO timestamp - generated/computed column
 }
 
 /**
