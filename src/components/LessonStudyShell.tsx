@@ -796,6 +796,7 @@ function returnToReaderIndex(
 ) {
   const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
   if (isDesktop) {
+    scrollTo(desktopIndex.current);
     focusActiveIndexButton(desktopIndex.current, activeIndex);
     return;
   }
