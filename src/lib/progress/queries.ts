@@ -6,7 +6,7 @@
  */
 
 import { createClient } from "@/lib/supabase/server";
-import type { UserLessonProgress, GlobalProgress, AreaProgress } from "@/types/progress";
+import type { UserLessonProgress, GlobalProgress, AreaProgress, AreaProgressWithLastTopic } from "@/types/progress";
 
 /**
  * Check if user has started a lesson
@@ -193,4 +193,123 @@ export async function getLastStudiedLesson() {
     topicCode: topic.code,
     areaName: area.name,
   };
+}
+
+/**
+ * Get progress for all areas with last visited topic
+ * Optimized to avoid N+1 queries
+ * Returns progress data and last topic per area
+ */
+export async function getAllAreasProgress(
+  areaIds: string[]
+): Promise<Map<string, AreaProgressWithLastTopic>> {
+  const supabase = await createClient();
+  const resultMap = new Map<string, AreaProgressWithLastTopic>();
+
+  if (areaIds.length === 0) return resultMap;
+
+  // Get all lessons grouped by area
+  const { data: allLessons } = await supabase
+    .from('lessons')
+    .select(`
+      id,
+      title,
+      topics!inner(
+        id,
+        title,
+        area_id
+      )
+    `)
+    .eq('is_current', true)
+    .in('status', ['SOURCE_VALIDATED', 'VERIFIED'])
+    .in('topics.area_id', areaIds);
+
+  // Get user progress for all lessons
+  const { data: userProgress } = await supabase
+    .from('user_lesson_progress')
+    .select(`
+      lesson_id,
+      completed,
+      effective_last_visit,
+      lessons!inner(
+        id,
+        title,
+        topics!inner(
+          id,
+          title,
+          area_id
+        )
+      )
+    `)
+    .in('lessons.topics.area_id', areaIds)
+    .order('effective_last_visit', { ascending: false });
+
+  // Group lessons by area
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const lessonsByArea = new Map<string, any[]>();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (allLessons || []).forEach((lesson: any) => {
+    const topics = lesson.topics;
+    const topic = Array.isArray(topics) ? topics[0] : topics;
+    const areaId = topic?.area_id;
+    if (areaId) {
+      if (!lessonsByArea.has(areaId)) {
+        lessonsByArea.set(areaId, []);
+      }
+      lessonsByArea.get(areaId)!.push(lesson);
+    }
+  });
+
+  // Group progress by area and find last visited
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const progressByArea = new Map<string, { completed: number; lastVisited: any | null }>();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (userProgress || []).forEach((progress: any) => {
+    const lessons = progress.lessons;
+    const lesson = Array.isArray(lessons) ? lessons[0] : lessons;
+    if (!lesson) return;
+    
+    const topics = lesson.topics;
+    const topic = Array.isArray(topics) ? topics[0] : topics;
+    const areaId = topic?.area_id;
+    
+    if (!areaId) return;
+    
+    if (!progressByArea.has(areaId)) {
+      progressByArea.set(areaId, { completed: 0, lastVisited: null });
+    }
+    
+    const areaProgress = progressByArea.get(areaId)!;
+    if (progress.completed) {
+      areaProgress.completed++;
+    }
+    
+    // Keep only the most recent (first in ordered results)
+    if (!areaProgress.lastVisited) {
+      areaProgress.lastVisited = {
+        lessonTitle: lesson.title,
+        topicTitle: topic.title,
+      };
+    }
+  });
+
+  // Build result map
+  areaIds.forEach(areaId => {
+    const totalLessons = lessonsByArea.get(areaId)?.length || 0;
+    const progress = progressByArea.get(areaId);
+    const completedLessons = progress?.completed || 0;
+    const progressPercent = totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0;
+
+    resultMap.set(areaId, {
+      areaId,
+      areaCode: '', // Will be filled from area data
+      areaName: '', // Will be filled from area data
+      totalLessons,
+      completedLessons,
+      progressPercent,
+      lastTopic: progress?.lastVisited || null,
+    });
+  });
+
+  return resultMap;
 }

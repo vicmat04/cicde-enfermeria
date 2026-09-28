@@ -796,8 +796,23 @@ function returnToReaderIndex(
 ) {
   const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
   if (isDesktop) {
-    scrollTo(desktopIndex.current);
-    focusActiveIndexButton(desktopIndex.current, activeIndex);
+    // Find the active button within the desktop index
+    const activeButton = desktopIndex.current?.querySelector<HTMLButtonElement>(
+      `button[data-lesson-index-button="${activeIndex}"]`,
+    );
+    
+    if (activeButton && desktopIndex.current) {
+      // Scroll the active button into view within the index container
+      activeButton.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'center',
+      });
+      
+      // Focus the button after scroll
+      window.requestAnimationFrame(() => {
+        activeButton.focus({ preventScroll: true });
+      });
+    }
     return;
   }
 

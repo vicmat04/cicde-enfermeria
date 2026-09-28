@@ -40,6 +40,13 @@ export interface AreaProgress {
   progressPercent: number;
 }
 
+export interface AreaProgressWithLastTopic extends AreaProgress {
+  lastTopic: {
+    topicTitle: string;
+    lessonTitle: string;
+  } | null;
+}
+
 /**
  * Global progress summary for dashboard
  */
