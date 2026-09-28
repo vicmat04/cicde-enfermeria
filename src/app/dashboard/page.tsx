@@ -4,7 +4,7 @@ import { GlobalProgressCard } from "@/components/progress/GlobalProgressCard";
 import { AreaProgressCard } from "@/components/progress/AreaProgressCard";
 import { createClient } from "@/lib/supabase/server";
 import { getUserProfile } from "@/lib/supabase/profiles";
-import { getGlobalProgress, getAreaProgress, getLastStudiedLesson } from "@/lib/progress/queries";
+import { getGlobalProgress, getAllAreasProgress, getLastStudiedLesson } from "@/lib/progress/queries";
 import { ContinueStudyingCard } from "@/components/progress/ContinueStudyingCard";
 
 export default async function DashboardPage() {
@@ -34,15 +34,18 @@ export default async function DashboardPage() {
   );
   const totalTopics = activeTopics?.length || 0;
 
-  // Fetch area progress for all areas
-  const areaProgressData = await Promise.all(
-    (areas || []).map(area => getAreaProgress(area.id))
-  );
-  const areaProgressMap = new Map(
-    areaProgressData
-      .filter((p): p is NonNullable<typeof p> => p !== null)
-      .map(p => [p.areaId, p])
-  );
+  // Fetch area progress for all areas (optimized)
+  const areaIds = (areas || []).map(area => area.id);
+  const areaProgressMap = await getAllAreasProgress(areaIds);
+  
+  // Enrich progress data with area code and name
+  areaProgressMap.forEach((progress, areaId) => {
+    const area = areas?.find(a => a.id === areaId);
+    if (area) {
+      progress.areaCode = area.code;
+      progress.areaName = area.name;
+    }
+  });
 
   return (
     <div className="page-wash min-h-screen">
@@ -134,6 +137,7 @@ export default async function DashboardPage() {
                 name={area.name}
                 description={area.description}
                 topicCount={topicCounts[area.id] || 0}
+                progress={areaProgressMap.get(area.id) || null}
               />
             ))}
             {(!areas || areas.length === 0) && (
