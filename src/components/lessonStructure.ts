@@ -123,9 +123,14 @@ export function buildLessonChapters(
 
   // Filter out metadata-only sections from navigation
   const navigableSections = sortedSections.filter(section => {
-    const title = section.title.toLowerCase();
+    const normalized = section.title
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .trim();
     // Keep most sections, filter only clear metadata
-    if (title.includes('estado académico del paquete')) return false;
+    if (normalized.includes("estado academico del paquete")) return false;
+    if (normalized === "estado para integracion") return false;
     return true;
   });
 
