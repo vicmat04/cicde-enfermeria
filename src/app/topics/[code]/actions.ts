@@ -33,7 +33,6 @@ export async function startLessonAction(lessonId: string) {
   }
 
   revalidatePath('/dashboard');
-  revalidatePath(`/topics/${lessonId}`);
 
   return { success: true, data };
 }
@@ -51,7 +50,6 @@ export async function toggleCompletionAction(lessonId: string, currentlyComplete
   }
 
   revalidatePath('/dashboard');
-  revalidatePath(`/topics/${lessonId}`);
 
   return { success: true, data };
 }
