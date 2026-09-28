@@ -1,5 +1,5 @@
 /**
- * Progress types for CICDE UI v1
+ * Progress types for student progress tracking v1
  * 
  * Based on official Backend Progress Contract:
  * Table: user_lesson_progress

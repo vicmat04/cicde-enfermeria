@@ -14,10 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "CICDE Enfermería 2026",
-    template: "%s | CICDE Enfermería",
+    default: "NexNurse",
+    template: "%s | NexNurse",
   },
-  description: "Preparación académica para el CICDE Enfermería 2026.",
+  description: "Plataforma independiente de preparación para certificación de enfermería.",
+  applicationName: "NexNurse",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
