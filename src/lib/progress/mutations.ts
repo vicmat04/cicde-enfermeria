@@ -9,7 +9,7 @@
  * - Do NOT set them manually
  */
 
-import { createClient } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/server";
 import type { UserLessonProgress } from "@/types/progress";
 
 /**
@@ -25,7 +25,7 @@ export async function markLessonStarted(
   lessonId: string,
   userId: string
 ): Promise<{ data: UserLessonProgress | null; error: Error | null }> {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   // Try INSERT first (new lesson start)
   const { data: insertData, error: insertError } = await supabase
@@ -80,7 +80,7 @@ export async function markLessonStarted(
 export async function markLessonCompleted(
   lessonId: string
 ): Promise<{ data: UserLessonProgress | null; error: Error | null }> {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const { data, error } = await supabase
     .from('user_lesson_progress')
@@ -105,7 +105,7 @@ export async function markLessonCompleted(
 export async function unmarkLessonCompleted(
   lessonId: string
 ): Promise<{ data: UserLessonProgress | null; error: Error | null }> {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const { data, error } = await supabase
     .from('user_lesson_progress')
@@ -150,7 +150,7 @@ export async function updateLastSection(
   lessonId: string,
   sectionId: string | null
 ): Promise<{ data: UserLessonProgress | null; error: Error | null }> {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   const { data, error } = await supabase
     .from('user_lesson_progress')
