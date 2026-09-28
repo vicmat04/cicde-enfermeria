@@ -2,7 +2,6 @@
 
 import { useActionState } from "react";
 import { login } from "./actions";
-import { StudyIcon } from "@/components/StudyIcon";
 
 export default function LoginPage() {
   const [state, formAction, isPending] = useActionState(
@@ -29,16 +28,19 @@ export default function LoginPage() {
           <div className="relative flex flex-col items-center gap-4">
             {/* Brand mark */}
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0d706d] text-white shadow-sm">
-              <StudyIcon code="CICDE" className="h-7 w-7" />
+              <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
             <div className="text-center">
-              <p className="text-xs font-bold uppercase tracking-[.18em] text-[#0d706d]">
-                Plan de estudio académico
-              </p>
-              <h1 className="mt-1 text-2xl font-bold tracking-tight text-[#173a37]">
-                CICDE Enfermería
+              <h1 className="text-2xl font-bold tracking-tight text-[#173a37]">
+                NexNurse
               </h1>
-              <p className="mt-0.5 text-sm font-medium text-[#617170]">2026</p>
+              <p className="mt-0.5 text-sm font-medium text-[#617170]">
+                Preparación para certificación de enfermería
+              </p>
             </div>
           </div>
         </div>

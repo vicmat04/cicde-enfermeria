@@ -67,7 +67,7 @@ export default async function DashboardPage() {
               id="dashboard-title"
               className="text-4xl font-bold tracking-tight text-[#173a37] sm:text-5xl"
             >
-              Prepárate para el CICDE 2026
+              Prepárate para tu certificación de enfermería
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-[#526966]">
               Recorre las áreas activas, estudia a tu ritmo y consulta contenido
@@ -146,6 +146,15 @@ export default async function DashboardPage() {
               </div>
             )}
           </div>
+        </section>
+
+        {/* Independence disclaimer */}
+        <section className="mt-12 border-t border-[#e0e9e6] pt-8">
+          <p className="text-center text-xs leading-relaxed text-[#617170]">
+            Plataforma independiente de estudio. No afiliada ni patrocinada por el CICDE, MINSA,
+            Universidad de Panam
+eu00e1 ni otras instituciones oficiales.
+          </p>
         </section>
       </main>
     </div>

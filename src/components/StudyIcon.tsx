@@ -104,7 +104,7 @@ function IconPaths({ name }: { name: IconName }) {
   }
 }
 
-/** A distinct inline icon for each CICDE study area, with a brand fallback. */
+/** A distinct inline icon for each study area, with a brand fallback. */
 export function StudyIcon({ code, className = "" }: StudyIconProps) {
   const icon = areaIcons[code.toUpperCase()] ?? "cicde";
 
